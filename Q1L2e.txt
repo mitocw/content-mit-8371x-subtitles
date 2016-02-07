@@ -1,0 +1,64 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L2e.txt
+#
+# Captions for 8.421x module
+#
+# This file has 54 caption lines.
+#
+# Do not add or delete any lines.
+#
+#----------------------------------------
+
+Recall that a density matrix has an infinite number
+of possible unravelings into stochastic mixtures
+of pure states.
+It turns out that, fascinatingly,
+quantum operations also have an infinite number of unravelings
+into different operation elements representing
+the same quantum operation.
+Why?
+What is the physical intuition behind this infinity
+of possible choices of quantum operation representations,
+and how might we exploit this, for example,
+for quantum error correction?
+Recall the quantum circuit we employed for the system
+environment model.
+We have a system and an environment
+going into a black-box unitary operation.
+The output is our E of rho, and we usually
+measure the environment immediately.
+But, in fact, the environment may be measured
+after a change of basis.
+That may be implemented by a unitary operation shown here
+as u prime.
+Moreover, it should be evident that the resulting map should
+not change when the basis of the measurement of the environment
+changes.
+Thus, we have the following lemma-- if the operation
+element set E sub k describes a valid operator sum
+representation E, then a different operation element
+set F, related to E by a unitary transform,
+will also describe the same quantum operation.
+We may show that this is true simply
+by writing out the operator sum representation of the quantum
+operation using elements F. That is, F rho F dagger.
+And now, let us substitute in the relationship with E. So,
+we have a unitary transform of E times rho
+times the daggered version of this.
+So, we have E dagger k prime u complex conjugated.
+Here, we have u dagger u, and that simply
+is the identity represented here as a Dirac delta
+function over k and k prime.
+That causes the sum to keep only the diagonal terms of the sum,
+and thus, the result is the same operation, E, acting on rho.
+This unitary degree of freedom in
+the operator-sum representation is explored further
+in the problem set.
+It turns out to be crucial in the insight which
+allows phase damping to be turned from a contiguous
+process into one in which one has,
+with some probability, nothing happening to the system.
+That is, alpha I. Or, with probability 1 minus alpha,
+a complete phase flip of the qubit,
+namely, a poly(z) operation.
+This is a natural interpretation made
