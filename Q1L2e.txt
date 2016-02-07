@@ -5,7 +5,7 @@
 #
 # This file has 54 caption lines.
 #
-# Do not add or delete any lines.
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
 #
 #----------------------------------------
 
