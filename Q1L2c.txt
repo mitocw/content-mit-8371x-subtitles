@@ -1,0 +1,84 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L2c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 74 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us now turn to a formal definition
+of what a quantum operation is.
+Recall that our goal is to describe
+in general what a legal map is for rho going to E of rho,
+not just including unitary operations.
+We find that a map E is a valid quantum operation if
+and only if three criteria are met.
+First, the output density matrix must have a trace of one.
+Second, E must be a linear and convex operation
+that is acting on a statistical mixture of density matrix
+inputs.
+It must also produce a statistical mixture
+and do so linearly.
+These two constraints are very natural from the standpoint
+of quantum mechanics being a linear matrix theory and also
+that the output must be a density matrix.
+So therefore, the map must be trace preserving.
+A third criterion has two parts and that
+is that the output density matrix must also be positive.
+It is natural to require that the output of the map
+be positive.
+But there is more.
+It turns out that one must also allow for the output
+to be positive, even when the map is only operating
+on part of the system.
+Suppose we have a reference and a quantum systems R
+and Q. Then if E only acts on Q, then the output still
+must be positive, even though nothing
+was done to the reference part of the system.
+This concept is known as complete positivity.
+And it is much more general than just positivity.
+The complete positivity requirement
+can be understood and appreciated
+by looking at the quantum circuit representation
+of this criterion.
+The initial density matrix has E acting on one part, namely
+the quantum part.
+Whereas the reference part has nothing acting on it.
+Despite E only acting on this subsystem of the density
+matrix, it must still produce a valid output density matrix.
+And thus this output state must be positive.
+We can further understand this criteria
+by looking at a specific example.
+Consider this particular map which acts on a single qubit,
+say abcd, and it transforms that qubit
+by transposing the off-diagonal elements.
+It is straightforward to see that a positive density
+matrix is transformed to a positive density matrix
+by this transpose map.
+However, if we look at the operation of this map on a 2
+qubit system where the first it has nothing happening to it,
+we may then, by looking at the 4 by 4 matrix which corresponds
+to this transform I tensored with E,
+see that the operation of the trace acting
+on the second cubit flips these off diagonal elements
+in each local quadrant of the 4 by 4 matrix.
+This is known as a partial transpose operation.
+Now, let us apply this partial transpose operation
+to a specific density matrix, which is this 1001, 0000, 0000,
+10001 state.
+That is, the density matrix for the two qubits
+state 0 0 plus 1 1 normalized.
+The partial transpose produces this output density matrix
+state.
+The density matrix just has 1 and 0s,
+and in fact, looks tantalizingly legal and has a trace of 1.
+However, in fact, it is not positive.
+It is an illegal state, not a density matrix.
+And that is because the inner block matrix
+has an eigenvalue of minus 1.
+The transpose is thus a non-physical operation.
+But it is still mathematical useful
+as a negative partial transpose test for entanglement.
