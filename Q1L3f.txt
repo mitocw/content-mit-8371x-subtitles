@@ -1,0 +1,104 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3f.txt
+#
+# Captions for 8.421x module
+#
+# This file has 94 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+One of the earliest results in quantum error correction,
+and a great surprise at the time of its discovery,
+is Shor's 9-qubit quantum error correction code.
+Here are the code words for that code,
+logical zero is a nine qubit state which is 0, 0, 0, plus 1,
+1, 1 repeated three times.
+Logical one is the state 0, 0, 0 minus 1,
+1, 1, repeated three times, normalized.
+The amazing thing about this code
+is that the code can correct for arbitrary single qubit error.
+
+Let us see how this works by examining the syndrome
+operators for this code.
+Again these are the quantum operators
+used to measure the bits that determine
+the location and the kind of error that occurred.
+For the bit flip errors, the 9-qubit code
+employs syndrome operators like this, zed one zed two,
+and zed two zed three.
+We can see how these work by writing out
+the code words explicitly, logical zero like this
+and logical one like this.
+I've written out all nine qubits here,
+and zed one zed two acts on the first two qubits
+in the first triplet.
+Zed two zed three act on the second two qubits.
+Of course it works both on the 0, 0, 0 and the 1, 1, 1 pair,
+but I'm only indicating the first three here directly.
+Bit flip errors may also happen to the second triplet,
+and those are detected by using zed four zed five,
+and zed five zed six as the parity check operators.
+These are just like the bit flip code,
+and so we have zed seven zed eight,
+zed eight zed nine for the third triplet,
+so this is like three copies of a three qubit code.
+The parity check operators check the pairs
+of all the possible qubits in each one
+of these triplets for errors.
+So why are there three copies?
+That becomes evident when we look at the phase
+flip syndrome operators, which are x one through x six,
+and x four through x nine.
+These two operate on the first pair
+of triplets, that's for the first operator
+and the second pair of triplets, that's for the second phase
+flip operator.
+And the reason they work is evident
+if you look at the signs and a parity of the signs.
+Shown here are marked in green, we
+find we have plus, plus, plus and minus, minus, minus.
+So this is a parity flip code.
+The 9-qubit code thus concatenates a bit flip code
+and a phase flip code together.
+How well does it perform compared with what is possible?
+Well let us look at some metrics of performance of quantum error
+correction codes.
+The number of possible errors on these nine qubits
+is 1 plus 3 times 9.
+1 indicates identity, that is no error,
+and there are three possible errors, x, y,
+and zed on each qubit, and their nine qubits.
+Thus there are 28 possible errors that may occur.
+That's a single qubit errors.
+Now let us look at this syndrome operators
+and how many errors might be distinguishable in principle
+by the number of possible syndrome measurement results.
+There are six bit flip checking operators,
+and there are two phase flip checking error syndromes,
+thus we have two the eight possible syndrome values.
+0 or 1 for each, meaning 256 distinguishable errors,
+and this is to be compared with the 28 possible single qubit
+errors.
+Thus in fact, this nine cubic code
+can correct many errors beyond single qubit errors.
+And in fact some of those are two qubit errors.
+The nine qubit code is interesting for many reasons
+and we will return to it later.
+How good can a quantum error correction code be?
+We define a perfect quantum code with parameters n and k
+as being one where the number of possible syndrome measurement
+results is exactly the number of possible single qubit
+errors on the system.
+That is, the code has log base 2 of 1
+plus 3n syndrome operators.
+Is there such a perfect quantum code?
+Yes, it turns out to be that five qubits can
+encode one qubit perfectly.
+This code has 1 plus 3 times 5, namely 16, possible errors,
+and it employs four syndrome operators.
+The four syndromes can distinguish 16 possible errors,
+that is 2 to the 4, and thus the number
+of distinguishable errors exactly
+equals the number of possible single qubit errors,
