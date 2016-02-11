@@ -1,0 +1,76 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L2b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 66 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+For quantum error correction, we need
+to describe what an error is, in a quantum mechanical context.
+More generally, let us try to describe
+all possible ways in which a input density matrix may evolve
+to an output density matrix.
+We will describe this via a map called E.
+E should be able to capture any physical process happening
+to this input state, not just unitary evolution,
+but non-unitary, as well.
+The model which we will employ will
+be one which has two parts.
+We will suppose that we have a system, which
+may start at a pure state, say, size for now.
+And this system evolves in a unitary manner,
+but not just by itself, rather, it
+is coupled to another state, which
+we will call the environment.
+Let us say the initial state of the environment
+is a cat E, a pure state, but that need not
+be a pure state, in general.
+The environment, let us say, is measured
+after this unitary transform.
+And we will consider the measurement
+as happening in an orthonormal basis, e0, e1,
+and so forth, up through the dimension of the environment.
+The question is, what is the output state, rho?
+We may write the output state before the measurement,
+by understanding that the unitary transform gives
+us u times e times psi.
+It is convenient to invent some notation
+to describe this output state.
+We will use the circle plus symbol to represent "or."
+Using this, then we may write the output state rho
+as a stochastic combination, where,
+when the measurement result is 0, we get e0 u e,
+and this is an operator which acts on psi.
+Or, if the measurement result is 1,
+we get e1 u e acting on psi, and so forth.
+This may be compactly written as a sum
+over all possible measurement outcomes,
+where ek u e, we emphasize, is a matrix, an operator, which
+acts on psi.
+We call this operator an operation element.
+Historically, it is also called, sometimes, a cross operator.
+And this operator, e sub k, will play a principal role
+in our study of quantum error correction.
+We may also sometimes call them error operators.
+Concisely, therefore, we may write the output density
+matrix in this form, as the sum over k Ek rho Ek dagger.
+This is the map, E, acting on rho.
+The main constraint is that the sum
+of the square of these operators, Ek dagger Ek
+must equal identity.
+We can check that this is true, explicitly,
+by substituting in the definition of E sub k,
+first using Ek dagger and then Ek.
+And then, noting that this term in the middle, the sum over Ek
+Ek, is identity, because this is a complete set of states
+for the basis of the environment.
+Thus, this sum, overall, gives the identity operator,
+as desired.
+This setup, with the system environment model giving us
+an equation which maps the input density matrix to the output
+density matrix, is an important idea for quantum error
+correction, and we will return to this model several times.

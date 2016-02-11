@@ -1,0 +1,104 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 94 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Before examining full quantum error correction,
+let us look at a simpler case.
+First, that of quantum error detection.
+We may examine this using the operator-sum representation.
+Consider the action of a quantum operation defined by operation
+elements E sub K, not on a whole Hilbert space,
+but rather on a subspace C. We may visualize
+the action of the quantum operation
+on this subspace by looking at transformations given
+by each one of the operation elements E. Let C
+be this orthogonal subspace of the Hilbert space.
+One of the error operators, such as u0,
+might be a unitary operation that rotates this subspace,
+as we can denote here in a cartoon way as a rotation of C.
+That is, it is a unitary transform.
+
+Another operation element, E1, might
+be a projector, which take C to a number or a much
+smaller subspace.
+Yet another operation element, say, E2,
+might be one of the operation limits,
+such as we saw in phase damping, which shrinks or deforms
+this subspace C in a non-uniform way.
+I have drawn these here as if they were all
+separate subspaces.
+But, in general, the output of the operation elements
+may be spaces which overlap or collide with each other.
+For quantum error detection, given a set of errors E sub K,
+the important thing is that, on this subspace C,
+the output of the operation elements
+must be distinguishable.
+And that is true under certain circumstances.
+Specifically, the image of C must
+be a disjoint set of vector spaces for all operation
+elements in the set.
+This allows us to perform error detection
+and create an error detection code.
+Here's a simple example on a 2-qubit space.
+Let us define C as a linear vector space spanned by the two
+vector basis states, 00+11 and 01+10.
+In this expression, a and b are arbitrary coefficients
+for the state psi.
+And that defined C. Note that a squared plus b squared
+equals 1, so that psi is a unit vector.
+The errors of interest are described
+by phase damping happening independently
+and identically to the 2 qubits.
+We will include a subset of the possible errors.
+Specifically, we have, for a single cubit, the phase
+damping operator's identity and sigma
+Z weighted by probabilities alpha and 1 minus alpha,
+respectively.
+For 2 qubits, the error operators
+are given by the tensor product of the single cubic error
+operators.
+Thus, we have, for E00, alpa identity.
+For E01, we have square root of alpha times 1
+minus alpha times IZ.
+And, similarly, for E10, we'll have ZI,
+and then for E11, we will have ZZ.
+Actually, though, do we really want
+to include the ZZ operation?
+Let us leave it out for now, because it
+will turn out that this error is not distinguishable.
+And, therefore, we do not want to include it
+in our error detection set.
+So, now, let us see what the action is
+of these error operators on the codewords of our space.
+The first error operator, E00, is identity,
+and, therefore, it's easy to see that it leaves
+the code space unchanged.
+That happens with probability alpha squared,
+since there are 2 qubits.
+For E01, we have the error operation IZ.
+Recall that our code words is defined by the basis states,
+00+11 and 01+10.
+We, therefore, see that IZ flips the sign of terms which
+have a 1 in the second qubit.
+Therefore, we have this output state,
+and we make a density matrix.
+Similarly E10 flips this sign when
+the first qubit on the left is a 1 versus being a 0.
+The reason that this is interesting
+is because, these two code spaces, the images of E acting
+on C, are orthogonal to C. That it
+can be seen by looking at these two particular vectors.
+They are both orthogonal to C. The two vectors
+are, though, not orthogonal to each other.
+Therefore, we cannot distinguish which error happened.
+That is, if it was E01 or E10, but we can detect the fact
+that an error did occur.
+So, therefore, this is not error correction,
+but it shows the principles of how errors can be detected.

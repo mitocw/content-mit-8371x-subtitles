@@ -1,0 +1,67 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 57 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+A good starting point for our journey into quantum error
+correction is classical coding theory.
+There are many similarities, but there are also
+many important differences.
+Let us illustrate classical coding
+by looking at what is probably the simplest communication
+channel for binary data.
+In this channel, a zero is transmitted without error
+with probability 1 minus p but is flipped with probability p.
+Similarly, the 1 has the same 1 minus p and p.
+The sender and receiver both have binary alphabets.
+Thus, the probability of error for the channel is p,
+and this channel is symmetric and known as the binary
+symmetric channel.
+The quantum analog of this will be the bit flip channel.
+But first, let us begin with some definitions of codes.
+We define a classical code called with parameters n, k,
+and d as being a set of 2 to the k n-bit strings.
+The strings are constrained to have a minimum Hamming distance
+from each other of value d.
+The Hamming distance is a useful metric
+of how much error has occurred.
+And we define this distance between two strings, x and y,
+as being the weight of x exclusive ORed
+with y in a bitwise fashion.
+This weight is the number of ones in that string.
+Let us look at an example of such a classical code.
+This code will have three bits and map 000 to being logical 0
+and 111 to being logical 1.
+It has three bits, encodes one logical bit,
+and has distance of three.
+Thus, the parameters are 3, 1, 3, for n, k,
+and d for this code.
+What do errors due to the state?
+Well, let us apply the binary symmetric channel
+with error probability p.
+What the receiver sees as a result of this error
+can be written as a stochastic mixture of a certain set
+of received states.
+000 is received with probability 1 minus p cubed.
+Recall p is the error probability for a bit flip.
+The receiver receives 001 with probability p times 1 minus p
+squared, or, with the same probability, 010 and 100.
+We may decode each of these receive states as a logical 0,
+assuming, of course, a logical 0 was sent.
+Two or three errors can also occur.
+That happens with higher order probability.
+And, in those cases, a 1 is decoded from the output,
+and those are errors.
+We may, therefore, compute the overall probability
+of error of this, error decoded resolved, as being p cubed
+plus p squared times 1 minus p.
+To leading order, and this is p squared.
+And that is better than the original channel which
+had order of p for an error.
+Thus, this is an effective method for correcting errors.
