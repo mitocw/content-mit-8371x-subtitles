@@ -1,0 +1,86 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 76 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us now begin the story of quantum error correction,
+first, with some history, and then with the bit flip code.
+As of 1995, it was widely believed
+that quantum error correction was impossible because
+of three main reasons.
+First, states collapse when measured.
+This is very different from classical.
+Second, errors are continuous in the quantum realm rather than
+digital bit flips.
+Third, quantum states must obey the no-cloning theorem, thus,
+an unknown quantum state cannot be copied,
+and there is no direct analog of the classical redundancy code.
+Quantum error correction today is known to get around these,
+first, by not measuring the state holding the quantum
+information, but rather, only measuring
+the effect of the environment.
+This is a little counterintuitive
+For the second and third objections,
+one orthogonalizes errors using entanglement.
+This is a subtle idea.
+And we will see it in practice by looking at some examples.
+Specifically, let us consider the three qubit
+code for bit flip errors.
+The bit flip error channel is defined
+by this quantum operation.
+With probability 1, minus p, The input once unchanged.
+And, with probability p, the density matrix input
+sees an x error.
+So, that is x row x.
+x dagger is the same as x.
+This is known as the bit flip channel.
+Schematically, we think of this as a communication
+between Alice and Bob over a noisy channel
+represented by E of rho, the operator-sum representation
+given here.
+For quantum error correction, we define an analog
+to classical codes by saying that a n, k quantum code C
+is a k-qubit subspace of an n-cubit Hilbert space.
+Notice that we do not define the notion of distance yet.
+That will come later, when it is easier to do.
+An example is given by the n equal 3,
+k equal 1 code with these code words,
+where 0 is 000 and 1 is 111.
+This is to be compared versus the naive encoding, which
+would take an unknown qubit, a0 plus b1,
+and replace that with three copies of the unknown qubit.
+It is impossible to do this, in general,
+due to the no-cloning theorem.
+So, let us return to this bit flip channel.
+Again, here's the operator-sum representation
+of the noisy channel.
+Let the input state be an arbitrary, encoded qubit.
+So, this is a logical 0 plus b logical 1.
+When each of the qubits goes through this bit flip channel,
+acting independently and identically, we
+may receive, with probability 1 minus p cubed,
+the same as the original state.
+Or, a single bit flip might happen
+to the first qubit, or the second qubit,
+or the third qubit, each case happening with probability p
+times 1 minus p squared.
+Or, two bit flip errors might happen.
+This happens with probability p squared times 1 minus p
+and may happen to two out of the three qubits involved.
+Finally, all three qubits may experience a bit flip error,
+and this happens with probability p cubed.
+The four bottom cases here are those cases with an error.
+The four cases at the top are all states
+which are mutually orthogonal and thus, in principle,
+can be distinguished.
+Thus, in principle, error correction
+should be possible by projecting onto
+these orthogonal subspaces.
+And that is how quantum error correction
+works, as we will see next.
