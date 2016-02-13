@@ -1,0 +1,154 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3g.txt
+#
+# Captions for 8.421x module
+#
+# This file has 144 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Using the intuition we have built,
+we may now give necessary and sufficient criteria
+for quantum error correction.
+We employ the operator-sum representation
+to denote the channel where errors are occurring.
+Namely, Ek rho Ek dagger summed over k, as is usual.
+This theorem describes the quantum error correction
+criteria.
+Let C be a quantum code that is a subspace defined
+by the projector, P, which is a sum over the basis states psi
+sub l.
+Psi sub l will be the codewords of the code, C.
+There exists a quantum operation in recovery and syndrome
+measurement operator, R, which corrects
+a certain set of errors defined by E on the subspace C,
+if and only if the following criteria is satisfied.
+Namely, that P E sub k dagger Ej P
+is equal to a diagonal matrix times the projector, P.
+This middle expression, Ek dagger Ej,
+denotes the relationship of the two errors Ek and Ej,
+and we may equivalently understand
+what this expression tells us by decomposing it
+into the off-diagonal and diagonal terms.
+The off-diagonal terms talk about Ej and Ek
+and say that they must be orthogonal for all errors which
+are different from each other, and for all codeword states.
+This is known as the orthogonality criteria.
+For the diagonal elements, the criteria
+specify that Ek dagger Ek should be equal to a constant, d sub
+k, for all codeword states.
+That is, it must not distinguish codewords.
+We call this the non-deformation criterion.
+When these [INAUDIBLE] conditions are satisfied,
+R exists, and can also be found using
+the proof of these conditions.
+Let us now prove this.
+The intuition starts with the picture
+that we have looked at before with quantum error detection.
+There is a Hilbert space with a subspace,
+C. This codeword space has as its image,
+under error operators, some transformed vector space.
+For example, E may transform C into a smaller or displaced
+version of itself.
+Another, different error may also map C into an image.
+If that image collides with the image of the first operator, E,
+then we cannot distinguish these two images from each other.
+Collisions like this are ruled out
+by the orthogonality criteria of the quantum error correction
+conditions.
+Next, if the images are all orthogonal to each other,
+and, thus, distinguishable, the second error correction
+criteria condition requires that images not be deformed.
+That is, an error operator cannot differentially change
+one basis state by a length which is different from how
+another basis state is changed.
+That is the non-deformation criterion.
+The recovery operator should thus
+distinguish these image subspaces
+and unshrink them to recover the original.
+How do we do that?
+By the polar decomposition, each one of the error operators
+may be written as a unitary transform and a shrinkage part.
+This is just like writing a complex number
+as a magnitude times a phase.
+So the phase portion is u.
+That's the rotation.
+And the magnitude portion is PE dagger EP.
+From the error correction criteria,
+we know that PE dagger EP is d.
+The two parts of the recovery operation
+are, first, a syndrome measurement, and then, second,
+a rescaling.
+For the syndrome operation, we want
+to project into the kth image of the codeword space,
+C. So that is the rotated version
+of the codeword space projector, P, given by u Pu dagger.
+We may rewrite this using the polar decomposition result,
+to obtain an expression which has, explicitly,
+the error operator E sub k in it.
+All we have done, here, is to substitute in
+for ukP into the expression, such that E sub k appears.
+Another version of this expression
+gives us a relationship with E sub k dagger.
+The reason we want this is evident from the QEC criteria.
+Namely, we have PEk dagger Ej P must
+be diagonal with deformation constant d sub k.
+By virtue of this condition, which I will label with a star,
+we have that the P sub k, which are
+projectors into the kth image of C,
+P sub k are orthogonal to each other.
+This is expected.
+After all, we required that the images of C
+be orthogonal to each other, and P sub k project
+into the image of sub C.
+Explicitly, we can find that this condition is
+that Pk Pj is proportional to-- and now,
+let us take the product of the two expressions just obtained,
+and, indeed, we find that this is 0.
+Thus, the recovery operator may first
+use for syndrome measurement the measurement
+of P sub k, which gives k as the syndrome for the error.
+Given the syndrome for the error,
+we now want to recover the initial state.
+This state may be obtained by employing the unitary rotation
+operator, which we have as part of that polar decomposition
+of E. So the recovery will perform u sub k dagger, which
+undoes the rotation caused by E sub k.
+The overall recovery operation combines
+the syndrome measurement projection P sub
+k, which gives a post-measurement density matrix
+state rho prime.
+And then, this unitary operator u sub k,
+for a state, psi, in the code, we
+find that uk dagger Pk acting on the erroneous state, Ej acting
+on psi-- error j, in other words--
+gives us, via the syndrome measurement operation P sub
+k, the syndrome, k.
+And, via the recovery operation u sub
+k, which rotates the state back, ideally, psi.
+So let us see if that's true.
+We plug-in here the expression for P sub k,
+and we find that, again, P can be inserted here,
+because the state, psi, in the codeword space.
+We find that we have an expression with PE dagger
+EP, which is just equal to d sub k, by the quantum error
+correction criteria.
+That is d sub k times delta jk necessary
+for the orthogonality criterion.
+Thus, we find that the recovery operator acting
+on the output of the channel, E acting on the input state, psi,
+is given by taking the outer product of the pure state
+version we just obtained above.
+Rewriting that here, explicitly, as a sum over kj,
+with u sub k dagger P sub k Ej acting on psi, outer product
+with itself giving us-- substituting in the result
+with d sub k and delta jk-- simply,
+psi times the sum over all d sub k.
+And that sum is equal to 1, by the completeness criteria
+for the operator sum representation of the error
+channel E. Thus, we find that the output of the recovery
+operation is the input state, psi,
+and we have proven the validity of the quantum error correction
+criteria.

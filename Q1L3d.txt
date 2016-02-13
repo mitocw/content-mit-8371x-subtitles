@@ -1,0 +1,213 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L3d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 203 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+A key concept in quantum error correction
+is the ability to measure the effect of the environment
+without disturbing the encoded quantum state.
+This is realized using a method known as operator measurement.
+Given a unitary operation u, which
+has eigenvalues plus or minus 1 and eigenvectors plus or minus
+u, the concept of measuring u is defined
+by this quantum circuit.
+First, we start out with a cubit in the 0 state.
+We perform a Hadamard to put that into a superposition,
+and then use that superposition to control the operation of u
+onto another state.
+Assume that state is a superposition of the plus
+and minus eigenstates.
+The controlled u operation is followed by a Hadamard
+on the control cubit and then a measurement.
+In addition to the measurement output,
+this circuit also produces a output state psi.
+Let's call the measurement result z, and also label
+the intermediate states in the circuit
+so that we may analyze its operation systematically.
+Phi0, Phi1, and phi2 will be the states.
+The initial state, phi0, is a two-register quantum state
+with the first cubit in an equal superposition of 0 and 1,
+and then the second cubit being a superposition
+with unknown amplitude C0 and C1 of the two eigenstates of u.
+Phi1 follows the application of the controlled u operation,
+which flips the sign of the u minus term,
+but only when the control cubit is in the 1 state.
+So thus, for the 0 state, control, the bottom register,
+stays unchanged, but when the control is 1,
+the bottom register has [? u1. ?] Phi2
+then applies a Hadamard operation
+to that first control cubit.
+The result is easy to write down by flipping 0 for 0 plus 1,
+and 1 to 0 minus 1, but it is meaningful to further simplify
+this expression.
+Specifically, we find that it is just
+the superposition of two terms where
+0 labels the case when the eigenstate is u plus,
+and 1 when the eigenstate is u minus.
+This then let's us collapse the input state into eigenstates
+of u, and we find that the measurement result, z, tells us
+when the output state, psi, is a plus u eigenstate or a minus u
+eigenstate.
+Operator measurement is thus seen as a projector
+into the plus or minus 1 eigenvalue subspaces
+of a unitary operator.
+This is extremely useful to us for error correction.
+
+Specifically, we will employ operator measurement
+to obtain the error syndrome.
+The error syndrome tells us what error
+has occurred that is the effect of the environment.
+It will be determined by syndrome operators.
+For the 3-cubit bit flip code, these
+are the two syndrome operators, namely ZZI and IZZ.
+Recall our table of output probabilities.
+Here are the measurement results obtained
+when the syndrome operators are measured.
+We can read out what the measurement results
+are by realizing that 0 0 0 is a plus 1 eigenstate of ZZI.
+The 1 1 1 state is also a plus 1 eigenstate state of u1
+because it has two 1's, both of which contribute a minus sign
+and thus cancel out.
+Therefore, the input superposition
+state a 0 0 0 plus b 1 1 1 is a plus 1 eigenstate of u1.
+Therefore, the measurement result z1 will be equal to 0.
+Remember, 0 corresponds to a plus 1 eigenstate,
+and 1 corresponds to a minus 1 eigenstate.
+This state is also a plus 1 eigenstate of u2.
+Let us move on to the case when a single cubit
+error has occurred.
+Notice that 0 0 1 is a minus 1 eigenstate of u2,
+and 1 1 0 is also a minus 1 eigenstate of u2.
+In fact, in general, what we find is that ZZ applied
+to a 2-cubit state, xy, is going to be a plus 1 eigenstate
+if they're an even number of 1's, and a minus 1 state is xy
+has an odd number of 1's.
+Therefore, it is easy to read off by inspection
+that a 0 0 1 plus b 1 1 0 is a minus 1 eigenstate of u.
+Look at where the 01's exist.
+Thus, by inspection, we find that a 0 0 1 plus b 1 1 0
+has measurement results 0 and 1 for the z1 and u2 syndrome
+operators.
+The next case has syndrome measurement results 1 1
+and then 1 0.
+These four cases are the cases we're
+interested in for error correction.
+The second step after syndrome measurement
+is to apply a recovery operation.
+The recovery operator R takes the syndrome measurement result
+and conditionally applies an appropriate unitary transform
+to recover the original state.
+Here we find by inspection that the operator needed
+is a bit flip on cubits 3, 2, or 1 as appropriate,
+labeled by z1 and z2.
+The result of this recovery operation
+is a recovery of the original encoded cubit state, namely
+a 0 0 0 plus b 1 1 1.
+Of course, this is only the case when a single cubit error
+or no cubit error has occurred.
+If two cubit errors occur, then we also find syndrome results.
+For example, here we find 0 1, in the next case we find 1 1,
+and then here we find 1 0, and then 0 0.
+Of course, here, when the recovery operators
+are applied, namely x3, x2, x1, and identity, we
+find not the original cubit, but rather a 1 1 1 plus b 0 0 0,
+an inverted cubit.
+This is the wrong state.
+It's an error.
+We may use this to answer the question how good is
+the error corrected state?
+Let us compute the fidelity of the output state.
+Recall that the fidelity of a quantum state, rho,
+with a pure state, psi, is given by the square root
+of the overlap of psi and rho.
+This can be given a lower bound by taking the probabilities
+of errors occurring.
+Namely, we find the fidelity is at worst 1 minus 3p squared
+plus 2p cubed, namely 1 minus a term which
+is of order p squared.
+Without quantum error correction,
+this fidelity would have gone as 1 minus p instead of 1
+minus p squared.
+This is thus a significant improvement,
+and that improvement is a signature
+of quantum error correction.
+So how did we get this improvement?
+Well, let us look at the error correction procedure in total
+by writing down, for this example
+with the 3-cubit bit flip quantum error correction
+code, the quantum circuit.
+The quantum circuit model involves an encoding step,
+the errors, and then the recovery and syndrome
+measurement operation.
+Here's the encoding circuit for the 3-cubit code.
+We start with the single cubit unencoded.
+We then perform two controlled knots
+with zero state cubits as input.
+This 3-cubit state then goes through three
+separate, independent, and identically acting bit
+flip channels, which produce outputs
+that then go to our operator measurement circuit.
+The operator's measurement circuit
+measures the syndrome of the cubit.
+The two operators measured are the parities
+on the first two cubits, here done using two controlled set
+gates.
+Remember, the Hadamard gates are used in the operator
+measurement construction.
+This measurement result here gives us
+one of the syndrome bits.
+The measurement result here is z1.
+And for the second syndrome operator,
+we measure the parity on the middle and the bottom cubit,
+again with two controlled z operations.
+These two controlled z operations
+between the two Hadamard operators
+gives us, with operator measurement, the measurement
+result z2.
+
+Following the syndrome measurement operations,
+we perform the recovery operator.
+The recovery operator is classically
+controlled by the measurement results of z1 and z2.
+The output of the recovery operator
+is then, with high fidelity, the input cubit state,
+and that is a 3-cubit error correction circuit.
+Now, something that is very interesting
+to realize about this circuit is that it doesn't just
+correct for bit flip errors.
+I claim that it also corrects for small rotation errors, that
+is for continuous errors, not just
+this extreme case of a complete bit flip.
+We may see that this is true by analyzing
+the effect of a small rotation.
+Consider a channel which is a small rotation by angle
+[? 2epsilon ?] about the x-axis.
+This rotation applied to a pure state
+may be expanded to leading order in epsilon, giving us the two
+terms psi, which is the original state, minus i epsilon x1 psi.
+Here, x1 is the poly x operator applied to the first cubit.
+When no error correction is applied,
+the fidelity of this output is the overlap
+of this perturbed state with the initial state,
+and that is of order 1 minus epsilon.
+When error correction is applied,
+a funny thing happens due to the syndrome measurement.
+The syndrome measurement causes the superposition of error
+and no error to collapse.
+Thus, we obtain either psi or epsilon x1 psi,
+where epsilon x1 psi has a bit flip error applied to it.
+That is, there is no continuous error case here.
+You either have the error or no error.
+And thus, the recovery operator applied to the error channel
+output state gives us a fidelity which, to leading order,
+goes as 1 minus epsilon squared.
+This is, again, the same improvement
+that we saw with the full quantum error correction
+circuit.
+Thus, we see that the scheme also corrects
