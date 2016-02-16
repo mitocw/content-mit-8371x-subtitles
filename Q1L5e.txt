@@ -1,0 +1,79 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L5e.txt
+#
+# Captions for 8.421x module
+#
+# This file has 69 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Any graph state can be constructed
+using a simple unitary circuit with Hadamard gates
+and controlled Z gates, as we now show.
+Given a graph g, specified by its binary symplectic matrix
+representation with an adjacency matrix,
+what quantum circuit can be used to construct the state?
+Well, the stabilizer has x entries and Z entries,
+and this simple pattern leads to a simple construction circuit.
+First, Hadamard operations are used on every qubit
+to start in the state plus.
+That is Hadamard applied to the zero state.
+These are the vertices of the graph.
+Second, a controlled Z gate is applied on every edge.
+That is, every connection between two qubits as
+indicated by the adjacency matrix.
+For example, consider this graph with three qubits
+linked by two edges.
+Label the qubits zero, one, and twp.
+I claim that a circuit creating this graph state
+starts with plus states and then applies two controlled Z
+gates, one between qubits two and one,
+and one between qubits one and zero.
+Note that the order of the controlled Z gates
+does not matter, because they commute with each other.
+The output state is the desired graph state
+as can be shown in this proof for just the example.
+But the idea generalizes to any case.
+We analyze this by considering the three stabilizers,
+describing the input, the state after the first controlled Z,
+and the state after the second controlled Z gate.
+By the way, a controlled Z gate is symmetric,
+and that is why it is noted as two dots with no direction
+of control and target.
+The initial stabilizer state S zero
+is the graph state stabilizer shown here.
+Label the qubits two, one, and zero.
+Recall that an X gate applied before a controlled NOT
+gate is equivalent to 2x gates applied after the controlled
+NOT gate.
+That is, the controlled NOT gate conjugates a Pauli X operator
+to become two Pauli X operators if the X is on the control
+gate.
+This Heisenberg evolution picture of Pauli operators
+is useful to consider systematically.
+The controlled NOT gate conjugates XI to XX, as we saw,
+IX to IX, ZI to ZI, and IZ to ZZ.
+Similarly, the controlled Z gate conjugates XI to XZ, IX to ZX,
+and leaves the ZI and IZ unchanged.
+The special cases to remember are highlighted in red here.
+Let us use this transformation picture to understand
+what the output of the first controlled NOT gate is,
+that is the stabilizer S1.
+We see that XI is conjugated to XZ by the SZ gate,
+and therefore, the first stabilizer changes
+to XZI, the second one to ZXI, and the third one
+is left alone.
+The second controlled Z gate changes
+the second and third stabilizer states,
+so that XZ is the last two on the second stabilizer
+and the third stabilizer becomes ZX in the last two qubits.
+This resulting state is exactly the graph state
+which we desire.
+That is, three qubits connected to each other.
+The same idea behind this proof generalizes to any graph state
+construction circuit.
+And in fact, it also generalizes to stabilizer states simply
+by adding the local Clifford operation, which
+is used to transform the graph state to the stabilizer state

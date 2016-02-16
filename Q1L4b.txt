@@ -1,0 +1,117 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L4b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 107 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+An important concept in classical coding theory
+is tools to generate families of codes with useful parameters.
+Linear classical codes are a very important example of this.
+A linear code with parameters n, k, and d
+is an error correction code with 2
+to the k n-bit strings with a certain property, namely,
+the code words are closed under binary addition.
+In our discussion here, we will stick with the convention
+that the all 0's bit string is a codeword of the linear code.
+We have already seen an example of a linear code, namely,
+the 3-bit repetition code, or in fact, any repetition code.
+The reason linear codes are so interesting
+is because they may be described by a smaller set of generators.
+The generator matrix G is n by k,
+and it encodes a data string x into the codeword space
+via matrix multiplication.
+So v would be the codeword corresponding to x.
+Thus, columns of G are basis codewords
+and linear multiplication generates the codeword states.
+For example, for the 3-bit repetition code,
+the generator matrix is 1's like this.
+Thus, G time 0 gives you all 0's, and G times 1 gives you
+all 1's.
+The repetition codeword states corresponding to logical 0
+and logical 1.
+Linear codes also offer a very straightforward way
+to determine when an error has occurred and what the error is.
+This is done using the parity check matrix, which
+is an n minus k by n matrix satisfying the property
+that H times any codeword is equal to 0.
+That is, it annihilates codewords.
+Equivalently, we may also say H times G is equal to 0,
+so H sits in the null space of G.
+The utility of the parity check matrix
+is nicely demonstrated by our example.
+For the repetition code, the parity check matrix
+is 1 1 0 0 1 1.
+In other words, it checks the parity of the first two bits
+and the parity of the last two bits.
+Note that the rows of H are orthogonal to the columns of G.
+Of course, that is just to say H times V is equal to 0.
+Why is this useful?
+Well, if H is applied to a binary string which is not
+a codeword, but is perhaps close to a codeword--
+so for example, let v be corrupted
+by some kind of error string e, then when H is applied to v,
+we find it annihilates v but not e.
+It leaves behind H time e.
+And this expression is exactly the error syndrome
+which we will be interested in.
+Under certain circumstances, this error syndrome
+will be unique and allow e to be uniquely determined.
+Note that the codewords constrain the columns of H. One
+particularly useful fact is that if the code has distance d,
+then H will have at least d linearly independent columns.
+The 3-bit repetition code is an example
+which shows this explicitly.
+H, again, multiplying 1 1 1, shows that because this is 0,
+we know that the sum of the columns must be equal to 0
+in this example.
+And keep in mind, this is a binary sum, so it's modulo 2.
+Another consequence of this lemma
+is that, for example, for d equal 3, no two columns of H
+should be the same.
+This leads us to a famous set of classical codes known
+as the Hamming codes.
+The Hamming codes are parameterized
+by a number r, which is greater than or equal to 2.
+The code may be defined by taking its parity check matrix
+to have columns which are equal to the integers 2 to the r
+minus 1 as bit strings-- r bit strings excluding all 0's.
+For example, for r equal to 2, we
+get the repetition code which we have just seen,
+the triple redundancy code.
+For r equal 3, we have the parity check matrix,
+which has columns going from 1 to 2 to 3 to 4,
+and so forth, all the way up to 7 in binary form.
+This famous 7-bit Hamming code has parameters 7, 4, 3.
+It encodes 4 bits using 7 bits.
+In general, Hamming codes have n equal to 2 to the r minus 1,
+and k equal to n minus r.
+The generator matrix may be constructed by taking
+the transpose of a matrix which takes H and adds one additional
+row which is all 1's.
+Again, recall G must have columns
+orthogonal to the rows of H. Note that every row of H
+has four 1's, and thus, adding them all up gives 0.
+And note that rows of H are orthogonal to each other.
+And this is why G has this structure.
+For quantum codes, we will later need a specific kind
+of classical linear code.
+Let C an n, k linear code with a given generator and parity
+check matrix.
+We define C perp as the code given by a generator H
+transpose and a parity check matrix G transpose.
+The codewords of C perp are thus orthogonal to the codewords
+of C. Therefore, we may call C perp the dual code to C.
+In the problem set, you will prove the following lemma
+which is useful later on for a quantum code construction.
+Given a codeword of the dual code
+C perp, then the sum over minus 1 to the x dot y,
+where y is a code from C, will be
+equal to the size of the code.
+Otherwise, if x is not in C perp,
+then this same sum will be equal to 0.
+See if you can prove for yourself this useful fact

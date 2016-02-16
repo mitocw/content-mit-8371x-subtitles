@@ -1,0 +1,86 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L4a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 76 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The quantum bit flip code is created
+from the classical triple redundancy code.
+This concept can be generalized to allow
+quantum codes to be built from a wide variety
+of classical codes.
+And that idea is behind what is known as the CSS codes concept.
+For example, take the 3 bit code,
+repeat it three times, giving the short 9 qubit
+code, as shown here.
+Why does this work, in terms of the quantum error
+correction criteria?
+Well, each set of 3 qubits essentially has a triple
+redundancy coat that is 000 and 111 as the code words.
+And, thus, for a single bit flip errors, x sub j,
+we have that the error correction criteria gives us
+an orthogonality between the bit flip errors.
+Thus, the criteria are automatically
+satisfied for bit flip errors.
+Single bit flip errors.
+How about for phase flip errors though?
+Phase flip errors are Zed errors.
+And do we have that Zed j Zed k are orthogonal?
+Now, to see why this works, recall
+that x conjugated by the Hadamard gate
+gives the Zed gate.
+Thus, what we want-- PZZP, may be rewritten as P
+with x's conjugated by H. And this, we
+desire to be orthogonal.
+Now, if we apply another H on the outside of all of this,
+we get this expression here.
+And we may recognize that H conjugating P gives rise
+to this change of bases which goes
+from 0 to the plus state and 1 to the minus state.
+Thus, each acting on the logical 0 logical 1,
+give us these superpositions of plus and minus states.
+These code words in the plus and minus bases, again,
+are instances of the 3 bit redundancy code.
+The action of the x bit flip operator,
+though, takes plus to plus and minus to minus
+of the minus state.
+Thus, in a sense, this superposition--
+recalling that plus and minus add up to zero-- of plus, plus,
+plus and minus, minus, minus is kind of like a 000 code word.
+And, similarly, logical 1 is like a 111.
+That is, in terms of signs.
+Therefore, this triple redundancy code property
+lets us conclude, by observation,
+that the quantum error correction
+criteria are satisfied for phase flip errors.
+Thus, by virtue of two classical code instances--
+the triple redundancy code acting twice-- we
+have the 9 qubit code, which corrects both phase flip
+errors and bit flip errors.
+The 9 qubit code, again, does this
+by using the 3 bit code twice, one time embedded
+or concatenated within the other instance.
+This idea maybe generalized, taking one classical code
+to correct for bit flip errors and concatenating
+a second classical code to correct for phase flip errors.
+The idea is called the CSS codes approach,
+invented by Rob Calderbank, Peter Shor, and Andrew Steane.
+The first class of quantum codes,
+which generalized to a large set of families instead
+of single instances, the basic construction
+involves two classical codes-- C2,
+which corrects for phase flip errors,
+and C1, which corrects for bit flip errors.
+C2 is a subset of C1, and, actually,
+the code use for phase lifts is C2 perp.
+This may be visualized in terms of a set diagram.
+Imagine that we have a set of code words C1.
+C2 is a subset of C1, but see?
+Two also asks cosets.
+These cosets are other copies or instances of C2 within C1.
+And we will later see how this gives rise to a quantum
