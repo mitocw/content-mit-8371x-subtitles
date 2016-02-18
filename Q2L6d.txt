@@ -1,0 +1,133 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L6d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 123 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+We now describe and go through a procedure
+for estimating the threshold for fault tolerant quantum
+computation.
+Recall that PTH, this threshold value,
+is 1 over the number of fault paths in a procedure which
+is fault tolerant and provides a universal gate for quantum
+computation.
+What we need are fault tolerant procedures for gates state
+preparation and measurement and, in addition,
+we must perform gates on encoded data without decoding.
+This can be done on stabilizer codes using normalizer
+operations, as we have seen.
+To this point, a useful theorem about CSS codes
+is that all CSS codes have a transversal controlled NOT
+gate.
+For the three qubit code, we have already
+seen this to be the case, as three
+CNOT gates between each one of the qubits in the two blocks.
+Go ahead and see if you can prove
+this theorem for yourself.
+The CNOT is a Clifford operation, and as we have seen,
+it is not universal for quantum computation.
+The quantum Toffoli gate, the analog of the classical AND
+gate, is universal but this quantum Toffoli is not
+a Clifford gate operation.
+This is implied by the Gaddis-McNeill Theorem.
+Another very important stumbling block
+was proven in 2007, namely that no stabilizer code can
+have a set of transversal gates which is universal
+for quantum computation.
+Fault tolerant quantum computation
+is nevertheless still possible but requires
+extra complications such as the use of gate teleportation,
+as we will see next week.
+Let us move ahead and provide a first-cut estimate
+of the threshold for fault tolerant quantum computation
+based on using the Steane 7 qubit
+code and a fault tolerant controlled
+NOT gate procedure on the code.
+Recall that the threshold is given
+by 1 over the number of fault paths,
+and that this may be estimated by taking
+the number of gates in the fault tolerant procedure, choose 2.
+This factor of 2 is used because the code can correct
+for any single qubit error.
+What is the fault tolerant procedure here?
+Well, recall that since the Steane code is a CSS code,
+the fault tolerant CNOT starts with a transversal set of CNOTs
+between the two code blocks, namely bitwise CNOTs.
+There are seven of these controlled NOT gates.
+The controlled NOT gates are followed
+by a fault tolerant quantum error correction
+procedure-- two of them, one for each block of the code.
+Now, what is a fault tolerant quantum error correction
+procedure?
+Well, recall that quantum error correction
+starts with a measurement of the syndrome followed
+by the application of a recovery operator.
+The syndrome is measured using an ancilla state,
+using operator measurement, and then the syndrome result
+is used to classically control the recovery operation.
+The standard circuit for operator measurement
+involves using an ancilla qubit put into a superposition of 0
+and 1, which then controls the Zed or x
+or other poly-operators specified by the stabilizer
+generators of the code.
+Unfortunately, however, this construction
+has a single point failure, and thus it is not fault tolerant.
+How does one make operator measurement fault tolerant?
+Well, there are a number of ways to provide fault tolerant
+measurement of error syndromes.
+One solution employees cat states.
+This was introduced by Peter Shor.
+Instead of using a single qubit for the control,
+a cat state superposition of 0, 0 plus 1, 1, or however
+many qubits are needed, is constructed and then
+used to control the application of the stabilizer
+generator being measured.
+The integrity of the cat state itself must also
+be verified for this procedure to be fault tolerant.
+Fortunately, there is a simple circuit
+which does such verification, taking advantage of the fact
+that the CNOT propagates phase errors backwards.
+This measurement needs to be repeated three times or more,
+and the results fed into an error correction procedure
+such as a majority vote, a classical majority
+voting, which then controls the recovery operator.
+There are a lot of pieces which go into this.
+Let us now add up a total of the number of gates involved
+and use that to compute an estimate of the threshold.
+Again, this estimate is for the fault tolerant
+controlled NOT gate on the 7 qubit Steane code.
+Let us tabulate the number of gates
+needed for each one of the different steps involved.
+Seven gates are needed for the transversal CNOT.
+There are six syndrome operators which must be measured.
+Each one of the syndrome operators
+has about four gates apiece.
+And each one of those has to be repeated three times.
+This is an under-estimate.
+It does not include cat state verification, for example,
+but already we see we need 72 gates just
+for this part of the quantum error correction procedure.
+Of course, they may also be optimization,
+so let us leave the estimate at this-- 79 gates total.
+We compute the number of fault paths
+possible by taking 79 choose 2, giving 3081,
+and thus the threshold is approximately 1 over 3081,
+or 3 times 10 to the minus 4.
+Let's dwell on this for a moment.
+Why is a threshold for fault tolerant quantum
+computation so much lower apparently than that
+for classical computation?
+Well, classical gates such as the NAND gate
+can actually surprisingly be often self correcting.
+Furthermore, classical bits can be freely copied,
+allowing free broadcasting or fan out.
+Finally, typical classical gate models
+do not involve measurement error in contrast
+to the quantum case.
+So there we have it.
+A first estimate for the threshold for fault
