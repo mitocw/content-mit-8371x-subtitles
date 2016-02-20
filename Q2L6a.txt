@@ -1,0 +1,208 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L6a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 198 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+How much noise can be tolerated before computation
+is no longer possible?
+This question about computational capacity
+has fundamental analogs in the theory of communication.
+What happens when a wire has noise?
+This question was studied in the 1940s by Claude Shannon,
+and the seminal results inform our present study
+of fault-tolerant computation.
+In the communications scenario, one
+has the probability of error, which
+varies as a function of the rate of communication
+say in bits per second.
+The error probability goes between 0 and 1.
+And before Shannon came, the probability of error
+largely varied with the rate of communication,
+which makes sense.
+The faster I speak, the more garbled things are.
+But what Shannon brought is a theory
+which shows that there is a sharp threshold in rate.
+This threshold, known as the channel capacity,
+says that below the capacity, communication
+can occur with infinitesimally small error rate.
+This is due to the use of error correction.
+Computational capacity can similarly use error correction.
+The scenario is different, but has parallels.
+Gates with noise are utilized to build a computer.
+How much computational capacity this
+has was studied by von Neumann in the 1950s.
+His famous paper of 1956 studied the probabilistic logics
+and the synthesis of reliable organisms
+from unreliable components.
+The idea is to obtain a probability
+of an error for a circuit as a function
+of the probability of error of its component gates.
+And von Neumann's approach utilized intuition
+from biological systems built to be
+reliable systems despite having unreliable components.
+In the absence of use of error correction,
+the probability of error is similar to that one
+sees with communication, but with the use
+of error correction, there is a threshold
+in computational capacity.
+This threshold idea is what we will explore today:
+the threshold for computation.
+The idea behind this threshold in computation
+can be illustrated by considering
+the computation of a circuit.
+The circuit, say, fails with probability p.
+We may repeat this circuit three times.
+And though each circuit also fails with probability p,
+the outputs may be combined, for example,
+using a majority voting gate.
+The majority voting gate generates
+an output which is the majority of the three inputs.
+If we assume for now that the majority gate acts perfectly
+with no error, then the probability
+of error of its output goes as 3p squared,
+which is manifestly smaller than p when p is below 1/3.
+This illustrates the use of redundancy
+to reduce the error in computational output.
+However, there are several issues
+with this simple approach.
+First, there is no real threshold
+with this simplistic scheme.
+Second, we cannot really assume a perfect majority voting gate
+or in fact, any kind of perfect resource in this fault
+tolerance scenario.
+Here, this majority voting gate is clearly
+a single point of failure.
+If it fails, the output is entirely incorrect.
+However, with the right construction,
+one does obtain a threshold, as this theorem states.
+A uniform circuit -- that is a circuit with no feedback --
+comprised of a number n of error-free gates.
+This is the circuit which we wish to be ideal
+and error free.
+We may simulate this circuit -- this ideal circuit --
+using a number of noisy gates.
+Now, we will assimilate it with a probability of error
+bounded above by epsilon.
+And the key to this theorem is that we will not
+use a large number of noisy gates,
+rather a number of noisy gates which
+is polynomial in log of n over epsilon,
+and proportional to the size of the original circuit.
+This is a small increase in the size of the circuit,
+and yet the simulation will have error less than epsilon
+despite the gates failing with probability p,
+as long as p is less than some constant threshold p-th,
+constant meaning that p-th is independent of the size
+of the circuit n, and the error probability desired epsilon.
+Let us just prove this theorem as follows.
+The basic principle we utilize is to compute on encoded data
+-- data encoded in an error correction code --
+and we never decode.
+Gates are performed on the encoded data.
+For example, suppose we have a two-input NAND gate denoted
+by an n with inputs a and b generating the output a
+and b nodded the NAND output.
+Together with this NAND gate, we will also
+have a three-input gate taking a, b, and c as inputs,
+and generating as output the majority of a, b,
+and c: a single output.
+The majority voting gate will serve to correct errors
+and we will assume that both the NAND gate and the majority gate
+fail with some probability p.
+Despite using such faulty gates, the construction
+will be shown to be arbitrarily reliable.
+A triple redundancy code is utilized and the gates are also
+triplicated to create a three-input/three-output NAND
+gate.
+The three a inputs are shown here in blue,
+and the three b inputs are shown here in red.
+The output is also three bits.
+And the two parts of the circuit are a logical NAND gate
+with three NAND gates and an error correction step made out
+of three majority voting gates.
+Note how there are three rather than one in this simple example
+we saw earlier.
+Thus, the output is incorrect only if two or more failures
+occur in this fault-tolerant NAND gate procedure.
+Each such failure mechanism is known as a fault path.
+Here, the 6 gates have six choose two possible ways
+to fail at most, and that gives us 15 fault path possibilities.
+Thus, we may bound the probability
+of failure of the circuit as being at most 15p squared.
+And the construction is good as long
+as the probability of failure is less
+than that of the original gate, meaning that p
+should be less than 1 over 15.
+We will see shortly that this is a threshold
+for the circuit or at least a bound on the threshold.
+So far, what we have done is a level one encoding.
+Strictly speaking, to get a threshold,
+we need to go two more levels.
+The idea is to recurse.
+Let us encode each 0 now with nine 0's and each 1 with nine
+1's.
+This is like repeating the triple redundancy code.
+Recall that these are the 6 gates we just had,
+and now we repeat this structure.
+So a now has nine inputs shown here again in blue.
+And b has these nine inputs shown here in red.
+The output is also nine bits encoded in the same code.
+What is the probability of error of the circuit?
+Well, the output is incorrect if two or more blocks fail
+and each block fails with probability order of p squared.
+Since this is a self-similar circuit,
+there are six choose two possible ways to fail.
+The overall circuit failure probability
+thus goes as 15 times 15p squared squared,
+or in other words, 15p to the fourth power divided by 15.
+Here, 15 is the number of fault paths.
+In general, if we continue this pattern of recursion,
+we find that for a given number of fault paths --
+let's call that c -- we find that at one level of encoding,
+the probability of failure of the circuit times c is equal
+to c times p squared.
+At two levels of encoding, we find
+that cp fail is equal to c times p to the fourth power.
+And in general, if we had k levels of encoding,
+then c times p fail would go as c times p to the 2 to the k.
+This is doubly exponential in k.
+And furthermore, if c times p is less than 1,
+then this expression goes rapidly to 0 as k increases.
+Thus, we have a concept of a threshold.
+The threshold for fault tolerance
+is 1 over the number of fault paths.
+Here, c.
+And the crucial property is that this threshold
+is independent of n and epsilon as desire for the theorem.
+It is instructive to see this behavior graphically.
+We may plot the failure of probability of the circuit
+as a function of the gate error p.
+With no error correction, we get a straight line.
+With a single level, we get a curve.
+And with multiple levels of recursion,
+we get increasingly steeper curves
+approaching the threshold probability p-th.
+So, what are the thresholds for classical Boolean logic?
+Well, in the earliest work, von Neumann
+bounded the threshold as being above 0.07.
+This was from the 1950s.
+Later, the threshold was bounded to be above 1 over 6
+by Hajek and Weller about 40 years later.
+This result, though, assumed three-input gates
+like our three-input majority vote gate.
+For the NAND gate, the threshold has
+been estimated to be somewhere around 0.089
+by Evans and Pippenger in work from 1998.
+And more recently, Evans and Pippenger
+also estimated that for k input gates,
+the threshold is somewhere above 1/2 minus 1 over 2
+square root of k.
+This is work from 2003.
+What is a threshold then for quantum computation?
+We do not know today, but we have some estimates,
