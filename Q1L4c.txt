@@ -1,0 +1,152 @@
+#
+# File:   content-mit-8371x-subtitles/Q1L4c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 142 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+CSS codes, invented by Rob Calderbank Peter
+Shor, and Andrew Steane, are a very important family
+of quantum error correction codes.
+They are built from two classical codes,
+C1 with parameters n k 1, and C2 with parameters n k 2.
+These are two linear classical codes
+where C2 is a subset, or equal to, C1.
+The quantum code, CSS of C1, C2 is
+defined by the basis vectors labeled by x plus C2, which
+are superpositions over C2 different orthogonal states,
+given by the sum of states label by x plus y for all x in C1.
+y is in C2 and x plus y is a binary bit string.
+x plus C2 is a label which indicates
+that it is a coset of C2 in C1.
+Recall that the concept of CSS codes
+employs a larger set C1 of all code words
+and then a subset, C2, with different cosets.
+Now, strictly speaking, C2 is going to be a sub-group
+and C1 is also a group.
+In the expression x plus C2, x is thus a coset representative
+and each of these cosets, C2, C2 prime, and so forth,
+are distinct code words.
+The size of this code is therefore
+given by the ratio of the size of C1 over C2
+and thus, the quantum codes CSS, C1, C2,
+has parameters n and k1 minus k2.
+That is, in encodes k1 minus k2 qubits using n qubits.
+That is proof that this is a quantum code for single qubit
+errors.
+That is a combination of bit flip errors and phase
+flip errors.
+First, we will observe that bit flip errors are corrected by C1
+and phase flip errors are corrected by C2 perp.
+For bit flip errors, note that the effect of a bit flip error
+is to take a code word x plus C2 and turn it
+into a different quantum state with a bit string
+x plus C2 plus e1.
+Again, these are vectors even though I'm
+omitting vector symbols here.
+The e1 vector, or bit string, denotes where the bit
+flip errors occur in the bit string, the n bit string.
+More generally, we may have both bit flip and phase flip errors,
+and the effective phase flip errors
+may be mathematically modeled by a phase minus 1, which
+appears dependent on what the vector content is,
+that is x plus y, and a string, e2,
+which like e1 is a n bit string but this time, e2 captures
+phase flip errors.
+To correct for bit flip errors, one
+follows the error correction procedure of C1,
+namely the parity check matrix each one, for code C1,
+is applied to the bit vector.
+The bit vector here is x plus C2 plus e1.
+Quantum mechanically, this is realized
+by using a syndrome operator derived from H1 where
+0's correspond to no measurement and 1's
+correspond to measurement of the Z operator.
+Recall for example the three qubit code
+where we employed Z Z I as one syndrome operator.
+Here we find that H1, applied to the erroneous bit stream,
+gives us H times e1.
+And by classical coding theory, when
+this error is distinguishable by the classical code,
+e1 can be obtained from H times e1.
+The original state then can be recovered by applying
+x gates to undo the errors.
+Given this recovery process, the result
+is a superposition state of the code words
+where e1's effect has now been removed,
+but we are still left with phase flip errors, e2.
+How are the phase flip errors corrected?
+Let is called this state psi one and now
+investigate the use of C2 perp to correct
+for phase flip errors.
+We do this in the Hadamard basis.
+Recall that H times 0 is 0 plus 1 and H times 1 is 0 minus 1.
+The effect of Hadamard operators on superpositions thus flips
+signs in places dependent on where the [INAUDIBLE] bits were
+1's versus 0's.
+More generally, if x is an arbitrary bit string,
+then the Hadamard applied to it gives us
+this superposition with a minus 1
+to the x dot y preceding the state y in the sum.
+This is a very useful representation of Hadamards
+acting on bit strings.
+Let us use that now to compute the action of the Hadamard
+operator on this state.
+Recall psi 1 is a code word state of a CSS code
+with a phase flip error e2 having occurred.
+The Hadamard operator, acting on psi 1 thus
+adds an extra phase factor in front.
+Now the sum becomes over Z instead of x plus y,
+and the phase factor becomes minus 1
+to the x plus y times e2 plus Z, where Z labels the new basis
+vector in the sum.
+This sum may be interpreted by relabeling e2 plus Z
+as being a new variable.
+Let us call that Z prime.
+Using the fact that this is binary addition,
+we may also write this as Z being e2 plus Z prime.
+Rewriting the sum in terms of Z and Z prime,
+we therefore find that the effect of the Hadamard
+is to move the error, e2, from the phase
+to the bit string value.
+Specifically, the bit string value here is Z prime plus e2.
+Now what code with does this bit string live in?
+Well Z prime is in C, and the sum over the phase factor,
+minus 1 to the y dot Z prime, will select only the subset
+of Z prime in C-- in this case C2 perp-- because
+of this version of the Poisson sum formula
+here for the binary strings.
+Thus we find when we simplify the sum over all y being in C2,
+we find we are left with a single sum over Z
+prime of minus 1 to the x dot Z prime
+where Z prime is now in C2 perp that
+is orthogonal code words to C2 and the basis vector
+is Z prime plus e2.
+So Z prime is a code word in C2 perp
+and e2 is an error applied to it and thus
+we may correct the error e2 by measuring H2 perp,
+the parity check matrix for C2 perp.
+Applying the quantum syndrome operators
+for this thus gives us a measurement
+result from which we may obtain e2,
+assuming e2 is correctable by it's C2 perp.
+The original code word is then recovered
+by applying Z phase flips to those qubits which saw
+a phase flip, as denoted by e2.
+After this recovery, we are then left
+with a state which has no e2 error in it and thus
+we may apply the Hadamard operators once again
+to reverse this mapping of bits to phases, thus restoring
+the original code word state superposition over all x
+plus y, that is the original code word state.
+This multi-step process may be simplified.
+Instead of applying Hadamards twice,
+it is equivalent to do-- just as we have done with parity check
+matrix H1, remember we turned that into Z syndrome operator
+measurements, we may turn the H2 perp parity check matrix
+into x syndrome measurement operators,
+and this is how CSS code, quantum error correction,
