@@ -1,0 +1,40 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L9b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 30 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+Let us look at a quick example of factoring by order finding.
+Choose N to be 3 times 5, the number 15.
+Suppose we chose at random x being
+7, 7 being a number which is coprime with 15.
+Our goal is to find a nontrivial value of r, the order of 7
+with respect to 15 that is such that x to the r mod n equals 1.
+Let us do this by tabulating the values of r and seven
+to the r mod 15.
+For r equal 0 we find 1.
+For r equal 1 we find 7.
+For r equal 2 we find that 7 squared 49 modulo 15 is 4.
+Now, to compute the case for r equal 3, we multiply 4 by 7
+to get 28 modulo 15 gives us 13.
+to get 28 modulo 15 gives us 13.
+Repeating this pattern, multiplying 13 by 7
+gives us 91, which, modulo 15 is 1.
+This is the first value of 1 that we find.
+And because this is 1, the pattern
+And because this is 1, the pattern
+continues to repeat as r gets larger.
+That is, we get 7, 4, and 13.
+The first value of r for which the exponentiation is 1
+The first value of r for which the exponentiation is 1
+gives us r equal 4.
+So 4 is the order of 7 with respect to 15.
+Plugging this into the formula for the rest of the reduction
+theorem gives us 7 to the r divided by 2 modulo 15 being 4.
+Thus, computing the greatest common divisor between 4
+plus or minus 1 and 15 gives us 3 and 5, the factors of 15.
+Isn't that neat?

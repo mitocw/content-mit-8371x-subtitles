@@ -1,0 +1,149 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L9c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 139 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+Shor's algorithm can be understood and appreciated
+by working systematically through its quantum circuit,
+Let us do that beginning with the setting
+we have established.
+Let p and q be L-bit, prime numbers.
+N, the number we wish to factor, is p times q.
+We have chosen x in addition, randomly, a number
+which is co-prime to N. r is the order of x with respect to N,
+defined by the equation X to the r mod N equals 1.
+Our goal is to find r.
+Given r, we may find the factors of N and p
+with high probability.
+We began by sketching the circuit.
+The circuit has two registers.
+The first one with to 2L qubits, and the second one with L
+qubits.
+The first register has a Hadamard
+applied to all 2L qubits individually,
+creating an equal superposition of all decimal values ket a.
+This register of qubit is used to control
+the moderate exponentiation X to the a mod N.
+Suppose for now that we measure this result
+of the moderate exponentiation.
+Now let us walks through the circuit
+and compute the state's psi 0, psi 1, psi 2, and psi 3,
+step by step.
+The initial states, psi 0, has 0 and 1.
+The state after the Hadamard's is the equal superposition
+of all decimal values, a, going from 0 to 2 to the 2L minus 1.
+The state psi 2 after the controlled
+modular exponentiation, is a entangled state of the two
+registers where X to the a mod N,
+again, is the modular exponentiation of x, which
+is known to have only r possible values.
+r, again, is known as the order of X with respect to the N.
+It is meaningful to rewrite this expression, this summation,
+It is meaningful to rewrite this expression, this summation,
+by defining j and l, such that a is j times r plus l.
+Breaking up the sum into two parts now, one which is over j,
+and another which is over l, allows
+us to simplify the expression as follows.
+l indexes the possible values of the second register.
+It is insensitive to the value of j.
+Thus, when we measure the second register,
+we find some value X to the l0 mod
+N, where l0 is chosen randomly.
+This allows us to write the final state
+psi 3 of the circuit.
+It is a sum over j of jr plus l0.
+If we were to measure this register containing the state
+psi 3, we would of obtain, with equal probability,
+one of the following measurement results--
+l0, l0 plus r, l0 plus 2r, l0 plus 3r, and so forth,
+that is, l0 plus j times r.
+This probability distribution is an equal distribution
+of impulses separated by distance r from each other,
+but shifted from the origin by some value l0.
+The question we face is how do we take this final state psi 3
+and determine r from it.
+From each measurement we get some random integer.
+If l0 stays constant, we could make several measurements
+and thus determine l0 so then we could remove it and obtain r.
+However, we cannot repeat the measurements,
+because l0 changes each time randomly.
+So repeated measurements fail.
+Thus we need a different approach.
+And the solution is to use a quantum Fourier transform.
+We can see how that works by defining the quantum
+Fourier transform, and seeing what its properties are.
+Let us put aside some of these calculations
+so we can consider the Fourier transform,
+and then return to the structure of Shor's algorithm.
+The quantum Fourier transform, or to be specific, its inverse,
+can be defined in the following way as a unitary transform
+acting on the basis vector j, and creating
+a superposition over all possible values, k,
+in the domain, weighted by a phase
+where omega is the number 1, or that is e to the 2 pi i,
+and the phase is omega to the minus jk.
+We wish to understand what the Fourier transform does
+to the output state psi 3.
+Let us use this definition of the quantum Fourier
+transform and apply it to psi 3.
+what we get is a double summation
+where one of the terms in the phase can be removed.
+That is, omega to them minus l0 times k, but a second term
+which depends on both j and k, and incidentally,
+but importantly, r remains.
+This second term we may define as being the value g's of k.
+And g of k is nonzero only for certain values of k.
+That is, where kr is approximately a constant, c,
+an integer c, times 2 to the 2L.
+This is an important fact as we can
+see by looking again at the plot of a measurement result.
+The Fourier transform is essentially
+applied to this distribution as a quantum state
+before the measurement.
+But we can still gain an appreciation of it
+by comparing the two distributions, one which
+is the measurement of psi 3, and the other which
+is a measurement of the Fourier transform of psi 3.
+What we have is on the x-axis, k, and on the y-axis
+the probability g of k.
+These probabilities will be largely equal and distributed
+uniformly in impulses that are spaced apart by 2
+the 2L divided by r.
+So the possible measurement results include 2 to 2L
+divided by r, 2 times that, and 3 times that.
+Note that these are all separated by approximately 2
+to the 2L divided by r, and that this distribution
+is insensitive to l0.
+It is in sensitive tell zero because of the shift invariance
+property for the Fourier transform.
+In fact, as you can see from this equation,
+l0 turns into a phase factor.
+This phase factor is irrelevant when
+doing the measurement, and indeed g of k quantity squared
+is independent of l0.
+Let us include now the quantum Fourier transform
+in Shor's algorithm.
+Bringing that circuit back, remembering our initial setting
+of the problem, that is that we are given N as the number
+to factor, and recalling that our goal is to find r,
+we add the quantum Fourier transform inverse
+to the first register and recognize
+that the output of this is approximately
+an equal superposition of states which are an integer
+c times 2 to the 2L divided by r.
+Measuring this, we obtain c times 2
+to the 2L divided by r for random c.
+This number is essentially a rational fraction
+of c divided by r, since 2 to the 2L is known.
+If we apply the continued fractions expansion to this
+to determine the numerator and denominator, which
+are integers, using a number of samples
+from repeated execution of the algorithm,
+we can determine with high probability what r is.
+And that is the essential result of Shor's quantum factoring
+algorithm.
