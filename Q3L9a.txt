@@ -52,7 +52,7 @@ can be reduced to the problem of finding
 r, which is known as the order of x with respect to N.
 r is normally difficult to compute.
 The best-known classical algorithm
-takes a number of steps, which is exponentially L. However,
+takes a number of steps, which is exponential in L. However,
 what Shor's Algorithm provides is a quantum algorithm
 for finding the order r in time, which
 is polynomial NL and this is what we'll see next.
