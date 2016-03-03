@@ -1,0 +1,71 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L7e.txt
+#
+# Captions for 8.421x module
+#
+# This file has 61 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Consider the concept of encoding a quantum gate inside a quantum
+state as a quantum program.
+We have previously seen that for deterministic behavior,
+quantum programs must be orthogonal to each other.
+However, this opens the door to non deterministic quantum
+programs, and this is an example.
+Imagine that Alice has a state alpha which includes a quantum
+gate use of Alpha, which acts on the plus state
+to give this expression-- E to the I alpha on 0 and E
+to minus I alpha on 1 She also has a data qubit side being
+A0 plus B1.
+What Alice would like to do is to be
+able to give a third party, say Bob, both of these
+and have Bob implement U alpha on psi.
+Now the program state is alpha and the data state is psi.
+Bob can accomplish this, exploiting the fact
+that U alpha is a rotation around the zed axis.
+What he observes is that, in this case,
+X acting on the program state gives a flip of the sign alpha.
+In other words, it is U daggar alpha acting on the plus state.
+Thus Bob follows the following steps:
+First he takes psi and alpha and applies
+a controlled knot between them.
+This produces a state where when the data is 1, the program gets
+flipped.
+It seems counter intuitive to use the data as a control
+acting on the program state.
+But we may rewrite this state grouping together the program
+qubit 0 here, and the program qubit being 1 over here,
+and observe that when the program qubit is 1,
+alpha gets flipped.
+Thus from this first step, if in a second step we
+measure the program qubit and get a 0,
+we then find U alpha acting on psi.
+But when the program qubit is measured to be a 1,
+we get U dagger alpha.
+The probability is 1/2 for each of these two outcomes.
+So we are done if we received a 0 as a measurement result.
+On the other hand, if we measured receiving a 1 then
+we must ask Alice for another state-- 2 alpha
+which is U alpha acting twice on plus.
+Then we repeat step one using this new program state,
+and the slightly mangled state U dagger
+alpha which we already have.
+Then with probability 1/2 we get the desired state,
+but with probability 1/2 we get U alpha
+dagger cubed acting on psi.
+Of course, we can then repeat this
+over and over again each time getting the desired result
+with probability 1/2.
+Overall, if N rounds are done, this
+is the quantum state required from Alice.
+It is a tensor product of 2 to the L alpha, that is N program
+states, to get U alpha psi the desired
+result with probability 1 minus 2 to the N. That's not too bad.
+It's an exponential decrease in error probability.
+And the number of program qubits on average is P of N times N,
+and the probability goes as 1/2 to the end of an error.
+And so that is 2 on average.
+Pretty good, but of course non deterministic.

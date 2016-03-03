@@ -1,0 +1,57 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L8a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 47 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Quantum computation can be accomplished
+with available resources using a variety of different models.
+So far we have seen models which use states, gates,
+and measurement in different ways.
+Our first step was using the quantum circuit model
+which employed zero qubits, controlled
+knots and arbitrary single qubit rotations, and measurement
+in the computational basis non-thought
+tolerantly to achieve universal quantum computation.
+A second model which we have seen
+was explicitly fault tolerant.
+It employed zero states, and magic states,
+and Clifford gates, and stabilizer codes
+to achieve fault tolerant quantum computation.
+Some overhead that was required for these magic states.
+Another model we consider is teleportation
+based quantum computation.
+It also uses some resource states,
+which are entangled states, Pauli operators for gates,
+and a variety of controlled Clifford gates
+and measurement in the bell bases to achieve fault tolerant
+quantum computation.
+Teleportation is the basic idea underlying a very unusual model
+known as measurement based quantum computation.
+This employs a specific state known as a cluster state.
+No gates at all but measurement, which is a little stronger,
+namely measurement of any qubit rotated around the zed axis.
+This is not a fault tolerant model by itself,
+and it requires a number of qubits
+which is proportional to the depth of the circuit.
+Yet another interesting model is Adiabatic quantum computation,
+which uses the ground state of a Hamiltonian varying in time.
+A Hamiltonian, instead of unitary gates and measurement
+at the and in the computational basis.
+Whether this model can be made fault tolerant or not
+is still open for discussion.
+Our understanding of these models is still evolving.
+For fault tolerant quantum computation,
+for example, novel codes might be
+discovered or novel approaches to fault tolerant procedures.
+For measurement based quantum computation,
+an interesting question is whether a natural Hamiltonian
+might exist for creation of cluster states.
+And the model of Adiabatic quantum computation
+is tightly connected to questions about novel quantum
+algorithms.

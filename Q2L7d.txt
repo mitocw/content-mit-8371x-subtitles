@@ -1,0 +1,99 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L7d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 89 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Quantum software, a term coined by John Preskill,
+captures the idea that, in a general construction,
+such as using teleportation, a ancilla state may be prepared,
+which encodes a useful computation that
+is quantum mechanical.
+This ancilla preparation may be costly
+but may be done separately of all the quantum data
+to be processed.
+A standard quantum gate circuit, such as a teleportation
+circuit, is then followed by a fixup circuit
+based on the measurement results of the teleportation.
+Note, that this fixup circuit, as well as all the other blocks
+shown here, act on multiple qubits
+and take in multiple classical qubits.
+The output is ideally U times psi,
+where U is whatever is encoded by the ancilla preparation
+circuit.
+This quantum software state crucially
+can be prepared offline and may be checked for consistency.
+The rest of this circuit ideally is fault tolerant
+and is considered an online computation.
+It can only happen once, say.
+In standard teleportation, we have
+seen that the fixup circuits are all Pauli operators, X and Z,
+controlled on the Bell basis measurement.
+Let us call the Pauli group C1 in the following.
+The key idea for quantum software utilizing
+the teleportation construction is
+that one wants the unitary operator
+to be pushed backwards through the fixup operation, namely
+the random X or Z resulting from the Bell basis measurement.
+Shown here, again, is the standard teleportation circuit.
+Remember, the Bell basis measurement
+causes a random Pauli to appear.
+And the fixup operator, called W,
+has to be applied to undo that random Pauli.
+We wish to obtain U acting on psi,
+but of course, the idea is we don't
+have U. So let's push U backwards through W.
+That means we want U W U dagger operator, which we'll call V,
+to be simpler than the operation U.
+For teleportation, we know that W is a Pauli group operator.
+The result of this is for the two qubit teleportation
+that the quantum software state is V
+acting on half of the entangled qubit pair.
+Of course, the steps required to create the quantum software
+state may, in turn, be rather difficult.
+So we find ourselves in a recursive procedure.
+This recursion is captured by this definition
+of C sub k, which is given by all the unitary operators,
+which transform g, a Pauli operator, into C k minus 1
+for all Pauli operators.
+The base case of this recursion is C sub 1, the Pauli group.
+We have already discovered that C
+sub 2, the normalizer of the Pauli group,
+is the Clifford group.
+We can now identify C3 as a non-Clifford group
+set, which includes the Toffoli and the T gates.
+The T gate, we have shown previously.
+And the Toffoli gate will be an exercise in the problem set.
+This hierarchy continues on to see C infinity.
+Now C1 and C2 are exemplary, because they are the stabilizer
+gates.
+However, as the Gottesman-Knill theorem states,
+they are not universal for quantum computation.
+It turns out they are also not universal
+for classical computation.
+The Toffoli gate, the controlled-controlled-NOT gate
+suffices for that.
+And in fact, the addition of any C3 gate
+gives universal quantum computation together
+with a stabilizer gates.
+One might be tempted to think that C infinity
+would then include all possible quantum circuits.
+And in fact, this question was posed and answered negatively
+a few years ago.
+For example, this three qubit circuit
+with three Toffoli gates is not in the Ck hierarchy.
+It is a particular permutation gate, a classical computation.
+This permutation is not in the Ck hierarchy.
+And in fact, many classical computations
+are not in the Ck hierarchy.
+The Ck hierarchy is fascinating.
+It describes the set of all possible quantum software,
+which may be implemented efficiently
+using this teleportation construction.
+What computations are in the Ck hierarchy
+and what computations are not?

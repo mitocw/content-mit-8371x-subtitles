@@ -1,0 +1,177 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L8c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 167 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Cluster states provide a vivid example
+of measurement-based quantum computation.
+A cluster state is a graph with nodes connected by links.
+This may be in a one-dimensional topology,
+a two-dimensional policy, or any other topology.
+Each node in this graph represents a qubit,
+and each link in the graph represents a controlled phase
+or a controlled Z gate.
+They're the same thing.
+Other typologies follow the same rules.
+The quantum state is created based
+on this graph using an initial qubit, each in the plus state,
+and then applying a controlled phase gate
+between each connected qubit.
+This is exactly the same as the graph state,
+which we have seen previously.
+The cluster state quantum computing model
+may be defined as follows based on this graph representation.
+Consider this example graph with six nodes.
+Each node here is labeled with a number and with an operator.
+The operator has a form something
+like HZ alpha or HZ plus or minus alpha, or Z beta
+and so forth.
+These operators denote the measurement basis
+for each qubit.
+The plus or minus sign denotes a dependency
+on prior measurement results.
+As I will explain in more detail,
+unlabeled nodes are unprocessed qubits.
+They are not measured.
+The numbers shown here in red represent
+the order of operations.
+Elaborating a bit on the measurement basis,
+what is meant by HZ alpha 1, for example,
+is a circuit where that operator is
+applied before a measurement in the computational basis.
+The output of a cluster circuit is the unprocessed qubits
+and also the measurement record of zeros and ones
+from the measurement of each qubit.
+Let me explain how quantum computation-- universal quantum
+computation-- is done with this model using some examples.
+First, though, note that if we cascade
+two of these measurement basis change
+operations-- for example, HZ theta and then HZ phi
+acting, for example, on the plus state--
+then we get this output state.
+And it is instructive to note that it has two parameters.
+And it is almost, therefore, an arbitrary single qubit
+operation.
+Not quite.
+It doesn't have three parameters,
+as Bloch's theorem requires.
+Now onward with our examples.
+There are two example steps I will show.
+First, consider this cluster state defined
+by this three-node graph.
+The first qubit is measured in HZ theta,
+and the second in HZ plus or minus phi as the bases.
+We analyze this by writing down the equivalent quantum circuit,
+starting with the three qubits in the plus state,
+and then adding the controlled phase gates as denoted
+by the connectivity of the graph.
+We then have a measurement in the HZ theta basis,
+and a measurement in the HZ plus or minus phi basis.
+The plus or minus is controlled by the measurement result
+from the first qubit.
+The second measurement result doesn't control anything.
+We call these M1 and M2.
+The output state let us label as psi.
+From our analysis of teleportation
+with a measurement basis change, we
+know that the result of the first measurement
+is to teleport the sequence x to the M1 HZ theta acting
+on the input state plus.
+That's for M1.
+For M2, we add an additional set of operators--
+x to the M2 HZ plus or minus phi--
+to the first set of operators.
+And all of this acts on the input state plus.
+How do we properly account for plus or minus
+in this controlled measurement basis change?
+Well, recall that x changes a z-rotation
+by flipping its sign.
+We can use this to simplify our output state description,
+copying this over here, now changing the plus or minus
+to minus 1 to the M1.
+We can now recognize that this middle term
+has a sign which changes depending on the measurement
+result M1.
+This indicates the controlled effect of the measurement basis
+change.
+We may re-express this sign dependence
+by inserting x on either side of a sign-independent z-operation.
+Note, we already have one factor of x to the M1,
+and that cancels the new one we add.
+Thus, we're left only with one x to the M1 in this expression.
+Let me pull all terms depending on M1 or M2 to the left.
+So commuting H through gives us a Z to the M1,
+and now we have two parts to this expression.
+This second part represents exactly what
+we considered earlier.
+And the first part represents something
+which we may call a poly frame.
+It depends on M1 and M2, but these
+are both known from prior measurement results.
+And they can thus be undone in principle any time.
+It's OK for us to just keep them around
+because we'll find they always move
+to the end of the computation.
+Therefore, what we have in the term that's relevant
+is basically an arbitrary qubit state.
+And this is up to the Pauli frame, kind of a reference
+frame for our computation.
+So the first example has shown us
+how to create an arbitrary single qubit state.
+Our second example generalizes with the goal
+of being able to simulate a controlled NOT
+gate between two qubits using this cluster state model.
+There are four qubits used here.
+The first two qubits are measured in the H bases.
+Label the qubits a, b, c, and d, and draw the equivalent circuit
+using alpha as the input for a, plus and plus for b and c,
+but beta for d.
+This implies that nodes a and d actually come
+from some other cluster circuit, such as the one
+we saw previously.
+Following the usual rules, we apply controlled phase gates
+between connected qubits, as shown here.
+The a qubit is measured in the Hadamard basis,
+teleporting the gate x to the M1 H alpha.
+And then the b qubit is measured,
+and this also teleports the gate,
+and that is x to the M2 H. And that x to the M2 H
+is teleported after the controlled phase
+gate between b and d.
+Altogether, this leaves us with a two-qubit circuit.
+That is after the measurements, and that circuit
+acts on alpha and beta as inputs.
+Initially it has x to the M1 H on alpha.
+That is followed by a x to the M2 H,
+and in between is a controlled phase
+gate between alpha and beta.
+This is very close to what we want.
+Let us push the x to the M1 H over across the Hadamark.
+And what we find is that becomes an x
+to the M1, and a zed to the M1 after the controlled phase
+gate using the rules of propagation of Paulis
+through controlled phase gates.
+And we are left also with an HXM2 on alpha.
+Let us simplify this further by pushing the second H back
+through the X to the M1.
+That gives us a structure which has
+two Hadamards around the controlled phase gate.
+And this is going to be our controlled NOT gate.
+We are then left with Pauli operators, Z to the M1,
+X to the M2, and Z to the M1.
+And these three Pauli gates are all
+controlled by our measurement operators.
+Again, on the left, we have our desired controlled NOT gate.
+And on the right, we have our Pauli frame operators.
+All together, we have shown a CNOT and what is essentially
+an HZ theta gate.
+And together, this produces a universal set
+of gates for quantum computation.
+Measurement-based quantum computing using cluster states
+thus can simulate in principle any quantum computation.

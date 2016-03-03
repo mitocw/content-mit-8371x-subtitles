@@ -1,0 +1,83 @@
+#
+# File:   content-mit-8371x-subtitles/Q2L7b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 73 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The concept of a stored program is core to classical computing.
+Does this idea work for quantum computation?
+Here we explore the idea in the context of a universal quantum
+gate array.
+Call this g, an assembly of gates which is universal.
+It is controlled by an input program which
+is stored as a ket p, and acts on quantum data psi.
+It produces output p prime as well as u sub p
+acting on psi, the output data.
+The classical analog of this begins with some parameter
+counting on m bits.
+That is, m bits going to m bits.
+We have 2 to the m to the 2 to the m possible Boolean
+functions.
+Thus, one needs 2 to the m bits to describe
+all these possible functions.
+Quantum mechanically, we have a unitary transform on m qubits.
+That requires a unitary matrix that is 2 to the m by 2
+to the m.
+And thus we have 2 to the 2m real numbers for u.
+If the entries of u were to be approximated,
+each by k bits, then that means the total number of bits
+required would be 2 to the 2m to the 2 to the k.
+Of course, just as with classical programs,
+most u are impossible to describe efficiently.
+Nevertheless, this parameter accounting
+gives us the idea that we might utilize 2m qubits which have 2
+to the 2m plus 1 minus 1 real parameters as their amplitudes.
+Use these 2m qubits to parameterize
+possible unitaries.
+This is what we mean by the quantum program
+p in the diagram above.
+In order for this universal quantum gate array to work,
+we need the g acting on the input p tensored with psi,
+must produce an output which is p prime the left over tensored
+with u sub p acting on psi.
+This conceptual idea does not quite work, though.
+Here is a theorem.
+No deterministic universal quantum gate array exists.
+We may prove this as follows.
+Assume that we have two programs, p and q,
+such that u sub p and u sub q are unique programs,
+distinct programs.
+Thus, g acting on the input p psi
+must produce u sub p acting on psi, and g acting on q
+psi I must produce u sub q acting
+on psi, both with their left overs as well.
+Next, let us take the inner product of these two equations.
+On the left we get-- because g dagger g is identity,
+pq amp psi is ply, which is going to be 1, and on the right
+we get p prime q prime, the overlap of the leftovers.
+Together with the overlap of u sub p and u
+sub q, each acting on psi.
+Let us then divide both sides of this equation
+by the overlap of p prime and q prime.
+We find on the right hand side of this expression psi u p
+dagger u cube psi.
+The left hand side is manifestly independent of the input psi.
+Thus, it is clear the right hand side must also
+be independent of psi.
+The only way in which this is possible
+is if u p dagger you q is proportional to the identity.
+But that contradicts our assumptions,
+and therefore p and q must be orthogonal to each other.
+The general conclusion from this observation
+is that every implementable unitary transform that is not
+the same unitary, must require an extra dimension
+in the Hubert space to specify it.
+Basically, the programs must be classically distinct.
+Alternatively, another option would be for a gate array
+to not act deterministically, that is,
+to allow for probabilistic quantum programs.
