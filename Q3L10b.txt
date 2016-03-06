@@ -1,0 +1,110 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L10b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 100 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us apply the quantum Fourier transform
+to solving an interesting problem-- phase estimation.
+The scenario is that we are given a unitary transform, u,
+and an eigenstate state of u-- little u, such
+that u's eigenstate is e to the 2 pi i phi--
+And the problem is to find phi.
+Now, we don't know how to do this efficiently using
+just what I've given here.
+However, if the terms of the problem
+are changed such that instead of just u,
+you are given a controlled u of a form which
+I'll specify in just a moment, then
+it turns out we can find phi efficiently.
+Now, this Problem Two version can
+be solved with the following algorithm-- the phase
+estimation algorithm.
+We have two registers of qubits, one with t qubits
+that start in zero and go through Hadamard.
+A second, which is the u state that we are given that has n
+qubits.
+We perform a controlled u operation,
+and then an inverse quantum Fourier transform.
+And I'll show how this measurement of this register
+produces the desired result to good approximation.
+And of course, the bottom register
+will just get a phase shift.
+The measured result is phi times 2 to the t, an integer.
+Actually, it won't be exactly phi times 2 to the t,
+but the claim will be that this will
+be the result with high probability
+and under certain cases.
+What I most want to demonstrate is the ideal case working,
+and thus I will begin with some assumptions which
+we will be able to generalize beyond later.
+The strongest of these assumptions
+is that phi will be exactly t bits long.
+That is, it is described by finite binary fraction
+with just spaced phi one through phi t.
+OK.
+Let's take this quantum circuit and walk
+through why it works based on our understanding
+of the quantum Fourier transform.
+Here is the circuit.
+Note that the effect of the controlled u
+is to change the power exponentially of u that
+is applied.
+u, and then u squared, u to the fourth, u to the eighth,
+and so on.
+We have t qubits in this control register,
+and we have n qubits in this data register.
+All I've shown so far is this first part of the circuit,
+and it's very much like an operator measurement circuit.
+The controlled u to the k acting on 0 plus 1 and u
+gives zero plus omega to the k phi times 1 with u.
+This first part is a single qubit
+which gains a phase, just like we saw in the operator
+measurement circuit.
+That phase gives the eigenvalue of u.
+In contrast with a poly-operator measurement case though,
+here eigenvalues can be different from just
+plus and minus one.
+For controlled u to the one, we get the usual result-- omega
+to the phi, acting on one.
+For u squared we get omega to the two phi times cat 1.
+For u to the fourth, we get omega
+to the four phi times cat 1, and so forth to the case
+where we have u to the 2 the t, giving us omega to the 2
+to the t times phi times cat 1.
+This state should be very familiar to you
+from the Fourier transform analysis.
+We may rewrite the bottom qubit as omega to the zero point
+phi 1 through phi t.
+Remember, phi is a binary fraction.
+The second qubit has omega to the zero point phi 2
+to phi t times 1.
+The third qubit has omega to the zero point phi three phi
+t times 1, and so forth up to the final qubit
+up at the top, which has omega to the zero point fee t
+times 1.
+This is, in fact, exactly the output of the quantum Fourier
+transform, and thus we may rewrite it straightforwardly
+as simply the [INAUDIBLE], which is a sum over omega phi times
+k times cat k.
+This state, fed backwards through the inverse quantum
+Fourier transform, thus gives us phi-- or, more accurately,
+phi times 2 to the t.
+And recall, this is the output of the quantum Fourier
+transform showing up here in this circuit.
+This output is the ideal case.
+In reality, phi will not be t bits exactly,
+so we get an approximation.
+Second, we need this eigenstate u,
+which may not be available in general.
+And third, the scenario has called
+for a controlled u-- in fact, controlled powers of u--
+to exponentially higher values, and this is not
+generally possible given a u.
+Nevertheless, this phase estimation algorithm
+does turn out to be quite useful,
