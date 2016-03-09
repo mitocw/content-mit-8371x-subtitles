@@ -1,0 +1,113 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L10c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 103 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+We now revisit Peter Shor's quantum factoring algorithm
+in the light of the quantum phase estimation algorithm.
+Let us define a unitary operator which acts on an integer basis
+state y as giving x times y modular N. y here has l bits,
+and N, the number we wish to factor,
+is the product of two prime numbers.
+Our goal will be to find r, the order of x with respect to N.
+Now, I claim that the eigenstates of u
+have information about r, that is the u
+sub s, the eigenstate labeled by s,
+is a superposition of omega to the minus sk divided
+by r times x of the k mod N, where, again, omega
+is e to the 2 pi i.
+Let's prove this is an eigenstate of u.
+We may do this by applying u to u sub s.
+That gives us a similar expression
+now where we have the same phase factor but an additional factor
+of x in the ket.
+We then rewrite this by shifting the sum to become over k prime
+where k prime is defined as k plus 1.
+This gives us a state which has a ket that
+looks like the original use of s but has an overall extra phase
+factor, here written out as omega to the plus
+s divided by r, and then the same phase factor as
+in the original u sub s.
+We have, thus, identified this term here
+being u sub s and an extra phase in front, which
+is the eigenvalue of u sub s.
+This eigenvalue is e of the 2 pi i. s divided by r
+and s divided by r will be the phase
+phi, which we will try to find.
+The phase estimation algorithm states that given u sub
+s, finding phi can be done.
+And this gives us r and, thus, gives us factors
+of N with high probability.
+Now, how does one get u sub s?
+It turns out to be sufficient not
+to have u sub s but to have instead
+just the equal superposition over all the u sub
+s eigenstates.
+That is because this superposition is
+nothing more than the value 1.
+Using this fact, let us now return
+to phase estimation and present the quantum order
+finding algorithm, a version of phase estimation,
+which may be used to find r.
+The inputs will consist of a modular exponentiation
+box, the uxN operator, which I presented at the start.
+It maps jk to jx to the j times k mod N. Second,
+we have t equals 2l qubits, starting in the 0 state,
+initially.
+Third, we have l qubits, initialized to state 1.
+The output of this algorithm will
+be an estimate of the smallest integer r, such that x
+to r mod N is equal to 1.
+This is known as the order of x with respect to N.
+The algorithm promises to require
+only about l cubed operations limited by the mod exp.
+The procedure for this algorithm is
+to first start out in the 0 1 state,
+then apply a Hadamard to the first register of qubits.
+This case us an equal superposition state
+over all values of j.
+Let us also rewrite the 1 as an equal superposition
+over all the eigenstates of u, that is u sub s.
+The third step is to apply the controlled u operator.
+This uses the first registered j to conditionally apply u
+to the j to the second register.
+That gives us a phase factor omega
+to the js divided by r on each term.
+These are the eigenvalues.
+And we want to find s divided by r.
+We do this by applying in the next step
+an inverse qft to the first register, the one which had j.
+This gives us an estimate of the phase s divided by r.
+In the fifth and next to final step, we measure
+and obtain the estimate of s divided by r.
+Then in the final step, we apply the continued fractions
+algorithm as previously described, giving us r
+from the ratio s divided by r.
+This is the final result of the order finding algorithm,
+the order of x with respect to N. For quantum factoring,
+some additional constraints apply.
+First, N must be odd-- even numbers
+are trivially factored-- and must also not be
+an integer power of an integer.
+That's also easy to check.
+The number x for factoring is chosen
+coprime to be N. That's easy.
+If you chose a factor, then you would already be done.
+And for factoring, we apply the reduction
+of factoring to order finding, namely,
+if r is even and doesn't give a trivial root of 1,
+then try as factors of N the greatest
+common divisor between x to the r divided by 2 plus or minus 1
+and N. Otherwise, repeat.
+Only a few repetitions will be needed
+because this succeeds with high probability each time.
+And incidentally, the smallest meaningful case
+is that of factoring the number 15.
+And that case alone has presented
+interesting challenges for experimentalists
