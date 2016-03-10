@@ -1,0 +1,95 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L11b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 85 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+An important tool in quantum simulation
+is the Lie product formula, also known as Trotterization.
+The goal is to simulate a certain Hamiltonian and H
+sys, which we assume is the sum of a number
+of local Hamiltonian terms, H sub k.
+Such structure is very common, for example,
+in the Ising model.
+We have a sum over spin spin interactions, each of which
+is local, sigma dot sigma.
+One may try to simulate such a Hamiltonian,
+for example, by simply simulating
+each one of the Hamiltonians and then taking the product.
+However, this product of local evolutions
+is certainly not equal to the desired overall system
+evolution because the individual Hamiltonian terms typically
+do not commute with each other.
+To approximately construct H sys from Hk,
+we use the Lie or Trotter-Suzuki theorem.
+Let A and B be two operators which are Hermitian.
+Then, for a real valued parameter t,
+which will represent time, we have
+that in the limit of having an infinite number of steps,
+where each step is an infinitesimal evolution by A
+then by B, and this then repeated, we get evolution
+under the sum of A and B for time t.
+For this to hold, in fact, A and B do not need to commute.
+That is an important part of this theorem.
+We now prove the theorem as follows.
+Let us expand each time step operator as a power series
+to leading order in 1 over n.
+The product of two of these time steps
+is thus then to leading order a evolution by A plus B.
+But this is just two time steps.
+Now let us combine n of these times steps
+together by taking this to the nth power.
+We may apply the binomial theorem to this
+to get an expression which has n choose k and A plus B
+to the kth power divided by n to the k.
+As an aside, let us compute n choose k divided by n to the k.
+Expanding the combinatorial functions as factorials,
+we may identify where n to the k appears
+in both the numerator and the denominator and thus cancel.
+This leads us to leading order simply 1 over k factorial.
+Now employing this in our binomial expansion,
+we find is that we are left with A plus B to the kth,
+divided by k factorial, up to order 1 over n.
+We are thus left with e to the A plus B in the limit
+of n approaching infinity.
+This proves the theorem.
+The actual application of the Lie product formula
+is interesting to observe in some examples.
+Let A and B two Hamiltonians and evolution be for time delta t.
+To leading order we have just two of these terms,
+and that gives us an expression good to order t squared.
+A big improvement comes from using just three time
+slices, where the first is A for time delta t divided by 2.
+The second is B, for time delta t.
+And the third is A, again, for time delta t divided by 2.
+This is an order delta t cubed approximation.
+Note the symmetry in this expression.
+It is this which gives the ever cancellation.
+This second example illustrates how this idea of symmetry
+can be extended to a Hamiltonian with l terms.
+We then approximate the time evolution
+by half time steps of, say, Hl to H2, followed
+by a full time step at H1.
+And then another set of half time steps of H2 to through Hl.
+This approximation expression has a sandwich-type structure.
+And it is good to order tau squared.
+What is neat is that this symmetry
+can continue to be exploited to get a higher order
+approximation.
+u4 here is constructed from the u2 expressions
+that we just saw, but evolve for different amounts of time.
+Evolved first for two a tau periods,
+then for a 1 minus 4a tau period.
+And then two more a tau periods.
+For the right choice of a, here, in particular, a being 1 over 4
+minus the cube root of 4, we find
+this is a good approximation to order tau to the fourth.
+This may be generalized in an almost recursive manner.
+And it leads to methodologies known as symplectic integrators
+and is in general called Trotterization
+in the art of quantum simulation.
