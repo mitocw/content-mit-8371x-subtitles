@@ -1,0 +1,89 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L13a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 79 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us briefly explore Shannon's celebrated noisy coding
+theorem.
+A key concept involved is that of the mutual information.
+First, we define the joint entropy function h of x, y
+as being the usual entropy function,
+but over a joint probability distribution P of x, y.
+Recall that Bayes' rule relates the joint distribution
+to the conditional distribution and a marginal,
+p of x given y times p of y.
+It is insightful to employ Bayes' rule
+to rewrite this joint entropy function.
+Let us insert the product of a conditional and marginal
+into the logarithm in this argument here.
+Now, split the logarithm of the product
+into a sum of logarithms.
+We end up with two terms-- one with log p of x given y,
+the other with log of p of y.
+The first term defines what is known
+as the conditional entropy function,
+and the second is the usual H of y.
+Now, we gave Shannon's definition
+of the mutual information.
+This is I of x;y, which is given by H of x plus H of y minus H
+of xy.
+Using the expression above, we may
+rewrite this as H of y minus H of y
+given x or H of x minus H of x given y.
+Venn diagrams succinctly express the meaning.
+Let H of x be shown here in blue and y shown here in yellow.
+The joint H of xy is the total of the sets.
+And thus I of xy is the intersection shown here
+in green.
+The mutual information describes the extent to which
+x and y share common entropy.
+Its most important meaning comes operationally
+from the noisy coding theorem.
+The scenario for this theorem involves a source
+which sends x over a noisy channel
+and the receiver obtains y, a noisy transmitted version of x.
+We define the channel capacity C as being
+the maximum over all probability distributions
+which may be chosen for the source
+message of the mutual information I of xy.
+Here is another picture which describes
+what is going on conceptually.
+We have inputs-- say, these states shown here--
+that are transmitted with a probability p of x.
+There are 2 to the nH of x such sequences which are typical.
+Shown here in orange are the received states
+with probability distribution p of y.
+These are the outputs of the channel.
+The effect of the channel is to add
+noise to any single transmitted symbol
+such that it may become hard to distinguish
+from other transmitted symbols, as illustrated here.
+Given a transmitted symbol x, the number of plausible outputs
+y is 2 to the nH of y, given x.
+The total number of output possibilities
+is 2 to the nH of y.
+Putting these numbers together, we
+obtain an estimate of the number of distinguishable output
+received states.
+That is the ratio of 2 to the NIH of y divided
+by 2 to the nH of y given x.
+Rewriting this expression gives us an exponent with h of y
+minus h of y given x.
+Thus, we find the mutual information I of xy
+gives us the number of distinguishable received states
+in the presence of noise.
+Succinctly and conceptually, Shannon's noisy coding theorem
+states that C, the capacity, is optimal and achievable.
+No coding scheme can achieve a rate of communication
+faster than the capacity.
+And, furthermore, the capacity as specified
+by the mutual information is achievable.
+How to achieve C efficiently is a fascinating question.
+Also very interesting is the right way
+to translate this theorem into the quantum setting.

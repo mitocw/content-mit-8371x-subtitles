@@ -1,0 +1,93 @@
+#
+# File:   content-mit-8371x-subtitles/Q3L11c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 83 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+A concrete appreciation of the pros and cons
+of quantum simulation can be obtained
+by studying what I will call the quantum simulation algorithm.
+This has as inputs a Hamiltonian of a system,
+which is under study and is desired to be simulated.
+This is an n-dimensional system where
+each one of the individual Hamiltonian elements, H sub k,
+acts on a constant size subsystem
+of a total n-dimensional system.
+A second input is an initial state, psi sub 0.
+A third input is a parameter delta real number
+which is greater than 0 and is known as the accuracy goal.
+And a fourth input is the final evolution time point t sub f.
+The output of this algorithm will be a quantum state.
+We denote this as psi tilde of t,
+and this algorithm guarantees that this state has
+a overlap with the ideal state at t sub f, which is at least 1
+minus delta.
+The time required for this simulation
+will be of order polynomial in 1 over delta.
+This is a number of gates.
+Now, whether this is good or bad,
+we'll come to in a little bit.
+The algorithm has three main steps in its procedure.
+The first step is to discretized both the state, so
+that it is represented by approximately poly log n
+qubits, and also the time evolution operation,
+producing efficient quantum circuits for each Hamiltonian H
+k.
+The second step is to approximate to choose the time
+step delta t and the trotterization
+for producing H from H sub k.
+More sophisticated variance could employ adoptive time
+steps and/or trotterization schemes.
+The third step in the procedure is where
+all the main work is done.
+Here, a loop is performed starting with the initial state
+and j equals 0.
+The main loop then iteratively updates to produce
+psi sub j plus 1 from a time step evolution of psi sub j.
+Here, u sub delta t represents a single trotterized time
+evolution step.
+The loop is continued until the final time t sub f is reached.
+The final state is then copied and presented
+as the algorithm's main output.
+This is a very generic simulation algorithm,
+and many improvements can be made.
+But it suffices to provide us with a framework for analyzing
+the resources required in comparison
+with the classical case.
+Let us begin with space, the number of qubits or bits
+required.
+For a classical simulation of the same system,
+we require approximately two to the n bits
+compared with n qubits.
+For the output, if the desire is to obtain
+the entire state of the system, then the time required
+is order n for classical compared with 2
+to the n for the quantum.
+This is because the output state has two to the n amplitudes,
+and each measurement of the quantum algorithm's output
+collapses the output state.
+And thus it has to be repeated about two to the n times.
+We may compare that with the time required
+to estimate the expectation value of an operator
+with some error epsilon.
+In the classical case, approximately n
+log 1 over epsilon time is required.
+In the quantum case, the time goes as n over epsilon.
+We thus see the quantum algorithm
+wins in terms of space, but the classical
+wins in terms of time.
+The caveat is that if the output precision epsilon is fixed,
+then the quantum algorithm is just
+as fast as the classical while requiring
+exponentially less space.
+On balance then, for what realistic problems
+is quantum simulation useful compared
+with classical simulation?
+This is really the key question, and certainly the answer
+is not clear cut.
+But there are tantalizing possibilities.

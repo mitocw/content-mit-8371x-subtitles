@@ -1,0 +1,44 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L12e.txt
+#
+# Captions for 8.421x module
+#
+# This file has 34 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+A quick example of typical sequences
+is particularly effective in illustrating
+the central role of entropy.
+Consider an iid binary source which
+produces zero or one with probability p and 1 minus p.
+For example, if p is 0.854 and 1 minus p, 0.146, then out
+of n bits, we expect approximately np zeros.
+When n is 1,000, that means 854 zeros and 146 ones.
+How many of these binary strings would have to np zeros?
+Well that's just n choose np.
+And we expand this using the normal combinatorial formula.
+But it is far more insightful to see
+what this is asymptotically by applying
+Stirling's approximation.
+Let us take the log of the combinatorial expression.
+Substituting in Stirling's approximation,
+we find an expression where a bunch of terms cancel,
+namely the constant terms here.
+And we may identify additional cancellations
+by rewriting some of these logs of products as sums of logs.
+So we find terms with log n and log p and log 1 minus p.
+The log n terms all cancel, leaving us
+with this expression, minus np log p minus n minus np
+log 1 minus p.
+Factoring the n out front, we find this is nothing
+more than n times H of p.
+This final expression is remarkably useful.
+n choose np is approximately 2 to n H of p.
+In our particular example, for n equal 1,000, log of n
+choose np is 595.
+And the approximate version, n times H of p, is 600.
+This approximation illustrates the power
+of thinking about typical sequences in terms
