@@ -1,0 +1,146 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L12d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 136 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The quantum analog of the noiseless coding theorem
+was worked out by Ben Schumacher.
+In this scenario, the source sends
+quantum states and the output is characterized by density matrix
+rho.
+In comparison with a classical scenario,
+the symbols, instead of letters, are quantum states
+which may be non-orthogonal and the distribution, instead
+of a PDF, is a density matrix.
+The message is a tensor product of, say,
+end symbols from the alphabet.
+The quantum noiseless coding theorem states
+that messages from a quantum source of von Neuman
+entropy s of rho can be faithfully transmitted
+over a noiseless channel at a rate
+s of rho qubits per symbol.
+And this is, again, asymptotically in the limit
+of large n.
+Please appreciate that this theorem actually
+defines, from a resource standpoint, what
+it means to be a quantum bit.
+This endows the concept of a qubit
+with an operational meaning.
+Let us look at a quick example.
+Suppose that the alphabet has the states 0 and 0 plus 1
+divided by root 2.
+Each is admitted with probability 1/2.
+The density matrix is thus the combination
+of these two states, which gives us, overall,
+the density matrix 1/4, 3111.
+Let's look at the eigenstates of rho.
+Later, I'll tell you why.
+One eigenstate-- call it zero bar-- is cosine pi/8 times
+0 plus sine pi/8 1.
+And the other is orthogonal with minus sine pi/8 0
+and cosine pi/8 1.
+The zero state has an eigenvalue given by this expression.
+By virtue of their orthonormality,
+any block of n qubits-- call it phi--
+may be represented as a linear combination of tensor
+products of these eigenstates.
+Zero bar one bar thus behavior kind of like classical bits.
+Note also that these symbols of our alphabet
+have particularly large overlap with the zero bar state.
+That is, the squared matrix element of psi 0 and psi 1
+with zero bar are both cosine squared pi over 8, around 0.85.
+This is a high overlap.
+In contrast, the matrix element with one bar is relatively low.
+That is, sine squared of pi/8, around 0.15.
+This high overlap, low overlap distinction
+shows up vividly when we look at block coding the n
+equals 3 case.
+Let us denote any 3 qubit combination of the letter
+states psi 0 and psi 1 as the state phi.
+Note, then, that phi has a very large overlap with triple zero
+bar, namely cosine pi/8 cubed, around 0.62.
+The overlap with states with one one
+bar is slightly lower, at 0.107, and increasing
+the number of one bar states lowers
+this overlap even further.
+For example, with two one bar states,
+we get an overlap matrix element of 0.018.
+And with three one bar elements, the overlap drops to 0.003.
+The terms with the most zero bar elements
+thus has the highest weight.
+And in fact, there are three possible cases with 1 1.
+And thus, in total, there are four high probability cases
+and we may encode these as two qubits.
+In the limit of large n, throwing away
+the low probability cases does not decrease the fidelity
+meaningfully.
+To understand how this all works,
+we must turn to the asymptotic case.
+This is captured with two definitions and two theorems.
+First, we define a string of symbols-- x1 through xn--
+as being epsilon typical.
+If the combinatorial probability is bounded below
+by 2 to the minus 1 times h of x plus epsilon
+and bounded above by 2 to the minus
+n times h of x minus epsilon.
+Alternatively, the criteria may be
+expressed by saying that the average negative log
+probability of the string of symbols
+must be within epsilon of h of x, where h of x
+is the entropy of x.
+This definition is meaningful, because of the theorem
+of typical sequences.
+The theorem holds that for any fixed positive epsilon
+and any delta greater than 0, for sufficiently large message
+block size n, the probability that a message is
+epsilon typical is at least 1 minus delta.
+This means that asymptotically, most messages are typical.
+And in fact, the number of atypical messages
+drops exponentially.
+The quantum case has an analogous definition.
+For a source described by density matrix rho
+with orthonormal unraveling end states
+x and epsilon typical subspace is defined
+as being the subspace spanned by the vectors labeled
+by epsilon typical sequences of x.
+Note that these probabilities are the eigenvalues of rho
+and the quantum states are those with labels
+given by the classical symbols.
+In analogy to these typical sequences theorem,
+we have a theorem about typical subspaces for the quantum case.
+For fixed positive epsilon, then for any delta greater
+than 0 for sufficiently large block
+size n, the overlap between the epsilon typical subspace
+and the n symbol quantum state is at least 1 minus delta.
+Here, p of n epsilon denotes the projector
+into the typical subspace-- namely,
+the tensor product of all epsilon typical message states.
+Note that I have simplified some of the steps
+and logic for presentation.
+Please refer to the textbook for the details of the proofs.
+Schumacher compression, the methodology
+behind quantum noiseless coding, works
+because of the typical subspaces theorem.
+We begin with n log d qubits from the message source.
+We then compress this to n s of rho qubits.
+And finally, we may decompress this back
+to obtain the original n log d qubits to good approximation.
+The compression scheme utilizes two steps.
+First, we apply a unitary transform
+to rotate each cube it into the eigenbases of the density
+matrix of the source.
+This provides a basis with probabilities
+with classical interpretations.
+Thus, we may then project into the typical subspace defined
+by the typical sequences of the label eigenvectors.
+The decompression step undoes all of the compression
+simply by reversing the steps of the compression scheme.
+This works because asymptotically, the projector
+only leaves behind an infinitesimal subspace which
+is atypical.
