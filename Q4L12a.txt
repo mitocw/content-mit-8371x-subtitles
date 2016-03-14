@@ -1,0 +1,69 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L12a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 59 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+And insightful perspective for quantum communication
+is provided by starting with the scenario
+of classical communication.
+Here, the goal is to transmit a message, say x, described
+by its probability distribution function.
+What is received is a noisy message
+from the output of the channel.
+Call that y.
+The input to the channel is x.
+Two principal ideas describe this scenario mathematically.
+First, h of x, known as the entropy of x,
+is the number of bits needed to faithfully represent
+the message x on average.
+Second, the capacity c is the max
+over all probability distributions of something
+called the mutual information, I of xy,
+which is the maximum error-free communication
+rate achievable over the noisy channel.
+The two key concepts here are the entropy h
+of x and the mutual information I of xy.
+There are parallels to this in quantum communication.
+In this scenario, the source messages
+are described by a density matrix.
+This is a distribution which may be
+viewed as a distribution over peer states.
+For example, these may be non-orthogonal states,
+in contrast to the classical case.
+The received message is also described by a density matrix.
+And in contrast to the classical case,
+this is possibly decoded quantum mechanically,
+say by a quantum computer.
+Analogous to the classical case, the Von Neumann entropy
+describes the number of cubits needed to faithfully represent
+the density matrix row, and this is asymptotically.
+This entropy is similar to, but different from,
+the Shannon entropy, as we will see.
+Also, there are several distinct scenarios
+for noisy communication.
+After all, classical data may be the source, as well as
+the received data.
+Alternatively, the source may be quantum data.
+Or in fact, the receiver may receive and decode
+quantum mechanically.
+Or both the sender and receiver may be quantum.
+It is known that these channel capacities
+are ordered CCC is less than CQC and CCQ, and is less than CQQ.
+There are even richer scenarios beyond these four.
+Entanglement may also be used to assist, for example,
+classical communication.
+When the sender and receiver have
+pre-shared entangled cubits, this
+may change the [INAUDIBLE] capacity.
+Another set of capacity measures result when quantum information
+is allowed to be sent, but only one way or two ways,
+and possibly in addition to having a classical side
+channel.
+Beyond this, quantum communication
+may also involve multiple parties.
