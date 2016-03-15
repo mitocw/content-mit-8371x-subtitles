@@ -1,0 +1,86 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L12c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 76 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The first of Shannon's seminal two theorems
+is the noiseless coding theorem.
+Consider an i.i.d.
+Message source, which emits an N symbol message,
+x1 through xN, with each letter having a probability, which
+is sampled independently.
+This term here is therefore the PDF
+of the k-th symbol in the message.
+Utilizing the i.i.d.
+nature of the distribution, we may rewrite this as a product
+over the length of the alphabet, with each term being
+the probability of a symbol to the power
+given by the number of occurrences
+of that symbol in the message.
+Let us take the logarithm of this probability, divide it
+by N, and flip the sign to make the expression positive.
+Substituting in the product version of the probability,
+we find that this log probability expression
+simplifies to become a sum from 1
+to the size of the alphabet of N sub i divided by N log P sub i.
+Now, we may approximate this by substituting
+P sub i for N sub i divided by N,
+giving us the entropy function.
+This is reasonable because N sub i over N
+converges to P sub i in the limit of large N
+by the law of large numbers.
+Thus, the probability of an N symbol randomly drawn message
+is approximately 2 the minus N times H
+of x, as N goes to infinity.
+Remarkably, this probability is independent of
+the particular message string.
+How does this arise from counting?
+Well, there are x bar to the N total
+possible strings, and of these, 2
+the NH of x are those which are high probability,
+otherwise known as the typical sequences.
+This is a key idea behind Shannon's first theorem,
+the noisy coding theorem.
+The theorem states that messages from a source of entropy,
+H of P, can be transmitted at a rate H of P bits per symbol
+over a noiseless channel.
+This is, of course, in the limit of infinite message length.
+How this is accomplished conceptually
+is by enumerating the set of typical sequences
+and by treating all atypical sequences as exceptions.
+And because these are rare exceptions,
+they, on average, do not incur a substantial communication cost.
+Let us illustrate this with a simple example
+of a source which produces a, b, c, or d
+with probabilities 1/2, 1/4, 1/8, and 1/8, respectively.
+The code for this will be 0, 10, 110, and 111.
+Here is a sample 12-bit message string.
+What letters does this decode to?
+Well, the first 0 is an a.
+Then 110 is a c.
+We have three a's.
+10 is a b, 0 is an a, and 10 another b.
+This message thus has eight letters in it.
+With no code, 16 bits would have been required
+to transmit the eight letters.
+With the code, 12 bits suffice.
+This is definitely an improvement.
+But how close does it come to optimal?
+Well, the entropy of this distribution, H of P,
+is 1.75 bits, as we have seen before.
+With no code, 2 bits per letter are required.
+For this short message, with the code,
+we need 1.5 bits per letter.
+But in fact, you can see that the code is optimal.
+On average, it requires 1 bit with probability 1/2,
+2 bits with probability 1/4, and 3 bits
+with 2 times 1/8 probability.
+All together, that is 1.75 bits per letter.
+Thus, this code demonstrates how the bound
+given by Shannon's noisy coding theorem can be

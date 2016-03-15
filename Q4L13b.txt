@@ -1,0 +1,109 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L13b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 99 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The entropy of quantum systems has
+some peculiar and unexpected behavior
+compared with the classical.
+We define this entropy the Von Neumann entropy as minus trace
+of RHO log RHO for density matrix RHO.
+For example, the entropy of a pure state zero is zero,
+and the entropy of this fully mixed cubit is one bit.
+Evidently, the Von Neumann entropy of RHO
+is simply the Shannon entropy of the eigenvalues of RHO.
+So what could be surprising about this entropy?
+Well, let's look at its properties.
+From the classical case, we expect
+that the entropy is greater than or equal to zero,
+the entropy is bounded above by the size of the Hilbert space
+just like the Shannon entropy is bounded
+by the size of the alphabet.
+And now for some quantum behavior.
+If a joint system ab is pure, then the entropy of either half
+is going to be equal to each other.
+The proof of this is straightforward.
+Take a bipartite state PSI expressed
+in terms of the basis for a and b
+and apply the Schmidt decomposition.
+This gives a single coefficient djj and Schmidt basis terms
+psi j and phi j for systems a and b.
+Note that when either system is then traced over,
+the same eigenvalues are obtained and thus
+the entropies of the two halves are identical.
+A fourth property of the Von Neumann entropy,
+which will be useful to us shortly,
+is the entropy of a probabilistic combination
+of density matrices.
+This particular form may result when half of a bipartite state
+is measured, giving result k and leaving the other half
+in density matrix RHO sub k.
+Let us simplify by expressing RHO sub k in its diagonal basis
+with elements lambda kj.
+The Von Neumann entropy then reduces
+to a form which looks a great deal like a Shannon
+entropy of a probability distribution
+given by p sub k lambda kj.
+Let us break up the log of this product
+into the sum of the logs.
+And thus we have a term with log p sub k
+and a second term with log lambda sub kj.
+Lambda kj drops out of the first term in this expression,
+leaving us with h of p, and the second term
+becomes a convex combination of s of RHO sub k.
+Please keep this property in mind for the proof
+of Holevo's theorem.
+Let this turn now to the definition
+of mutual information for the quantum case.
+We build on the conditional entropy
+defined as s of p given q, being s of p cubed minus s of q.
+Be careful, though, because conditional entropy
+in the quantum case can be negative.
+That is not true in the classical case.
+The mutual information between p and q
+is given by s of p plus s of q minus s of pq
+just as is the case with the classical mutual information
+i of xy.
+It is very helpful to know some fundamental properties
+of this quantum mutual information first.
+Just like in the classical case, conditioning reduces entropy.
+So s of a given b and c is less than s of a given b.
+Discarding a system never increases
+the mutual information.
+Again, just like in the classical case.
+So s of a and b and c is greater than or equal to s of a and b
+with no c.
+Next, quantum operations can never
+increase the mutual information if acting
+on just one of the subsystems.
+Specifically, for systems p and q,
+if the quantum operation acts, say,
+only on the q subsystem, here shown as a channel e,
+then the mutual information of the original systems p and q
+is greater than or equal to the mutual information
+between the transformed systems p prime and q prime.
+This is true for any trace preserving quantum operation e,
+and it makes sense because e cannot increase any correlation
+between p and q acting only on the q subsystem.
+These properties all have classical analogs,
+but let me stress that it is important to be
+careful of the differences with the classical.
+The Shannon entropy of a single random variable x
+is always less than or equal to the Shannon entropy
+of a joint between x and y.
+This is not true in the quantum case, though.
+For example, consider a bipartite quantum state
+pq, which is an entangled cubit state, 0 0 plus 1 1.
+The Von Neumann entropy of p is equal to the Von Neumann
+entropy of q, which is one cubit,
+but the Von Neumann entropy of the total system
+is 0 because it is a pure state.
+The Von Neumann entropy and quantum mutual information
+thus have direct classical analogs but also differences
+to keep in mind.
