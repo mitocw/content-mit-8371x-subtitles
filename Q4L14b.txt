@@ -1,0 +1,60 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L14b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 50 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us define quantum entanglement
+and how entanglement may be quantitatively measured.
+For a pure state, psi AB, a composite state of two systems,
+A and B, we say that psi is entangled if and only
+if there does not exist a pure state phi of A and chi of B,
+such that psi of A and B is the tensor product of phi A
+and chi B. Entanglement is more than just a binary
+state, however.
+There are measures which quantify
+how entangled a given state is.
+The most important of these is the entropy.
+Let rho sub A be the trace over B of the bipartite AB system.
+The entanglement of psi AB is defined as the Von Neumann
+entropy of this reduced density matrix on A
+or the reduced density matrix on B.
+This is called The Entanglement with a capital E
+because of how important this measure is.
+For example, consider the bipartite state 0 0 plus 1 1.
+The density matrix of this state is a familiar quantity
+which has four one half values in the corners.
+The reduced density matrix is the identity matrix
+divided by 2.
+And thus, the entropy is one bit.
+And the entanglement is, therefore, one E bit.
+In fact, we will see this defines an E bit.
+Another useful measure is the Schmidt number.
+This is a number of non-zero coefficients
+which appear in the Schmidt decomposition
+of a bipartite pure state.
+More explicitly, for psi AB, this
+means we take the Schmidt decomposition, which
+is a sum over square root lambda times K sub A K sub
+B, where the square root of lambda sub K
+is the Schmidt coefficient.
+For example, consider two E bits of the form 0 0 plus 1 1.
+Let's expand this, keeping A in blue and B in orange.
+When we expand this product, we end up
+with the A and B labels all mixed up.
+And this is a very inconvenient representation.
+So let us collect all the A terms together and all the B
+terms together.
+That gives us 0 0 0 0 plus 0 1 0 1 plus 1 0 1 0 plus 1 1 1 1.
+And this is conveniently represented
+by taking x to be an integer from 0 to 3.
+And it's a sum of xx.
+The Schmidt number for this state is 4.
+And in fact, this representation--
+a sum over x of xx-- is a general and very useful
+representation for maximally entangled states.

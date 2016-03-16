@@ -1,0 +1,108 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L13c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 98 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Let us now discuss and prove Holevo's theorem,
+one of the earliest results in quantum information theory.
+The scenario here starts with a classical message
+X, which is then mapped by some encoding
+to a quantum state rho.
+And this rho or rho sub X may be an [INAUDIBLE]
+with non-orthogonal states.
+The states are sent over a noiseless channel-- no noise--
+and received, then measured to produce the channel output
+Y, a classical variable.
+We will model this measurement in the operator sum
+representation with operator elements E sub Y.
+The reason why this is a noisy communication scenario
+is because the source signals may be
+non-orthogonal with each other.
+Holevo's theorem puts a bound on the maximum rate at which X
+can communicate with Y. That is that the mutual information is
+bounded above by the entropy of the density matrix
+minus the probabilistically weighted combination of the von
+Neumann entropy of the signal [INAUDIBLE] states.
+Here rho is the sum of P sub X times rho sub X.
+Let us explicitly prove Holevo's theorem
+because it is very instructive to see
+how such quantum information theoretic proofs are
+constructed.
+We introduce fictitious systems P and M,
+helpers to Alice and Bob, alongside the quantum system Q
+sent over the channel.
+Specifically, the initial state can then
+be written as this density matrix over the Hilbert
+space of PQM where the first system denotes
+Alice's classical message, the second system
+denotes the message sent-- Q-- and the third system, M,
+holds Bob's measurement result.
+The final state of this system may also
+be written in the same form as rho P prime Q prime M prime.
+Alice's classical message state P remains the same,
+Q changes to become the post-measurement state
+after Bob's operation with E sub Y,
+and M becomes the measurement result Y.
+So here we have P prime, Q prime, and M prime.
+We observe that the entropy between P and Q
+is related to the entropy between P prime
+and M prime as follows.
+First, this entropy between P and Q
+is equal to the entropy between P and Q and M.
+And that is at least as large as the entropy between P prime
+and Q prime M prime because the measurement cannot increase
+mutual information between P prime and Q prime M prime.
+We may then discard Q prime because discarding cannot
+increase the mutual information between P prime and M prime.
+OK.
+Now we have an expression linking the mutual information
+between P and Q and the mutual information
+between P prime and M prime.
+The left-hand side of this expression, S of PQ,
+can be simplified by noting that the density matrix of P and Q
+is given by this labeled stochastic combination, which
+we have seen previously.
+The quantum mutual information between P and Q
+is thus found to be H of P plus S of rho-- remember,
+Q is the state rho-- minus the entropy of P sub X
+and the convex combination of the entropies of rho sub X
+weighted by P sub X.
+S of rho is the entropy of the state sent over the channel Q,
+and this term here is the result from property number four
+from the previous lecture.
+The two H of P terms cancel, thus leaving us with S of rho
+minus this stochastic combination
+on the left-hand side.
+For the right-hand side, we note that, given X, the probability
+of Y is simply the measurement result probability trace
+of rho sub X EY dagger EY.
+Also, the reduced density matrix rho of just P prime M prime
+is given by tracing over Q. This gives a diagonal density matrix
+where we rewrite the measurement probabilities using
+the conditional probability expression above.
+This output density matrix allows
+us to now express the right-hand side of our entropy equation
+by direct substitution into the definition
+of the quantum mutual information,
+namely S of P prime plus S of M prime minus S of P prime M
+prime.
+We find H of X plus H of Y-- that's
+P prime M prime-- minus the joint entropy of P prime M
+prime.
+And from our density matrix, we see
+that is simply the classical Shannon entropy of X and Y.
+Thus we find the right-hand side is
+no more than the mutual information between X and Y.
+Put all together, we now have a proof of Holevo's theorem,
+namely that the mutual information is bounded
+above by this expression.
+For a single qubit, Holevo's theorem
+stipulates that the mutual information between X and Y
+is at most the entropy of the density matrix, and that is 1.
+You will explore more interesting cases
