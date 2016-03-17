@@ -1,0 +1,92 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L14a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 82 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Space, time, and energy are fundamental physical resources.
+Does quantum information theory introduce
+additional such resources?
+For example, we have seen how noisy, classical channels
+may provide correlation between two signals, x and y.
+Shared classical randomness is known
+to be useful for cryptography.
+Might noisy quantum channels also be resources?
+Could entangled quantum states be resources?
+Well let us see what entanglement may be useful for.
+We have seen that teleportation may
+be utilized to turn one entangled pair,
+called an ebit, plus two classical bits
+into the ability to communicate one quantum bit.
+Such conversion is not possible without the entanglement.
+Another well known protocol is super dense coding,
+by which an ebit and one cubit are used to communicate
+two classical bits.
+Entangled quantum states are known
+to also be useful for clock synchronization, distributed
+quantum computation, and cryptography
+such as quantum key distribution.
+Entanglement may also sometimes replace
+classical, shared randomness.
+So given that entanglement is useful,
+the problem is, is entanglement a resource?
+And by this I mean, a mathematical, formal definition
+of resource.
+For example, here are two entangled state, 0 0 plus 1 1,
+versus 0.9 square root 0 0 plus 0.1 square root 1 1.
+How are these the same or different?
+After all, one can't have different kinds of resources
+for different states.
+For entanglement to be a resource,
+there must be a way to convert between states
+of different qualities of entanglement.
+One strict criterion for a definition of a resource
+is to say that A and B are equivalent if there
+is a mechanism to convert from A to B and from B to A.
+Does this apply to entangled states?
+In fact yes, to some degree.
+A state psy and another state phi,
+which are by bipartite peer states,
+are equivalent under local operations
+and classical communication, that is,
+operations which do not create entanglement, if and only
+if psy majorizes phi, and phi also majorizes psy.
+Here, psy and phi are the Schmidt decomposition
+coefficients of the pure bipartite states.
+Equivalently, the eigenvalues of the reduced density matrices
+of psy and phi for one side or another must be the same.
+This is a fine criterion, but it is clearly too strict,
+because it means that we would have many different categories
+of entanglement.
+A better approach utilizes a broader concept
+for what a resource is.
+This is asymptotic equivalence.
+For example, currency, such as dollars and the English pound,
+are considered equivalent because they
+may be converted to each other at a constant rate with a fixed
+fee.
+We capture this idea mathematically
+with the following definition, saying
+that A and B are asymptotically equivalent if there exists
+a conversion rate that is a ratio, which we will call r,
+such that for some epsilon and delta greater than 0,
+there exists a size n such that when the amount being converted
+is larger than capital N, we have a procedure, which
+takes n times r plus delta copies of a and returns n
+copies of b.
+And n copies of b may be converted
+to n times r minus delta copies of A.
+These conversions should be possible
+with error less than epsilon.
+Think of r as being the exchange rate
+and delta as being the fee.
+This model works for many resources.
+Does it work for entanglement?
+Do entangled states have a well-defined notion
+of asymptotic equivalence?
+Let us find out.

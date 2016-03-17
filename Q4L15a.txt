@@ -1,0 +1,76 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L15a.txt
+#
+# Captions for 8.421x module
+#
+# This file has 66 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Perhaps the most important practical application
+of quantum information has been cryptography.
+And as a famous cryptographer has written,
+the notion of commitment is at the heart
+of almost all non-trivial cryptographic protocols.
+Consider a scenario with two participants--
+A, who we will call the commiter, and B,
+who we will call the verifier.
+We wish A to commit to a secret.
+She does this in two phases.
+In phase one, known as the commit phase,
+there are two steps.
+First, A chooses her secret as 0, from an alphabet S. Second,
+A publishes some information which is related to S,
+namely f of S 0.
+We'll call this f 0.
+In phase two, the opening phase, there are also two steps.
+First, A reveals S 0, the secret.
+And then, fourth, B does something.
+B verifies that f 0, which was given previously,
+is equal to f of S 0, which was just given.
+It is important that f is a publicly known function.
+In fact, this f must be a non-invertible function
+known as a one-way function.
+Otherwise B could determine S 0 from f 0.
+After all, B knows F 0.
+For this to be a good commitment protocol
+two properties must hold.
+First, it must be hiding, that is,
+that B cannot be able to determine S 0 from f 0.
+Second, it must be binding.
+A must not be able to change her mind about S 0
+after committing in phase one.
+So what have we accomplished by having a protocol
+with these two properties?
+For example, an old fashioned realization of bit commitment
+is to write down the secret S 0.
+0 or 1 on a piece of paper and then put this piece of paper
+in a safe.
+This safe, with its locked door, serves the purpose
+of the one-way function.
+To open, A gives the combination to B, who retrieves
+the secret stored in the safe.
+Another example shows how bit commitment
+is done in a more modern way.
+A chooses two primes, p and q.
+These prime numbers may be large unusual ones,
+such that A may release the product N equal p times q,
+but p and q remain hard to find.
+Thus, in the opening phase, A reveals p,
+and B may check that p is a factor which divides N.
+This version of the protocol is good only so long
+as factoring is a hard problem.
+A secure bit commitment scheme is
+useful for a variety of applications
+such as the millionaires problem, where
+two millionaires went to find out
+who has more money without revealing
+how much either one has.
+Bit commitment may also be used for certain, secured two-party
+computations.
+But can bit commitment be realized securely
+without the need for computational complexity
+assumptions?
+Let us see if bit commitment can be realized with quantum

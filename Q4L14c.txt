@@ -1,0 +1,142 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L14c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 132 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+We now show that quantum entanglement
+can be thought of as a physical resource
+in the sense of this claim.
+I claim that all entangled bipartite pure states
+are asymptotically equivalent.
+Different forms of entanglement are fungible.
+We may prove this claim by showing
+there is a gold standard for entanglement.
+We will use the state 0, 0 plus 1, 1.
+Specifically, there are two parts to the argument.
+First is entanglement concentration.
+There must exist a mechanism to take
+n copies of a partially-entangled state, psi,
+and turn them into a smaller number
+of gold standard states, which we will call phi-- capital phi.
+In particular, we will show that concentration
+produces n times E of psi minus delta of these states' phi.
+The second part of the argument is entanglement dilution.
+We start with n times E of psi plus delta
+copies of the maximum entangled state
+and obtain n copies of the less entangled state.
+These protocols will work with epsilon delta parameters
+greater than zero and in the asymptotic limit
+of sufficiently large n.
+Epsilon here is the probability of error of the protocol.
+Let us first look at concentration.
+Without lots of generality, we may take the state psi
+as being a bipartite state with coefficients 1 minus P
+square root 0, 0, n square root of P 1, 1.
+This is the form provided by the Schmidt decomposition.
+Recall that the entanglement of the state psi
+is given by the von Neumann entropy of the reduced density
+matrix of half of this state.
+We find this is nothing more than the binary entropy of P,
+which we have seen several times.
+What we need from concentration is
+to be able to take n copies of the state psi
+into approximately E of psi copies
+of the maximum entangled state.
+Delta here will be the phi that is
+paid to be able to create these EPR pairs.
+Since the protocol uses n copies of psi,
+let us explicitly write out this tensor product of n copies.
+We may express this tensor product using
+a binomial expansion were each of the usual binomial
+coefficients multiply as the term xx.
+Here, the absolute value of x denotes the number of 1s
+in the binary string x.
+Let's rewrite using the number of 1s
+as w-- giving us a slightly simpler expression
+where we may take into account that there are multiple values
+of x with the same weight, w.
+The superposition of all of the states with the same weight, w,
+is useful to define.
+Here, we give that the name s sub w and normalize it properly
+by the number of possibilities-- that is, the square root of n
+choose w.
+Each s sub w state is actually a maximally-entangled state
+in a Hilbert space of dimension n
+choose w meaning equivalently log n choose w ebits.
+What we have, though, is not a single s sub w state
+but, rather, with psi to the n, a superposition over a variety
+of s sub w states-- each with an amplitude with a form which
+has a binomial coefficient, as shown here.
+This superposition of maximally-entangled states
+is quite useful, despite the different sizes.
+And that is because we may obtain one of them
+simply by following this procedure.
+Alice and Bob-- A and B-- both independently
+measure w, the Hamming weight of the strings that they have.
+This collapses the superposition into a single s sub
+w-- requiring no communication between the two parties.
+The probability of a given weight
+is n choose w, P to the w, 1 minus P to the n minus w.
+And this is approximately Gaussian for large n.
+The mean value of w obtained is n times P,
+and the variance is n P times 1 minus P.
+The average number of entangled pairs obtained
+is, therefore, the log of n choose n P, which
+is approximately the binary entropy of P.
+And this is nothing more than n times E, the entanglement.
+To be a little more precise, we don't get exactly nE
+but, rather, nE minus some overhead, which goes something
+like the width of the variance-- that is, square root of n.
+And this determines our overhead phi cost-- delta.
+Choosing delta to go as 1 over square root of n
+thus allows us to obtain a final protocol which
+succeeds to produce approximately n
+times E minus delta EPR pairs with high probability.
+This completes the argument for part one of the proof.
+The second part of the proof requires
+that we go in the opposite direction
+to dilute a given number of EPR pairs--
+specifically, n times E plus delta of these EPR pairs
+into n copies of psi.
+We want to turn ebits into arbitrary bipartite entangled
+states.
+A really neat way to do this uses teleportation.
+One party-- say, Alice-- starts out
+by generating n copies of the state psi
+locally in her own apparatus.
+Remember, this is a bipartite state.
+She takes half of this state-- n qubits-- and compresses
+it to produce using Schumacher compression,
+for example, and output, which has approximately nE cubits.
+Here, delta is the overhead required for the compression.
+Separately, Bob-- shown here in purple--
+produces n perfect EPR pairs, perhaps
+with a little overhead delta.
+Bob, who holds this entangled state,
+then sends half of those qubits--
+that is, approximately nE cubits over to Alice.
+Alice performs a Bell basis measurement
+between the compressed state and this half of the EPR pairs,
+sends the classical measurement result to Bob,
+who fixes up the other half of the EPR pairs
+using the normal teleportation protocol.
+And remember, there are nE of these cubits.
+Decompresses with the reverse of the Schumacher compression,
+obtaining a state with n cubits.
+All together then what Bob and Alice have
+is with high probability n copies of the state psi A/B.
+For this protocol, the fixed parameter is delta.
+The overhead and epsilon, the error,
+are determined by the Schumacher compression and decompression
+steps.
+This completes part two of the proof,
+and so now we have the full proof-- providing a foundation
+for conceptually understanding how
+entangled bipartite pure states are a physical resource, which
+are fungible and which may hold quantifiable intrinsic value.
