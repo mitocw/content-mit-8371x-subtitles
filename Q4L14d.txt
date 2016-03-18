@@ -1,0 +1,103 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L14d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 93 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Entanglement concentration, also known
+as entanglement purification, has a deep relationship
+with quantum error correction.
+Recall that we have seen that dilution can be performed
+using teleportation, and in that case,
+teleportation served as a noiseless channel.
+Concentration can use teleportation
+as a noisy channel.
+Recall the goal of concentration is
+to create nE EPR pairs between Alice and Bob.
+The first step in this protocol is for Alice
+to create these EPR pairs herself locally.
+She then takes half of each of these EPR pairs
+and encodes them into an n qubit code.
+Meanwhile, Bob has n copies of the state psi,
+which we wish to concentrate.
+He sends half of each of these bipartite states to Alice.
+Alice performs a Bell basis measurement between the two n
+qubits that she holds.
+Alice sends those measurement results
+to Bob, who uses them to complete the teleportation
+protocol.
+But the teleportation is noisy because it
+used states psi instead of perfectly entangled EPR pairs
+like it should have.
+So Bob sends his n qubits through an error correction
+code decoder, resulting in nE qubits
+and all together therefore Alice and Bob
+hold an entangled pair with nE ebits.
+This protocol requires a quantum error correction code,
+which encodes nE ebits with n physical qubits
+and has a certain distance d, which I
+will let you work out yourself.
+If the code is a CSS code, it turns out
+this is equivalent to coding in a random CSS code,
+as is shown in the security proof
+of quantum key distribution.
+Alternatively, suppose that instead of constructing
+an entanglement concentration protocol,
+you were given such a protocol.
+Call it an entanglement purification protocol, EPP.
+Suppose then, we wanted to do something which normally you
+do with error correction codes.
+That is, to send from Alice a state psi
+to Bob over a noisy channel.
+This may be accomplished by using
+teleportation and entanglement purification as follows.
+Alice starts out with a state psi
+but also creates some EPR pairs.
+She sends half of each of the EPR pairs
+over the noisy channel.
+Let the number of EPR pairs be n and nE be the number of qubits
+in the state psi.
+The output of the noisy channel goes to Bob,
+shown here in purple.
+After receiving this state, Alice and Bob
+then perform the entanglement purification protocol
+using whatever classical communication
+and local operations is specified in the protocol.
+No qubits are transmitted between Alice and Bob
+during this portion of the protocol.
+The output of the entanglement purification protocol
+is nE EPR pairs.
+Alice then performs a Bell basis measurement between psi
+and these nE ebits and sends the measurement results to Bob.
+Bob uses these to complete the teleportation protocol, finally
+obtaining an nE qubit state, which
+is a good approximation of the original state psi
+that Alice transmitted.
+This shows how entanglement purification protocols
+can serve in place of quantum error correction codes
+using teleportation.
+In fact, this approach can provide advantages
+over error correction.
+Entanglement purification protocols
+can provide communication over noisy channels,
+even when quantum error correction codes fail.
+This is the case, for example, for the depolarization channel.
+This single qubit channel transmits the state
+unchanged with probability p but otherwise replaces the qubit
+with one of the [INAUDIBLE] states.
+When p is less than 3 over 4, it is
+known that the capacity of the channel
+is 0 as proven, for example, by the quantum singleton bound.
+But the entanglement purification protocol
+gives a non-0 rate, and that is because the channel output
+may still have distillable entanglement for p
+less than 3/4.
+It turns out that the reason for this difference
+is because the entanglement purification protocol may
+employ two-way communication in contrast
+to the one-way communication traditionally employed
