@@ -1,0 +1,111 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-9-qprisoner.txt
+#
+# Captions for 8.421x module
+#
+# This file has 101 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+This is an example of a quantum version
+of the prisoner's dilemma game.
+Perhaps the most important rule to the prisoner's dilemma
+setting is that no communication is allowed between the players.
+However, what if the players were
+allowed to hold an entangled quantum state?
+Suppose we define a single qubit Hilbert
+space with basis state's C and D.
+And allow each player to hold one qubit.
+We may model a quantum version of the prisoner's dilemma game
+as this quantum circuit.
+The players are assumed to initially hold
+qubits in the C state.
+A two qubit operation J is applied to these qubits.
+J will be defined in a moment.
+The two player's actions are represented
+by use of A and use of B-- two single qubit operations.
+The two qubits are then passed through the inverse operator J
+dagger and then measured.
+We define J as being the two qubit entangling
+operator II plus xx divided by square root of 2.
+This is an entangling operation, which
+is a pi over 4 rotation about the two Pauli xx operation.
+Now, it is a little unclear exactly who
+is doing J and J dagger.
+But it should be clear that use of A and use of B
+are the prisoner's actions.
+Where the unitary operations are either
+I-- representing cooperation with a partner,
+or x-- representing defection from the partner.
+Note that the two qubit operation J commutes
+with all four possible classical actions which may be chosen
+as strategies by the players.
+Thus, assuming that the measurement results give
+the probabilities of the prisoners deciding on CC, CD,
+DC, or DD as their actions, then the payoffs
+represented by these two formulas
+reduce to exactly the same as expected
+from the classical version of the prisoner's dilemma game.
+In these formulas R, P, T, and S are, as before,
+the reward punishment tempt payoff and the sucker's payoff.
+What is different now is that the payoffs involved
+probabilities P sub CC, P sub DD, and so forth, given
+by the measurement results.
+So these are now random variables.
+In the case where the player's action is cooperate or defect
+this circuit behaves classically and the output
+is deterministic.
+Thus, the payoff matrix is exactly the same
+as in the classical case.
+With this quantum setting, however, we
+may now introduce a new quantum strategy represented
+by the operator Z chosen for either use of A or use of B,
+or both.
+Let us call this the quantum action versus C or D
+being the classical actions.
+What payoffs may result if a quantum action is chosen?
+Well, suppose Al chooses Q-- the quantum action,
+and Bob chooses to cooperate C. Then in this case, the output
+state before measurement, psi, is given by this formula
+J dagger Z tensored I times J acting on CC- the input state.
+Working through the algebra for this
+using the known poly matrix commutation relationships
+we find that the output state is up to an overall phase
+DD for this action QC.
+Thus, the output payoff is-- for each one of the players--
+the punish payoff.
+What if both players choose Q?
+What is the payoff?
+In this case, with use of A and use of B both being Z,
+the output state is found to be up to an overall phase CC.
+That is because J commutes with Z tensor Z. Thus,
+the payoff is 3 for both players.
+3 being the reward payoff.
+A similar computation can be done for the case of Q
+and defect.
+Putting these new results with quantum strategies
+into the payoff matrix we find these results.
+Note now that this payoff matrix no longer
+has a dominant strategy in contrast
+with the original payoff matrix.
+Here now we have a Nash equilibrium strategy
+that is both players choosing the quantum action.
+And in this case both prisoners receive the reward payoff.
+However, there are issues with this setting.
+For example, what happens if the prisoners
+choose other unitary operators than I, x, and Z.
+How does one enforce J and J dagger?
+In fact, who performs them?
+Are they performed by the police?
+Are they performed by a judiciary?
+Perhaps they are performed by a trusted third party.
+Perhaps they are performed by a trusted physical apparatus.
+But then again, why does one want
+to help the prisoners in this setting?
+What is the proper interpretation
+of the game now that we have a quantum set of strategies?
+Nevertheless, this example demonstrates
+some of the principle ideas used in introducing
+quantum strategies into classical games.

@@ -1,0 +1,43 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-8-pqpenny.txt
+#
+# Captions for 8.421x module
+#
+# This file has 33 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+We now consider a very simple quantum
+game called PQ Penny Flip Over, introduced
+by David Meyer in 1998.
+This game involves two players, Picard and Q.
+They flip a coin.
+The coin is known to start out in tails.
+Q gets to flip first, if he so desires.
+P then flips, then Q. Q wins if the penny ends up heads
+and Q loses if the penny ends up tails.
+We may model this game with the following payoff matrix.
+Q is given two moves, each of which
+is either a flip or a no flip.
+P gets one move.
+There are eight possible payoff values.
+This game has no Nash equilibrium.
+The best strategy for Q turns out
+to be a mixed strategy, meaning that it
+is a statistical mixture of doing no flip
+or a flip with probability 1/2 On average, the payoff for Q
+will be zero.
+On the other hand, because Q is clearly a quantum being,
+Q can put the coin in a superposition state.
+Instead of merely flipping the coin,
+Q can apply a Hadamard operator to put the coin
+in a superposition of tail and head.
+P is classical, so he can only perform a flip,
+modeled as an X operator, or no flip, an identity operator.
+The winning strategy for Q is thus
+to perform two Hadamard operations,
+such that it becomes irrelevant whether P flipped the coin
+or not, thus leaving the coin always in the head
+state, in the end, once it is measured,

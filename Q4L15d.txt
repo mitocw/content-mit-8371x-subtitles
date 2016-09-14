@@ -1,0 +1,106 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L15d.txt
+#
+# Captions for 8.421x module
+#
+# This file has 96 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The clean, quantum, bit commitment protocol fails.
+We will now see that all quantum bit commitment protocols fail.
+The most general possible protocol
+involves multiple rounds and not just a single round,
+as was the case in the clean protocol.
+Alice may perform a measurement, shown here as m j 1.
+Bob may perform another measurement shown here
+as m j 2.
+And what Bob does may depend on classical communication
+from Alice, shown here as j 1.
+Then Alice may be asked to perform yet another step, shown
+here as m j 3.
+And that may depend on a message from Bob, shown here as j 2.
+And so forth, with multiple rounds going
+back and forth between Alice and Bob.
+Shown here is the dividing line.
+And let me outline in green what Bob's steps are.
+The key to analyzing such a multi-round protocol
+is to show how a single round, say
+which converts between psi and phi,
+may be reduced to something simpler.
+We use here a Lemma, known as the Lo-Chau reduction.
+Suppose the transformation between psi and phi
+can be done using local operations
+and classical communication.
+That is, no quantum communication,
+and no entanglement creating steps.
+The Lemma then holds that this transformation between psi
+and phi can also be performed by a simpler equivalent
+circuit, where Alice performs a measurement,
+or generalized quantum operation n sub j,
+followed by Bob performing a unitary operation u sub j.
+This unitary may depend on a message from Alice
+and we will show how this transforms between psi and phi.
+The key step in showing this Lemma
+is to prove that any measurement by Bob
+can be simulated by Alice working locally.
+We prove this by starting with our friend
+the Schmidt decomposition, here written with lambda sub
+k, a sub k, and b sub k.
+In this basis, let Bob's measurement quantum operators
+b m sub j, with the matrix elements m sub j kl.
+Note how this operator maps b sub l to b sub k.
+Acting on psi, Bob's measurement produces
+psi sub j, a superposition involving
+the measurement matrix elements, as well as a sub l,
+and b sub k.
+a sub l appears because of the delta function
+that arises from matching b sub l, and b sub k.
+The jth measurement result occurs
+with probability given by a sum over kl lambda sub l,
+and the matrix element m j k l squared.
+Suppose that instead of Bob measuring m, Alice measures n.
+Let this be n sub j, which looks like m sub j,
+but has matrix elements a sub k, a sub l,
+instead of b sub k, b sub l.
+This operator, measured by Alice locally,
+would produce a state psi tilda sub
+j, which is a sum over matrix elements and a sub k, b sub l.
+The probability of the jth measurement result occurring
+would be a sum over a kl of matrix elements squared.
+And it turns out to be exactly the same as p sub j.
+These states, though, are slightly different.
+Previously, we had a sub l, but now we have a sub k.
+These are different, but it turns out
+that psi tilda sub j has the same Schmidt
+decomposition as psi sub j.
+This is evident by inspection because the two states are
+the same under a relabelling of a sub k, and a sub l,
+and b sub k, and b sub l.
+This remapping is an operation which may be performed locally
+by unitaries.
+Call these u sub i, and u sub j.
+And these unitaries map between psi sub j, and psi tilda sub j.
+Let us absorb u into the definition of n prime.
+We have thus shown that a measurement of m sub
+j by Bob, can be equivalently done by Alice performing n sub
+j prime, and then sending Bob a message via which
+he performs v sub j.
+Repeating this reduction equivalence thus
+leads to the general conclusion that a multiple round quantum
+bit commitment protocol, say with Alice measuring, Bob
+measuring, and back and forth, can always
+be reduced to a single round where
+Alice does one measurement and Bob does
+another unitary transform.
+This single round protocol is exactly the clean qubit quantum
+bit commitment protocol.
+And since we have shown that protocol to be insecure,
+then a perfectly secure quantum bit commitment protocol
+is thus impossible.
+I leave you to dwell on why this is the case
+and what ramifications it might have for other quantum
+protocols or how this might call for different definitions
+for bit commitment.

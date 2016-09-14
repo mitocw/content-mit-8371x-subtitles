@@ -1,0 +1,109 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L15b.txt
+#
+# Captions for 8.421x module
+#
+# This file has 99 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Can bit commitment be realized securely
+using quantum protocols?
+Consider the following quantum scheme.
+Alice starts by creating a random classical bit string
+a of n bits.
+She then performs a Hadamard depending
+on whether b is 0 or 1.
+b is a single bit which we will refer
+to as being Alice's secret.
+She sends the n qubits to Bob, who
+then performs a controlled Hadamard based
+on the random classical bit string b prime.
+This has n bits and it acts on the n
+qubits which are measured to produce the bit string a prime.
+Note that I have used tildas to indicate bit strings here.
+This part of the protocol represents the commit phase.
+For the opening phase of bit commitment,
+Alice reveals the bit string, a, and her secret, b.
+B b then checks to see if a prime is
+equal to a on all bits, k, such that b prime is equal to b.
+The security claim for this protocol
+is that A's probability of cheating
+successfully drops exponentially with some security parameter,
+s, where the resources required are polynomial in s.
+An argument why this protocol is secure
+first notes that this protocol is hiding.
+Bob clearly cannot determine the secret, b, from what he has,
+the density matrix rho sent by Alice,
+because rho is a statistical mixture equally weighted of 0 0
+1 1 plus plus and minus minus.
+That is rho is the identity matrix.
+Clearly rho alone has no information about b.
+We might also argue that this protocol is binding,
+that is that A cannot change her secret b after the commit
+phase.
+This is evident from how Bob can detect
+attempted cheating by Alice.
+To be explicit, here is a table showing all the possibilities
+in the protocol.
+We have Alice's parameters a and b, the state sent by Alice,
+Bob's parameter b prime, the probability Bob measures
+0 and 1, and the probability that Bob's measurement
+when b equals b prime leads to a prime being equal to a.
+Now a and b are both random, and thus we
+have four possibilities of equal probability.
+They correspond to Alice sending 0, 1, plus, or minus to Bob.
+If Bob chooses b prime to be equal to b, just by chance,
+that means Bob measures in the same bases
+in which b is encoded.
+So there is no uncertainty in the probabilities of obtaining
+0 and 1, as shown here.
+a prime is always equal to a.
+Now there are four more possibilities.
+Same situation for Alice, but Bob chooses the opposite of b.
+In this case, the probability of measuring 0 or 1
+is uniform at 1/2 each, because now Bob
+is measuring in the wrong bases all of the time.
+Thus the probability of a prime being equal to a is now 1/2.
+These four cases where b prime is not
+equal to b is exactly what happens
+when Alice tries to cheat and announces
+a b which is opposite of what she actually
+encoded her data using.
+If Alice cheats, because Bob chooses b prime at random,
+then with a fixed probability bounded away from 0,
+Bob can detect this cheating on each bit transacted.
+For a finite number of bits, say n
+being 2 s, therefore the probability of cheating
+not being detected drops exponentially with s.
+This protocol thus seems to be compelling as an implementation
+of bit commitment.
+However, it turns out that Alice can cheat in a different way.
+And this is done using entanglement.
+Let's take a look at Alice's entanglement cheating strategy.
+The basic idea arises from purifying Alice's protocol
+to replace randomness with entangled pairs.
+Suppose Alice starts out with n EPR pairs, 0 0 plus 1 1.
+She sends half of each of these EPR pairs to Bob.
+The density matrix of half of an EPR pair
+is identity, exactly what hiding requires.
+Alice does not decide upon b until later
+in the opening phase.
+At that point, she chooses b, performs a Hadamard depending
+on b, and then measures.
+This gives her a tilda.
+She finds out a tilda instead of choosing a tilda.
+This act of deferring the choice of b and production of a tilda
+until the opening phase clearly violates
+the binding requirement of the bit commitment protocol.
+This flaw is known as the EPR attack.
+It leaves open the question of a potential secure quantum bit
+commitment protocol.
+Maybe the protocol needs to be more
+complicated than this simple version.
+It could have multiple rounds, for example.
+Or it might involve non-orthogonal states instead
+of just 0 1 plus and minus.
+Let's see, is secure quantum bit commitment possible?

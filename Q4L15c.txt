@@ -1,0 +1,116 @@
+#
+# File:   content-mit-8371x-subtitles/Q4L15c.txt
+#
+# Captions for 8.421x module
+#
+# This file has 106 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+We now show that a simple version of quantum bit
+commitment, known as clean quantum bit commitment,
+is insecure.
+This includes one round and non-orthogonal states,
+so a slight generalization of what we just saw.
+Just as in the very simplest protocol,
+A chooses her secret b and two states, which
+produce what she sends to Bob.
+First is psi AB0, which is a superposition
+over an orthogonal set of states on A and another set of states
+phi to send to Bob.
+We also have psi AB1 for the case when B is equal to 1.
+The ei and ej prime states are orthogonal to each other
+and play the role of A tilde in randomizing
+what is sent to Bob.
+The states phi i and phi j prime are non-orthogonal potentially
+and are the states sent to Bob.
+This mapping of classical parameters to states
+is public and plays the role of the one-way function.
+In this first step of the commit phase,
+A measures her first register, the ei and ej prime,
+obtaining i or j.
+In the second step, Alice commits
+by sending Bob the state psi, which is either phi i or phi j
+prime.
+These two steps may be illustrated
+as a quantum circuit.
+Alice first performs a measurement
+on half of the states.
+That's the ei, ej part.
+And then Bob potentially performs a unitary transform
+on what he receives from Alice.
+This is the boundary between Alice and Bob,
+and later we will see why Bob's unitary transform is
+meaningful to include.
+In the opening phase, Alice provides b, her secret,
+as well as i or j, the index on to the state sent to Bob.
+Bob then verifies in the fourth step
+by checking to see whether Alice's previous sent
+state, phi i or phi prime j, agrees
+with the state created by B, i, and j, that is, the state psi.
+For this protocol to be secure, we
+needed to have the desired properties
+of hiding and binding.
+For hiding, we need Bob's density matrix rho sub
+B to be the same and independent of Alice's secret b.
+To be binding, the protocol must be such that Alice cannot
+change her secret b after the commit phase.
+I now claim that this protocol cannot be simultaneously hiding
+and binding.
+In other words, it is insecure.
+Historically, this result from Dominic Mayers, HF Chau,
+and Hoi-Kwong Lo was a milestone in our understanding of quantum
+bit commitment and quantum particles
+utilizing entanglement.
+The proof of this no-go theorem utilizes our familiar friend,
+the Schmidt decomposition.
+The bipartite state, psi AB, has a Schmidt decomposition
+involving e sub k, which is already orthogonal,
+and f sub k, which is orthonormal by virtue
+of the decomposition.
+Thus we may rewrite psi AB0 as a sum over Schmidt coefficients
+lambda sub k, ek, and fk orthonormal
+and psi sub AB1 similarly with ek prime and fk prime.
+How are fk and fk prime related?
+It turns out that hiding places a strong requirement on fk
+and fk prime.
+The density matrix when Alice's secret b is equal to 0
+is given by this partial trace over A's state.
+Writing this in terms of the Schmidt decomposition
+and recognizing that e sub k is a complete set of states
+gives us a matrix diagonal in the f sub k basis.
+When we do the same for rho sub B1,
+we find that it is the same expression
+but with f sub k prime and lambda sub k prime.
+These two density matrices must be the same.
+And thus lambda equals lambda prime and f
+equals f prime for all k.
+Let's use this equality and Schmidt decomposition
+to rewrite our two states.
+Psi AB0 is thus the Schmidt coefficients with ek and fk,
+and psi 1 is the same state with ek prime and fk.
+Because of the requirements of hiding,
+the Schmidt coefficients and the state sent to Bob are the same.
+Is this protocol then binding?
+Now consider a unitary transform, which maps e sub k
+to e sub k prime.
+This acts on the qubits that Alice keeps locally to herself.
+U sub A is thus something Alice can choose
+to do without telling Bob.
+And in fact, this let's Alice change
+psi AB0 to psi AB1 and vice versa.
+And again, Alice this does this without touching Bob's state.
+Therefore, we conclude that this protocol
+violates the second requirement, namely that of binding.
+Alice can cheat in her commitment
+without Bob being able to detect the cheating.
+In fact, this cheating is a straightforward generalization
+of the EPR attack we saw on the simple protocol.
+Can the clean quantum bit commitment protocol
+be fixed, perhaps by adding multiple rounds
+or some other kind of generalization?
+It turns out not to be possible.
+No generalization of this protocol
+is known to be secure today.
