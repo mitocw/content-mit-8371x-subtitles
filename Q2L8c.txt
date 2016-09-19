@@ -13,7 +13,7 @@ Cluster states provide a vivid example
 of measurement-based quantum computation.
 A cluster state is a graph with nodes connected by links.
 This may be in a one-dimensional topology,
-a two-dimensional policy, or any other topology.
+a two-dimensional topology, or any other topology.
 Each node in this graph represents a qubit,
 and each link in the graph represents a controlled phase
 or a controlled Z gate.
