@@ -29,9 +29,9 @@ we will largely be interested in discrete Hilbert spaces.
 Keep in mind that these Hilbert spaces
 are complex vector spaces with an inner product that
 is defined.
-States that are thus vectors, such as this zero state being
-1,0 and the one state being 0,1, two component factors which
-are spinners, or are otherwise known as qubits
+States are thus vectors, such as this zero state being
+1,0 and the one state being 0,1, two component vectors which
+are spinors, or are otherwise known as qubits
 in quantum information science.
 So that tells us about states.
 Let us now move on to Postulate 2, which talks about gates.
@@ -52,10 +52,10 @@ Thus, let us consider a few examples of quantum gates.
 Specifically, let us look at the action of a few common quantum
 gates on qubits.
 Recall the state zero.
-The x gate-- 0,1, 1,0, a two by two
+The X gate-- 0,1, 1,0, a two by two
 matrix-- acts on the zero state to give the one state,
 as is shown by this simple matrix multiplication.
-Thus, this x gate may be considered the quantum analog
+Thus, this X gate may be considered the quantum analog
 of the classical NOT gate.
 A really uniquely quantum gate is this transform,
 which is described by the two by two matrix 1,1, 1, minus 1.
@@ -89,7 +89,7 @@ Thus, the first column and row act
 on the top-most label, and the bottom right
 acts on the bottom label.
 We can therefore work out straightforwardly by a matrix
-multiplication that the action of U [INAUDIBLE]
+multiplication that the action of U on psi
 is to flip the labels 2 and 3.
 This should not be a surprise, because after all U
 is a permutation matrix.
@@ -120,7 +120,7 @@ The Ms need not be square.
 For example, Ms may be projection operators.
 The operator formed by the product of two Ms
 may be familiar to you from a different context.
-They are also known as positive operator value measures.
+They are also known as positive operator-valued measures.
 Measurements are something we will return to a great deal
 later.
 So for now, let us move on to the fourth postulate,
@@ -151,8 +151,8 @@ Thus, this expression yields a superposition
 over the four basis vectors.
 Incidentally, it is common and convenient to represent
 these binary vectors often by integers.
-0,0 is 0.
-0,1 is 1, et cetera, such that we may write this superposition
+00 is 0.
+01 is 1, et cetera, such that we may write this superposition
 state also as a superposition of 0, 1, 2, and 3.
 An expression common in quantum information science
 is thus the use of n Hadamard operators acting on n qubits,
@@ -180,8 +180,8 @@ So let's take two qubits, both in their zero state.
 And we'll represent this transform
 by the following circuit diagram.
 That circuit state was known as a controlled NOT gate.
-The first qubit controls whether or not
-an x gate happens to the second qubit, the one on the bottom.
+The first qubit controls whether a NOT,
+an X gate, happens to the second qubit, the one on the bottom.
 If we replace the first part of this circuit
 with a Hadamard acting on a zero state,
 then we actually get something far more non-trivial.
