@@ -1,0 +1,27 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-3-widgets2.txt
+#
+# Captions for 8.421x module
+#
+# This file has 18 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+For this payoff matrix, it turns out
+there is no dominant strategy.
+However, there is something suggestive of an interesting
+strategy, because there is a local maximum at the $1.00,
+$1.00 price point.
+At this local maximum point, neither party
+has an incentive to change their price.
+This concept of a local maximum is an important one
+in game theory.
+It is a Nash equilibrium.
+A Nash equilibrium is a set of strategies,
+one for each player, such that no player has incentive
+to change his or her action.
+In many ways, a Nash equilibrium is a self-enforcing agreement.
+We can thus recognize, in this game, the $1.00,
+$1.00 price point as a Nash equilibrium.

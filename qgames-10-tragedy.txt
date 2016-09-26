@@ -1,0 +1,68 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-10-tragedy.txt
+#
+# Captions for 8.421x module
+#
+# This file has 59 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+The Tragedy of the Commons is a classic game
+which we illustrate here using an example from McCain's
+book on game theory.
+Consider the question of whether an individual, along the many,
+would be better off commuting by car or by bus.
+Both must share the same roads, and the reward to an individual
+is a faster commute.
+This scenario can be described by a proportional game
+model where the payoff, for example, the speed of commute,
+is a continuous variable related proportionally
+to the proportion of commuters by car.
+When everyone commutes by car, the roads are clogged,
+making for a lower payoff per individual,
+versus when nobody commutes by car.
+Say the same proportionality also holds for buses.
+However, buses travel slower than cars.
+And thus we observe in this simple model
+that car commuters always see a higher payoff, that is a faster
+commute, than bus commuters.
+The dominant strategy is thus to commute by car.
+Unfortunately, this leaves all the roads congested, causing
+a negative payoff for everyone.
+This model is not very realistic since each bus
+carries more people than a car.
+And since a single bus is perhaps
+less impacted by congestion than many individual cars,
+we may thus improve our model by having
+the slope of a car commuter line be steeper
+than that for bus commuters.
+In this more realistic scenario, there is no longer
+a dominant strategy.
+Instead what we find is a Nash equilibrium at the point Q
+where the two lines intersect.
+This is a Nash equilibrium point because no one
+can be individually better off switching at that point.
+If a bus commuter switched to a car, for example,
+he would have a slower commute.
+Observe though that the payoff for each person
+would be higher if everyone were to commute by bus, relieving
+the roads of all congestion.
+However, as long as individuals act
+to maximize their individual payoff,
+such global system optimums are not attained.
+For example, in the scenario, if nearly everyone
+commuted by bus, an individual could
+switch to commuting by car for an even faster commute.
+This is thus an example of the Tragedy of the Commons,
+illustrating how all common-property resources,
+roads in this case, tend to be over exploited and thus
+degraded.
+The traditional approach to avoid such tragedy
+is to involve a trusted third-party regulator,
+such as governments, who restrain over use.
+Such solutions bring their own issues.
+Could perhaps trusted third parties
+be supplemented or replaced by trust
+in quantum mechanics, or at least an apparatus

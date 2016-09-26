@@ -1,0 +1,87 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-1-intro.txt
+#
+# Captions for 8.421x module
+#
+# This file has 78 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Quantum games are an extension of classical game
+theory introducing new quantum resources and quantum
+protocols.
+We introduce this subject by considering
+five topics, classical game theory, a quantum game known
+as PQ Penny Flipover, a quantum version
+of the classical Prisoner's Dilemma game,
+the classical Tragedy of the Commons,
+and the quantum version of known as a quantum public goods game.
+Let us begin with some history, context, and definitions
+from classical game theory.
+Modern game theory was founded by Von Neumann and Morgenstern
+in the 1940s and 1950s.
+What it is is a multi-person decision theory,
+an analysis of the decision-making process,
+assuming participants in the game act rationally.
+The idea is that each participant or person
+in the game seeks to maximize the rewards.
+These rewards maybe profits, incomes, subjective benefits,
+or other kinds of rewards.
+A classic example was provided in the 1950s by Albert Tucker.
+In this example, two burglars are caught
+and are separated by police so that the two may not
+talk with each other.
+These two burglars have the following options.
+When interviewed by the police, they
+may choose to cooperate with their partner in crime,
+or they may defect from that partnership.
+Consider the possible outcome.
+These are recorded in what is known as the payoff matrix.
+Let the burglars be named Al and Bob.
+Al may cooperate or defect, and Bob may cooperate or defect.
+There are four possibilities.
+The payoffs to Bob may be three or five
+if Al cooperates or zero or one if Al defects.
+On the other hand, the payoffs to Al, shown here in green,
+are three or zero or five or one.
+These numbers may be interpreted as follows.
+Let us call three the reward.
+Let us call one punishment.
+Let us call five the tempting payoff
+and zero the sucker's payoff.
+Given these payoffs which are known to both Al and Bob,
+what should each one of them do not knowing
+what the other one will do?
+Each burglar's goal is to maximize their own payoff.
+And remember, the rule is no communication
+is allowed between the two burglars.
+Consider what would happen if the two burglars cooperated.
+Then clearly, for example, Bob could get a higher payoff
+by defecting instead of cooperating.
+Similarly, Al could get a higher payoff also by defecting.
+But if Al defected, then Bob would do better
+by also defecting.
+And thus, the clear, optimum choice for each player
+is to defect and both then defect their partnership.
+The choices that each player makes in a game
+are known as a strategy.
+In this case, there is a name to the strategy that is
+employed by the two burglars.
+It is known as the dominant strategy.
+A dominant strategy is one which earns a player a larger
+payoff than any other strategy, regardless
+of what other players do.
+When a set of dominant strategies,
+one for each player, exists, this
+is known as a dominant-strategy equilibrium.
+In this game, we have such a case
+where the dominant-strategy equilibrium is for both players
+to defect.
+This example is a classic problem
+in game theory known as the Prisoner's Dilemma.
+Both prisoners would be better off
+if they had cooperated with each other,
+but because of the incentive to defect from each other,
+each one of them ends up defecting, not knowing
