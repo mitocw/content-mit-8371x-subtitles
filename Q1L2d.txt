@@ -9,7 +9,7 @@
 #
 #----------------------------------------
 
-The operators sum representation is
+The operator sum representation is
 one of the most important tools in quantum error correction.
 This theorem connects what we have
 done with the system environment model and the quantum
@@ -22,13 +22,13 @@ The theorem states that this map is a valid quantum operation.
 I encourage you to verify it for yourself.
 Thus what we may do is to employ this representation of quantum
 operations for all quantum operations, that
-is, all black box operations or maps taking row to row prime.
+is, all black box operations or maps taking rho to rho prime.
 And there will exist a set of quantum operation elements
 to describe any such black box transformation.
 We do not prove that here, but it is fairly straightforward.
 Furthermore, there also exists by dint
 of the system environment model-- which
-we considered-- a sister environment model
+we considered-- a system environment model
 for any quantum operation.
 Recall that what this means is that any quantum operation may
 be represented by the input state interacting unitary
@@ -44,14 +44,14 @@ of quantum error correction.
 Let us consider some examples of the operator sum
 representation.
 A very simple example is the simple unitary transform.
-Here the operation elements are clearly just u.
+Here the operation elements are clearly just U.
 A second example is measurement.
 Consider a projective measurement,
-where the measurement operators are the projectors, p sub k.
+where the measurement operators are the projectors, P sub k.
 The operator sum representation of this measurement operation
 simply has operation elements given by the projector.
 Notice, by the way, the projectors
-conjugate the [INAUDIBLE] themselves.
+conjugate to produce themselves.
 A third example is given by this quantum circuit.
 And this will be the first illustrative example
 of a system environment interaction
@@ -60,17 +60,17 @@ So the black box contains two qubits
 interacting via a controlled rotation operator.
 The second qubit is our environment.
 The first qubit is our system, which produces
-e of [? rho ?] as the output.
+E of rho as the output.
 What is the quantum operation described by this?
 Recall that the rotation operation acting
 on a single qubit is a 2 by 2 matrix, which is
 a rotation around the y-axis.
 The elements are thus real valued,
-and are given by [? cosines ?] and [? sines ?] if they
-[? are to be ?] divided by 2.
+and are given by cosines and sines of
+theta divided by 2.
 For simplicity of notation, let lambda equal sine squared
-theta, divided by 2.
-If we denote this box by u, then we may write the Transform.
+theta divided by 2.
+If we denote this box by U, then we may write the transform.
 Again, this is a two qubit transform as a four
 by four matrix.
 This four by four matrix has basis states
@@ -84,7 +84,7 @@ That is what happens in this quadrant where s is equal to 0,
 the identity matrix appears.
 In the quadrant where the system is 1,
 we find that the target, the environment qubit
-is rotated by the [? ry ?] operation.
+is rotated by the Ry operation.
 Here I write it in terms of lambda simply for conciseness.
 The rest of the terms are off diagonal,
 and thus are simply going to be 0's.
@@ -121,14 +121,14 @@ We may see why that is true by applying this quantum
 operation to an input density matrix, which is arbitrary,
 a b b-star, c.
 E of rho, the quantum operation acting on this input state
-is given by a sum over two terms, one with e0
-and the other with e1 as the operation element.
+is given by a sum over two terms, one with E0
+and the other with E1 as the operation element.
 Let's do this step-by-step by multiplying the first two
-major series in each of the elements of the sum first.
-For e0 times row, we find this matrix.
-And then we're left over with e0 [? dagger ?] on the right.
+matrices in each of the elements of the sum first.
+For e0 times rho, we find this matrix.
+And then we're left over with E0 dagger on the right.
 And for the second term in the sum
-we obtain this matrix, with the e1 [? dagger ?] on the right.
+we obtain this matrix, with E1 dagger on the right.
 Completing this little bit of matrix algebra,
 we find that the output density matrix is simply
 the input density matrix with the off-diagonal terms
@@ -137,33 +137,33 @@ Moreover, if square root of 1 minus lambda
 is an exponentially decaying function of time--
 which it often is in real practice--
 then we find that the off-diagonal elements
-decay with a rate which we call t2, the phase damping time.
+decay with a rate which we call T2, the phase damping time.
 So this is a very interesting example.
 Let us build on this example with a similar quantum circuit
 and see how the operation elements change.
 So recall that the phase damping black box quantum circuit
 had a controlled rotation about the y-axis,
 happening from the system to the environment.
-Let us add to the circuit a controlled naught gate, which
+Let us add to the circuit a controlled NOT gate, which
 happens between the environment and the system
 after the controlled rotation.
-So both the controlled rotation by y, and the control not
+So both the controlled rotation by y, and the controlled NOT
 operations are in this black box.
 Let us now write the operation elements.
-For e0, we find the same thing as we obtained for phase
+For E0, we find the same thing as we obtained for phase
 damping because the environment does not change, only
 when the system qubit is in the 0 state.
 And when the environment is in the 0 state,
 the second controlled naught does nothing.
-So e0 is the same as it was in the phase damping case.
-For e1, the operation element is the same
-as it was for phase damping except that a x operation,
-and naught gate has to happen to the system
-after the phase damping e1 operation element.
-That is because the controlled naught
+So E0 is the same as it was in the phase damping case.
+For E1, the operation element is the same
+as it was for phase damping except that a X operation,
+and NOT gate has to happen to the system
+after the phase damping E1 operation element.
+That is because the controlled NOT
 acts due to the environment being in the 1 state.
-Therefore e1 can be read off simply
-as being 0 square root of lambda, 0 0.
+Therefore E1 can be read off simply
+as being 0, square root of lambda, 0 0.
 This quantum operation is known as amplitude damping.
 It reflects the physical process of energy loss from the system.
 We can see that by doing the same thing we did with phase
@@ -178,7 +178,7 @@ The off-diagonal terms are just as we found for phase damping.
 The diagonal terms now also change.
 And the diagonal terms have a very meaningful change in terms
 of an exponential for lambda.
-Now using t1 instead of t2, what we find
+Now using T1 instead of T2, what we find
 is that the diagonal elements decay
 such that the left top element goes to 1,
 and the bottom right element goes to 0.
@@ -189,11 +189,11 @@ The diagonal term decay is the loss of energy from the system.
 That is the amplitude decay term of this process.
 Note also, that the off-diagonal terms
 decay at twice the rate of the diagonal terms.
-That is, the effective t2 is 2 times t1.
+That is, the effective T2 is 2 times T1.
 This process is the physical process
 of loss of energy from a qubit.
 We have thus modeled face damping and amplitude damping,
 two fundamental physical processes causing errors
 to qubits using the operator sum representation.
 We will next see how we may reinterpret
-these representations in terms of errors
+these representations in terms of errors, so that we may correct them with quantum error correction.

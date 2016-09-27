@@ -30,7 +30,7 @@ measure the environment immediately.
 But, in fact, the environment may be measured
 after a change of basis.
 That may be implemented by a unitary operation shown here
-as u prime.
+as U prime.
 Moreover, it should be evident that the resulting map should
 not change when the basis of the measurement of the environment
 changes.
@@ -45,8 +45,8 @@ operation using elements F. That is, F rho F dagger.
 And now, let us substitute in the relationship with E. So,
 we have a unitary transform of E times rho
 times the daggered version of this.
-So, we have E dagger k prime u complex conjugated.
-Here, we have u dagger u, and that simply
+So, we have E dagger k prime, U complex conjugated.
+Here, we have U dagger Uu, and that simply
 is the identity represented here as a Dirac delta
 function over k and k prime.
 That causes the sum to keep only the diagonal terms of the sum,
@@ -60,5 +60,5 @@ process into one in which one has,
 with some probability, nothing happening to the system.
 That is, alpha I. Or, with probability 1 minus alpha,
 a complete phase flip of the qubit,
-namely, a poly(z) operation.
-This is a natural interpretation made
+namely, a Pauli Z operation.
+This is a natural interpretation made for errors and the formalism of error correction.

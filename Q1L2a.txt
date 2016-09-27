@@ -14,7 +14,7 @@ using four postulates.
 However, for quantum error correction we need more.
 We need classical statistics.
 Consider this question.
-With probability 1/2 you were given either psi or fi.
+With probability 1/2 you were given either psi or phi.
 How do you describe this state?
 It is not a single quantum state, but rather
 a statistical combination of two possible states
@@ -32,7 +32,7 @@ and this state we may draw as this quantum circuit which
 originates from a single place.
 The two qubit state will be this particular superposition,
 and have parts A and B. A will be the first label
-and B will be the second label in each of the cats.
+and B will be the second label in each of the kets.
 The question is, suppose B measures B's part of the state.
 What describes A's part of this bipartite quantum state?
 This state will be a statistical mixture,
@@ -56,7 +56,7 @@ The question, again, is what is A's state?
 A will see something that we may interpret as being different,
 depending on what B's measurement result is.
 The state before B's measurement is written here.
-It is a superposition where the second cat has had a Hadamard
+It is a superposition where the second ket has had a Hadamard
 operation applied to it.
 And therefore we can read off from this
 what A's state is going to be.
@@ -181,12 +181,12 @@ with probabilities P and states psi.
 It turns out that this unraveling is not unique,
 in general, for mixed states.
 For a mixed state the density matrix
-may also be unraveled with probabilities P and states fi,
+may also be unraveled with probabilities P and states phi,
 under the following condition.
 That is, that the square root-- in a sense--
 of this decomposition-- square root of P and state psi--
 is related by a unitary transform
-to the other decomposition, with square root Q and states fi.
+to the other decomposition, with square root of Q and states phi.
 The physical origin of this infinity of possibilities
 of unravelings may be interpreted
 as arising from the fact that it doesn't matter which
