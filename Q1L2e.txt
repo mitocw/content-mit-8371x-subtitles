@@ -46,7 +46,7 @@ And now, let us substitute in the relationship with E. So,
 we have a unitary transform of E times rho
 times the daggered version of this.
 So, we have E dagger k prime, U complex conjugated.
-Here, we have U dagger Uu, and that simply
+Here, we have U dagger U, and that simply
 is the identity represented here as a Dirac delta
 function over k and k prime.
 That causes the sum to keep only the diagonal terms of the sum,
