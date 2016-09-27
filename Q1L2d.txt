@@ -154,11 +154,11 @@ For E0, we find the same thing as we obtained for phase
 damping because the environment does not change, only
 when the system qubit is in the 0 state.
 And when the environment is in the 0 state,
-the second controlled naught does nothing.
+the second controlled NOT does nothing.
 So E0 is the same as it was in the phase damping case.
 For E1, the operation element is the same
 as it was for phase damping except that a X operation,
-and NOT gate has to happen to the system
+a NOT gate has to happen to the system
 after the phase damping E1 operation element.
 That is because the controlled NOT
 acts due to the environment being in the 1 state.
@@ -192,7 +192,7 @@ decay at twice the rate of the diagonal terms.
 That is, the effective T2 is 2 times T1.
 This process is the physical process
 of loss of energy from a qubit.
-We have thus modeled face damping and amplitude damping,
+We have thus modeled phase damping and amplitude damping,
 two fundamental physical processes causing errors
 to qubits using the operator sum representation.
 We will next see how we may reinterpret
