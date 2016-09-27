@@ -50,7 +50,7 @@ Whereas the reference part has nothing acting on it.
 Despite E only acting on this subsystem of the density
 matrix, it must still produce a valid output density matrix.
 And thus this output state must be positive.
-We can further understand this criteria
+We can further understand this criterion
 by looking at a specific example.
 Consider this particular map which acts on a single qubit,
 say abcd, and it transforms that qubit
@@ -59,17 +59,17 @@ It is straightforward to see that a positive density
 matrix is transformed to a positive density matrix
 by this transpose map.
 However, if we look at the operation of this map on a 2
-qubit system where the first it has nothing happening to it,
+qubit system where the first qubit has nothing happening to it,
 we may then, by looking at the 4 by 4 matrix which corresponds
 to this transform I tensored with E,
 see that the operation of the trace acting
-on the second cubit flips these off diagonal elements
+on the second qubit flips these off diagonal elements
 in each local quadrant of the 4 by 4 matrix.
 This is known as a partial transpose operation.
 Now, let us apply this partial transpose operation
 to a specific density matrix, which is this 1001, 0000, 0000,
-10001 state.
-That is, the density matrix for the two qubits
+1001 state.
+That is, the density matrix for the two qubit
 state 0 0 plus 1 1 normalized.
 The partial transpose produces this output density matrix
 state.

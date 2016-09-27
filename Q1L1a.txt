@@ -40,7 +40,7 @@ isolated systems, and thus will be unitary transforms.
 Specifically, the unitary transform
 will govern how a state psi evolves from the initial time,
 t1, to some final time, t2.
-Psi 1 and psi 2 and thus related by a matrix U which
+Psi 1 and psi 2 are thus related by a matrix U which
 multiplies a state vector psi 1 to produce a state vector
 psi 2.
 This unitary transform has a property
@@ -64,7 +64,7 @@ The Hadamard gate acts on 0 to give
 a superposition of 0 and 1, an equal superposition
 with coefficients 1 over square root of 2.
 That is, the two-component vector 1 over
-square to the 2, 1 over square to the 2.
+square root of 2, 1 over square root of 2.
 You can check for yourself that the Hadamard operator
 is its own inverse.
 OK.

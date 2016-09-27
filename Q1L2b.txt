@@ -21,13 +21,13 @@ but non-unitary, as well.
 The model which we will employ will
 be one which has two parts.
 We will suppose that we have a system, which
-may start at a pure state, say, size for now.
+may start at a pure state, say, psi for now.
 And this system evolves in a unitary manner,
 but not just by itself, rather, it
 is coupled to another state, which
 we will call the environment.
 Let us say the initial state of the environment
-is a cat E, a pure state, but that need not
+is a ket e, a pure state, but that need not
 be a pure state, in general.
 The environment, let us say, is measured
 after this unitary transform.
@@ -37,7 +37,7 @@ and so forth, up through the dimension of the environment.
 The question is, what is the output state, rho?
 We may write the output state before the measurement,
 by understanding that the unitary transform gives
-us u times e times psi.
+us U times e times psi.
 It is convenient to invent some notation
 to describe this output state.
 We will use the circle plus symbol to represent "or."
@@ -52,8 +52,8 @@ over all possible measurement outcomes,
 where ek u e, we emphasize, is a matrix, an operator, which
 acts on psi.
 We call this operator an operation element.
-Historically, it is also called, sometimes, a cross operator.
-And this operator, e sub k, will play a principal role
+Historically, it is also called, sometimes, a Krauss operator.
+And this operator, E sub k, will play a principal role
 in our study of quantum error correction.
 We may also sometimes call them error operators.
 Concisely, therefore, we may write the output density
