@@ -1,0 +1,19 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-6-threep1.txt
+#
+# Captions for 8.421x module
+#
+# This file has 10 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Consider the following three-dimensional payoff
+matrix, with one player playing left right corresponding
+to the columns of a matrix, another player playing
+up down corresponding to the roles of the matrix,
+and a third plan playing A or B corresponding
+to the third dimension of the matrix.
+Let the payoff values be the numbers as shown here.
+What is the Nash equilibrium of this game?

@@ -1,0 +1,25 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-7-threep2.txt
+#
+# Captions for 8.421x module
+#
+# This file has 16 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+A Nash equilibrium strategy for this game is ULA.
+Looking at the payoff element for ULA
+we see that AB has no incentive to switch to B,
+LR has no incentive to switch to R,
+and UD has no incentive to switch to D.
+There is one thing unusual about this,
+however, which is that it is vulnerable to a coalition move.
+If LR and UD were to conspire with each other,
+then they would be able to force DRA to become an equilibrium.
+Note that starting from DRA, if AB were to switch to B, then
+LR and UD could perform a sequence of moves which would
+propel the system back to DRA.
+This emphasizes the fact that Nash equilibria are only
+unilaterally optimal.

@@ -1,0 +1,15 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-4-nash1.txt
+#
+# Captions for 8.421x module
+#
+# This file has 6 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Consider a game between two players,
+one who moves left right and another who moves up down.
+This is the payoff matrix.
+Given these payoffs, what is the Nash equilibrium?

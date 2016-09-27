@@ -1,0 +1,23 @@
+#
+# File:   content-mit-8371x-subtitles/qgames-5-nash2.txt
+#
+# Captions for 8.421x module
+#
+# This file has 14 caption lines.
+#
+# Do not add or delete any lines.  If there is text missing at the end, please add it to the last line.
+#
+#----------------------------------------
+
+Consider what happens if the players start with the DL
+strategy.
+From this point, it is clear that the LR player can
+gain a higher payoff by switching from L to R.
+Similarly, the up-down player can also gain a higher payoff
+by switching from down to up.
+In addition, if we had started from the up-right strategy
+both up and down could also switch strategies
+to either up-left or down-right to gain a higher payoff.
+Thus, we see that both up-left and down-right
+are Nash equilibria.
+That is, this game has two Nash equilibria.
