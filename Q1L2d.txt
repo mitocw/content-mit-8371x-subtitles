@@ -125,7 +125,7 @@ is given by a sum over two terms, one with E0
 and the other with E1 as the operation element.
 Let's do this step-by-step by multiplying the first two
 matrices in each of the elements of the sum first.
-For e0 times rho, we find this matrix.
+For E0 times rho, we find this matrix.
 And then we're left over with E0 dagger on the right.
 And for the second term in the sum
 we obtain this matrix, with E1 dagger on the right.
