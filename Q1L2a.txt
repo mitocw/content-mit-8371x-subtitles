@@ -208,4 +208,4 @@ leaving rho sub A as the final state.
 This concept of having infinite unravelings,
 and the interpretation of density matrices
 in purified forms will be key ideas
-in understanding the intuition behind quantum error
+in understanding the intuition behind quantum error correction.
