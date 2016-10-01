@@ -34,7 +34,7 @@ But there is more.
 It turns out that one must also allow for the output
 to be positive, even when the map is only operating
 on part of the system.
-Suppose we have a reference and a quantum systems R
+Suppose we have a reference and a quantum system R
 and Q. Then if E only acts on Q, then the output still
 must be positive, even though nothing
 was done to the reference part of the system.

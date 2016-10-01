@@ -61,7 +61,7 @@ operation applied to it.
 And therefore we can read off from this
 what A's state is going to be.
 A will see when B measures a 0 a superposition of root 3 over 4
-0 and root 1 over 4 1.
+|0> and root 1 over 4 |1>.
 If B measures a 1 instead, A's state
 will be different, with a minus sign instead of a plus sign.
 Now, this is another statistical mixture.
@@ -186,7 +186,7 @@ under the following condition.
 That is, that the square root-- in a sense--
 of this decomposition-- square root of P and state psi--
 is related by a unitary transform
-to the other decomposition, with square root of Q and states phi.
+to the other decomposition, with square root of q and states phi.
 The physical origin of this infinity of possibilities
 of unravelings may be interpreted
 as arising from the fact that it doesn't matter which

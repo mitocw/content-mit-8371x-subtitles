@@ -46,10 +46,10 @@ as a stochastic combination, where,
 when the measurement result is 0, we get e0 u e,
 and this is an operator which acts on psi.
 Or, if the measurement result is 1,
-we get e1 u e acting on psi, and so forth.
+we get e1 U e acting on psi, and so forth.
 This may be compactly written as a sum
 over all possible measurement outcomes,
-where ek u e, we emphasize, is a matrix, an operator, which
+where ek U e, we emphasize, is a matrix, an operator, which
 acts on psi.
 We call this operator an operation element.
 Historically, it is also called, sometimes, a Krauss operator.
@@ -65,8 +65,8 @@ must equal identity.
 We can check that this is true, explicitly,
 by substituting in the definition of E sub k,
 first using Ek dagger and then Ek.
-And then, noting that this term in the middle, the sum over Ek
-Ek, is identity, because this is a complete set of states
+And then, noting that this term in the middle, the sum over ek
+ek, is identity, because this is a complete set of states
 for the basis of the environment.
 Thus, this sum, overall, gives the identity operator,
 as desired.

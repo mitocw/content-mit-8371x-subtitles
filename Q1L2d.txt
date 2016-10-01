@@ -31,7 +31,7 @@ of the system environment model-- which
 we considered-- a system environment model
 for any quantum operation.
 Recall that what this means is that any quantum operation may
-be represented by the input state interacting unitary
+be represented by the input state interacting unitarily
 with an environment, which may start in its pure state,
 initial state, and then the environment
 is measured producing the resulting output density matrix
@@ -93,25 +93,25 @@ That gives us the four by four unitary matrix representing
 this black box operation.
 Given this unitary operation, our next natural step
 is to write down the operation elements
-e0 and e1 corresponding to the two possible measurement
+E0 and E1 corresponding to the two possible measurement
 outcomes of the environment qubit.
 Recall from our study of the system environment model
-that the operation element e sub k
-is defined as the matrix element of u between the environment
+that the operation element E sub k
+is defined as the matrix element of U between the environment
 state e sub k and the initial environment state.
-E0 is therefore the matrix element of u between 0 and 0,
+E0 is therefore the matrix element of U between 0 and 0,
 that is, the environment qubit does not change.
 Remember this is not a number, but rather an operator which
 acts on the system qubit.
 And we can read out what happens by looking at all the matrix
-elements of u, which have 0 and 0 for the environment qubit,
-and that gives us this upper left hand corner block of u.
+elements of U which have 0 and 0 for the environment qubit,
+and that gives us this upper left hand corner block of U.
 Copying these, we find that the operation on the system qubit
-is this matrix, 1 0 0 0 square root of 1 minus lambda.
+is this matrix, 1 0 0 square root of 1 minus lambda.
 Similarly, we may find E1.
-And this is the matrix element of u
+And this is the matrix element of U
 when e changes between 0 and 1.
-That is this bottom left corner of u.
+That is this bottom left corner of U.
 And reading off from this submatrix,
 we find that E1 is the operation 0 0 0 square root of lambda
 acting on the system qubit.
@@ -168,7 +168,7 @@ This quantum operation is known as amplitude damping.
 It reflects the physical process of energy loss from the system.
 We can see that by doing the same thing we did with phase
 damping-- namely apply this quantum
-operation to an arbitrary single qubit density matrix--
+operation to an arbitrary single qubit input density matrix--
 the result is that the output of this quantum operation
 is this transformed density matrix state.
 Recall that a plus c is equal to 1.
@@ -176,9 +176,9 @@ And therefore, we can write the diagonal elements just
 with terms with c.
 The off-diagonal terms are just as we found for phase damping.
 The diagonal terms now also change.
-And the diagonal terms have a very meaningful change in terms
-of an exponential for lambda.
-Now using T1 instead of T2, what we find
+And the diagonal terms have a very meaningful change. In terms
+of an exponential for lambda,
+now using T1 instead of T2, what we find
 is that the diagonal elements decay
 such that the left top element goes to 1,
 and the bottom right element goes to 0.
