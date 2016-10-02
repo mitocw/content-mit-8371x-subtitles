@@ -25,7 +25,7 @@ and this channel is symmetric and known as the binary
 symmetric channel.
 The quantum analog of this will be the bit flip channel.
 But first, let us begin with some definitions of codes.
-We define a classical code called with parameters n, k,
+We define a classical code with parameters n, k,
 and d as being a set of 2 to the k n-bit strings.
 The strings are constrained to have a minimum Hamming distance
 from each other of value d.
@@ -59,9 +59,9 @@ That happens with higher order probability.
 And, in those cases, a 1 is decoded from the output,
 and those are errors.
 We may, therefore, compute the overall probability
-of error of this, error decoded resolved, as being p cubed
+of error of this error decoded result as being p cubed
 plus p squared times 1 minus p.
-To leading order, and this is p squared.
+To leading order this is p squared.
 And that is better than the original channel which
 had order of p for an error.
 Thus, this is an effective method for correcting errors.

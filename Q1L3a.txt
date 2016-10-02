@@ -20,23 +20,23 @@ the action of the quantum operation
 on this subspace by looking at transformations given
 by each one of the operation elements E. Let C
 be this orthogonal subspace of the Hilbert space.
-One of the error operators, such as u0,
+One of the error operators, such as U0,
 might be a unitary operation that rotates this subspace,
 as we can denote here in a cartoon way as a rotation of C.
 That is, it is a unitary transform.
 
 Another operation element, E1, might
-be a projector, which take C to a number or a much
+be a projector, which takes C to a number or a much
 smaller subspace.
 Yet another operation element, say, E2,
-might be one of the operation limits,
+might be one of the operation elements,
 such as we saw in phase damping, which shrinks or deforms
 this subspace C in a non-uniform way.
 I have drawn these here as if they were all
 separate subspaces.
 But, in general, the output of the operation elements
 may be spaces which overlap or collide with each other.
-For quantum error detection, given a set of errors E sub K,
+For quantum error detection, given a set of errors E sub k,
 the important thing is that, on this subspace C,
 the output of the operation elements
 must be distinguishable.
@@ -51,20 +51,20 @@ Let us define C as a linear vector space spanned by the two
 vector basis states, 00+11 and 01+10.
 In this expression, a and b are arbitrary coefficients
 for the state psi.
-And that defined C. Note that a squared plus b squared
+And that defines C. Note that a squared plus b squared
 equals 1, so that psi is a unit vector.
 The errors of interest are described
 by phase damping happening independently
 and identically to the 2 qubits.
 We will include a subset of the possible errors.
-Specifically, we have, for a single cubit, the phase
+Specifically, we have, for a single qubit, the phase
 damping operator's identity and sigma
 Z weighted by probabilities alpha and 1 minus alpha,
 respectively.
 For 2 qubits, the error operators
-are given by the tensor product of the single cubic error
+are given by the tensor product of the single qubit error
 operators.
-Thus, we have, for E00, alpa identity.
+Thus, we have, for E00, alpha identity.
 For E01, we have square root of alpha times 1
 minus alpha times IZ.
 And, similarly, for E10, we'll have ZI,
@@ -88,7 +88,7 @@ Recall that our code words is defined by the basis states,
 We, therefore, see that IZ flips the sign of terms which
 have a 1 in the second qubit.
 Therefore, we have this output state,
-and we make a density matrix.
+and we make it a density matrix.
 Similarly E10 flips this sign when
 the first qubit on the left is a 1 versus being a 0.
 The reason that this is interesting

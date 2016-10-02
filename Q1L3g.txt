@@ -21,7 +21,7 @@ Let C be a quantum code that is a subspace defined
 by the projector, P, which is a sum over the basis states psi
 sub l.
 Psi sub l will be the codewords of the code, C.
-There exists a quantum operation in recovery and syndrome
+There exists a quantum operation, a recovery and syndrome
 measurement operator, R, which corrects
 a certain set of errors defined by E on the subspace C,
 if and only if the following criteria is satisfied.
@@ -41,7 +41,7 @@ specify that Ek dagger Ek should be equal to a constant, d sub
 k, for all codeword states.
 That is, it must not distinguish codewords.
 We call this the non-deformation criterion.
-When these [INAUDIBLE] conditions are satisfied,
+When these algebraic conditions are satisfied,
 R exists, and can also be found using
 the proof of these conditions.
 Let us now prove this.
@@ -84,12 +84,12 @@ a rescaling.
 For the syndrome operation, we want
 to project into the kth image of the codeword space,
 C. So that is the rotated version
-of the codeword space projector, P, given by u Pu dagger.
+of the codeword space projector, P, given by U P U dagger.
 We may rewrite this using the polar decomposition result,
 to obtain an expression which has, explicitly,
 the error operator E sub k in it.
 All we have done, here, is to substitute in
-for ukP into the expression, such that E sub k appears.
+for Uk P into the expression, such that E sub k appears.
 Another version of this expression
 gives us a relationship with E sub k dagger.
 The reason we want this is evident from the QEC criteria.
@@ -102,7 +102,7 @@ P sub k are orthogonal to each other.
 This is expected.
 After all, we required that the images of C
 be orthogonal to each other, and P sub k project
-into the image of sub C.
+into the images of C.
 Explicitly, we can find that this condition is
 that Pk Pj is proportional to-- and now,
 let us take the product of the two expressions just obtained,
@@ -120,8 +120,8 @@ The overall recovery operation combines
 the syndrome measurement projection P sub
 k, which gives a post-measurement density matrix
 state rho prime.
-And then, this unitary operator u sub k,
-for a state, psi, in the code, we
+And then, this unitary operator u sub k.
+For a state, psi, in the code, we
 find that uk dagger Pk acting on the erroneous state, Ej acting
 on psi-- error j, in other words--
 gives us, via the syndrome measurement operation P sub
@@ -131,7 +131,7 @@ k, which rotates the state back, ideally, psi.
 So let us see if that's true.
 We plug-in here the expression for P sub k,
 and we find that, again, P can be inserted here,
-because the state, psi, in the codeword space.
+because the state psi is in the codeword space.
 We find that we have an expression with PE dagger
 EP, which is just equal to d sub k, by the quantum error
 correction criteria.

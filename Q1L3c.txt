@@ -34,11 +34,11 @@ Specifically, let us consider the three qubit
 code for bit flip errors.
 The bit flip error channel is defined
 by this quantum operation.
-With probability 1, minus p, The input once unchanged.
+With probability 1 minus p, the input is unchanged.
 And, with probability p, the density matrix input
-sees an x error.
-So, that is x row x.
-x dagger is the same as x.
+sees a X error.
+So, that is X rho X.
+X dagger is the same as X.
 This is known as the bit flip channel.
 Schematically, we think of this as a communication
 between Alice and Bob over a noisy channel
@@ -46,7 +46,7 @@ represented by E of rho, the operator-sum representation
 given here.
 For quantum error correction, we define an analog
 to classical codes by saying that a n, k quantum code C
-is a k-qubit subspace of an n-cubit Hilbert space.
+is a k-qubit subspace of an n-qubit Hilbert space.
 Notice that we do not define the notion of distance yet.
 That will come later, when it is easier to do.
 An example is given by the n equal 3,
