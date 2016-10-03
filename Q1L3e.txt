@@ -14,7 +14,7 @@ and classical error correction is
 that there are far more different kinds of quantum
 errors than classical errors.
 The bit flip channel, which we have just studied,
-where a bit flips happens with probability p on a single qbit
+where a bit flip happens with probability p on a single qubit
 is really very much a classical kind of error.
 It's an analog of a classical bit flip.
 The quantum bit flip code which we
@@ -23,22 +23,22 @@ for our construction of quantum error correction codes.
 A more quantum mechanical kind of error
 is given by the phase flip channel.
 The phase flip channel acts on the input density matrix,
-flipping the qbit with probability p,
+flipping the qubit with probability p,
 but in phase and not in amplitude.
-We call that the zed operator, which
-has one 100 minus 1 as the matrix elements,
+Recall that the Z operator, which
+has 1 0 0 -1 as the matrix elements,
 acts on 0 to stay unchanged, but adds a minus sign to the 1
 state.
 How does one correct phase flip errors?
 Well, a good starting point is to review the bit flip quantum
-code, which has, as it's code word states, a 000 plus b 111.
+code, which has, as its code word states, a 000 plus b 111.
 Here, logical 0 and logical 1 are repetitions
-of the three bases states.
+of the three basis states.
 Can we correct phase flip errors in the same way?
 Well, recall the Hadamard gate H.
-It is just kind of like a square root of NOT gate.
+It is kind of like a square root of NOT gate.
 It creates a superposition state from basis states.
-And also it conjugates x to become z and z to become x.
+And also it conjugates X to become Z and Z to become X.
 Thus, we may observe a very interesting duality,
 namely the bit flip channel with Hadamard's applied to the input
 and the output is actually the phase flip channel.
@@ -47,11 +47,11 @@ and consider the plus minus states which
 are superpositions of 0 and 1, that
 is Hadamard acting on 0 and 1.
 And employ those as a phase flip code,
-namely let us encode as our qbit a plus,
+namely let us encode as our qubit a plus,
 plus, plus, plus b minus, minus, minus,
 where logical 0 is a plus, plus, plus state, and logical 1
 is the minus, minus, minus state.
-This is indirect analogy to the bit flip code.
+This is in direct analogy to the bit flip code.
 Note that the phase flip channel flips plus and minus,
 just like the bit flip channel flips 0 and 1.
 And this is why, in many ways, intuitively,
@@ -60,34 +60,34 @@ Just like we did for the bit flip code,
 let us now look at a quantum circuit for the phase
 flip code.
 We start with the same kind of construction as with the bit
-flip code, namely an arbitrary qbit state a0 plus b1 is
-encoded using two control NOT gates to become an output 000
+flip code, namely an arbitrary qubit state a0 plus b1 is
+encoded using two controlled NOT gates to become an output 000
 plus 111.
 Then, we transform the 000, 111 basis to the plus, plus, plus,
 minus, minus, minus using three Hadamard operators.
 The result is then sent through the phase flip channel,
 acting independently and identically
-on each of the three qbits.
+on each of the three qubits.
 If we then transform the output back into the 01 basis with
 three more Hadamard operations, we may then apply the same
 syndrome operation measurement and recovery operations as we
-found for the 3 qbit bit flip code.
+found for the 3 qubit bit flip code.
 And thus, complete the error correction process.
 This example leads to an interesting and important
-claim, that is that arbitrary qbit errors can
-be represented as x, z, and xz, namely y type errors.
+claim, that is that arbitrary qubit errors can
+be represented as X, Z, and XZ, namely Y type errors.
 We may show this formally by looking again
 at the operator sum representation of a quantum
 channel.
 Recall that this form has operators E sub k rho Ek
 dagger summed over k.
-Now, let this represent the polymatrices as sigma j,
+Now, let this represent the Pauli matrices as sigma j,
 including the identity.
 So, j goes from 0 through 3.
-To connect with the claim, recall that the poly y-matrix
-is 0 minus ii0, and that is related to x and z
+To connect with the claim, recall that the Pauli y-matrix
+is 0 -i i 0, and that is related to X and Z
 by a factor of i.
-That is y is equal to i times xz.
+That is, Y is equal to i times XZ.
 That, you can show with a little bit of matrix algebra
 reproduced here.
 The sigma j form an additive basis for any 2 by 2 matrix.
@@ -120,5 +120,5 @@ In particular, what the syndrome measurement does in general
 removes all these off diagonal terms
 in the chi-matrix representation.
 The syndrome measurement projects the environment
-into a definite action given by a polymatrix, namely an x, y, z
+into a definite action given by a Pauli matrix, namely an X, Y, Z,
 or identity as the error.

@@ -76,8 +76,8 @@ This is a state in a four-dimensional Hilbert
 space with four coefficients, which are arbitrary.
 Of course, subject to normalization.
 We may also write the state as a sum over basis vectors, which
-are labeled 0 through 3 with coefficient C sub x rather than
-A through D. That's the same.
+are labeled 0 through 3 with coefficient c sub x rather than
+a through d. That's the same.
 We may also write it as a four component
 vector in this inner product Hilbert space.
 The unitary transform we'll look at
@@ -179,7 +179,7 @@ as acting on a two qubit composite space.
 So let's take two qubits, both in their zero state.
 And we'll represent this transform
 by the following circuit diagram.
-That circuit state was known as a controlled NOT gate.
+That circuit symbol is known as a controlled NOT gate.
 The first qubit controls whether a NOT,
 an X gate, happens to the second qubit, the one on the bottom.
 If we replace the first part of this circuit

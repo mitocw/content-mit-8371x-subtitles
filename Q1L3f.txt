@@ -56,8 +56,8 @@ of triplets, that's for the first operator
 and the second pair of triplets, that's for the second phase
 flip operator.
 And the reason they work is evident
-if you look at the signs and a parity of the signs.
-Shown here are marked in green, we
+if you look at the signs and parity of the signs.
+Shown here marked in green, we
 find we have plus, plus, plus and minus, minus, minus.
 So this is a parity flip code.
 The 9-qubit code thus concatenates a bit flip code
@@ -68,11 +68,11 @@ correction codes.
 The number of possible errors on these nine qubits
 is 1 plus 3 times 9.
 1 indicates identity, that is no error,
-and there are three possible errors, x, y,
-and zed on each qubit, and their nine qubits.
+and there are three possible errors, X, Y,
+and Z on each qubit, and there are nine qubits.
 Thus there are 28 possible errors that may occur.
 That's a single qubit errors.
-Now let us look at this syndrome operators
+Now let us look at the syndrome operators
 and how many errors might be distinguishable in principle
 by the number of possible syndrome measurement results.
 There are six bit flip checking operators,
@@ -81,7 +81,7 @@ thus we have two the eight possible syndrome values.
 0 or 1 for each, meaning 256 distinguishable errors,
 and this is to be compared with the 28 possible single qubit
 errors.
-Thus in fact, this nine cubic code
+Thus in fact, this nine qubit code
 can correct many errors beyond single qubit errors.
 And in fact some of those are two qubit errors.
 The nine qubit code is interesting for many reasons
@@ -101,4 +101,4 @@ and it employs four syndrome operators.
 The four syndromes can distinguish 16 possible errors,
 that is 2 to the 4, and thus the number
 of distinguishable errors exactly
-equals the number of possible single qubit errors,
+equals the number of possible single qubit errors. Thus, the five-qubit code is perfect.
