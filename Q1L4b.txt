@@ -49,7 +49,7 @@ is 1 1 0 0 1 1.
 In other words, it checks the parity of the first two bits
 and the parity of the last two bits.
 Note that the rows of H are orthogonal to the columns of G.
-Of course, that is just to say H times V is equal to 0.
+Of course, that is just to say H times v is equal to 0.
 Why is this useful?
 Well, if H is applied to a binary string which is not
 a codeword, but is perhaps close to a codeword--
@@ -83,7 +83,7 @@ minus 1 as bit strings-- r bit strings excluding all 0's.
 For example, for r equal to 2, we
 get the repetition code which we have just seen,
 the triple redundancy code.
-For r equal 3, we have the parity check matrix,
+For r equal 3, we have the parity check matrix
 which has columns going from 1 to 2 to 3 to 4,
 and so forth, all the way up to 7 in binary form.
 This famous 7-bit Hamming code has parameters 7, 4, 3.
@@ -100,7 +100,7 @@ And note that rows of H are orthogonal to each other.
 And this is why G has this structure.
 For quantum codes, we will later need a specific kind
 of classical linear code.
-Let C an n, k linear code with a given generator and parity
+Let C be a n, k linear code with a given generator and parity
 check matrix.
 We define C perp as the code given by a generator H
 transpose and a parity check matrix G transpose.
@@ -114,4 +114,4 @@ where y is a code from C, will be
 equal to the size of the code.
 Otherwise, if x is not in C perp,
 then this same sum will be equal to 0.
-See if you can prove for yourself this useful fact
+See if you can prove for yourself this useful fact in the problem set.

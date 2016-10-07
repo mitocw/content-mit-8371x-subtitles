@@ -16,13 +16,13 @@ quantum codes to be built from a wide variety
 of classical codes.
 And that idea is behind what is known as the CSS codes concept.
 For example, take the 3 bit code,
-repeat it three times, giving the short 9 qubit
+repeat it three times, giving the Shor 9 qubit
 code, as shown here.
 Why does this work, in terms of the quantum error
 correction criteria?
 Well, each set of 3 qubits essentially has a triple
-redundancy coat that is 000 and 111 as the code words.
-And, thus, for a single bit flip errors, x sub j,
+redundancy code that is 000 and 111 as the code words.
+And, thus, for single bit flip errors, X sub j,
 we have that the error correction criteria gives us
 an orthogonality between the bit flip errors.
 Thus, the criteria are automatically
@@ -32,21 +32,21 @@ How about for phase flip errors though?
 Phase flip errors are Zed errors.
 And do we have that Zed j Zed k are orthogonal?
 Now, to see why this works, recall
-that x conjugated by the Hadamard gate
+that X conjugated by the Hadamard gate
 gives the Zed gate.
 Thus, what we want-- PZZP, may be rewritten as P
-with x's conjugated by H. And this, we
+with X's conjugated by H. And this, we
 desire to be orthogonal.
 Now, if we apply another H on the outside of all of this,
 we get this expression here.
 And we may recognize that H conjugating P gives rise
 to this change of bases which goes
 from 0 to the plus state and 1 to the minus state.
-Thus, each acting on the logical 0 logical 1,
+Thus, each acting on the logical 0 and logical 1,
 give us these superpositions of plus and minus states.
 These code words in the plus and minus bases, again,
 are instances of the 3 bit redundancy code.
-The action of the x bit flip operator,
+The action of the X bit flip operator,
 though, takes plus to plus and minus to minus
 of the minus state.
 Thus, in a sense, this superposition--
@@ -65,22 +65,22 @@ errors and bit flip errors.
 The 9 qubit code, again, does this
 by using the 3 bit code twice, one time embedded
 or concatenated within the other instance.
-This idea maybe generalized, taking one classical code
+This idea may be generalized, taking one classical code
 to correct for bit flip errors and concatenating
 a second classical code to correct for phase flip errors.
 The idea is called the CSS codes approach,
-invented by Rob Calderbank, Peter Shor, and Andrew Steane.
-The first class of quantum codes,
-which generalized to a large set of families instead
-of single instances, the basic construction
+invented by Rob Calderbank, Peter Shor, and Andrew Steane,
+the first class of quantum codes
+which really generalized to a large set of families instead
+of single instances. The basic construction
 involves two classical codes-- C2,
 which corrects for phase flip errors,
 and C1, which corrects for bit flip errors.
 C2 is a subset of C1, and, actually,
-the code use for phase lifts is C2 perp.
+the code use for phase flips is C2 perp.
 This may be visualized in terms of a set diagram.
 Imagine that we have a set of code words C1.
-C2 is a subset of C1, but see?
-Two also asks cosets.
+C2 is a subset of C1, but
+C2 also has cosets.
 These cosets are other copies or instances of C2 within C1.
-And we will later see how this gives rise to a quantum
+And we will later see how this gives rise to a quantum code, the quantum CSS codes.
