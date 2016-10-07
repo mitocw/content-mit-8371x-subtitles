@@ -15,7 +15,7 @@ and controlled Z gates, as we now show.
 Given a graph g, specified by its binary symplectic matrix
 representation with an adjacency matrix,
 what quantum circuit can be used to construct the state?
-Well, the stabilizer has x entries and Z entries,
+Well, the stabilizer has X entries and Z entries,
 and this simple pattern leads to a simple construction circuit.
 First, Hadamard operations are used on every qubit
 to start in the state plus.
@@ -26,7 +26,7 @@ That is, every connection between two qubits as
 indicated by the adjacency matrix.
 For example, consider this graph with three qubits
 linked by two edges.
-Label the qubits zero, one, and twp.
+Label the qubits zero, one, and two.
 I claim that a circuit creating this graph state
 starts with plus states and then applies two controlled Z
 gates, one between qubits two and one,
@@ -76,4 +76,4 @@ The same idea behind this proof generalizes to any graph state
 construction circuit.
 And in fact, it also generalizes to stabilizer states simply
 by adding the local Clifford operation, which
-is used to transform the graph state to the stabilizer state
+is used to transform the graph state to the stabilizer state desired.
