@@ -16,7 +16,7 @@ Recall that PTH, this threshold value,
 is 1 over the number of fault paths in a procedure which
 is fault tolerant and provides a universal gate for quantum
 computation.
-What we need are fault tolerant procedures for gates state
+What we need are fault tolerant procedures for gates, state
 preparation and measurement and, in addition,
 we must perform gates on encoded data without decoding.
 This can be done on stabilizer codes using normalizer
@@ -34,7 +34,7 @@ it is not universal for quantum computation.
 The quantum Toffoli gate, the analog of the classical AND
 gate, is universal but this quantum Toffoli is not
 a Clifford gate operation.
-This is implied by the Gaddis-McNeill Theorem.
+This is implied by the Gottesman-Knill Theorem.
 Another very important stumbling block
 was proven in 2007, namely that no stabilizer code can
 have a set of transversal gates which is universal
@@ -73,14 +73,14 @@ is used to classically control the recovery operation.
 The standard circuit for operator measurement
 involves using an ancilla qubit put into a superposition of 0
 and 1, which then controls the Zed or x
-or other poly-operators specified by the stabilizer
+or other Pauli operators specified by the stabilizer
 generators of the code.
 Unfortunately, however, this construction
 has a single point failure, and thus it is not fault tolerant.
 How does one make operator measurement fault tolerant?
 Well, there are a number of ways to provide fault tolerant
 measurement of error syndromes.
-One solution employees cat states.
+One solution employs cat states.
 This was introduced by Peter Shor.
 Instead of using a single qubit for the control,
 a cat state superposition of 0, 0 plus 1, 1, or however
@@ -130,4 +130,4 @@ Finally, typical classical gate models
 do not involve measurement error in contrast
 to the quantum case.
 So there we have it.
-A first estimate for the threshold for fault
+A first estimate for the threshold for fault-tolerant quantum computation.
