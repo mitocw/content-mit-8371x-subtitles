@@ -48,7 +48,7 @@ One approach for controlling error propagation
 is to employ a concept known as transversal gates.
 In the quantum case, this means that for n-qubit blocks
 a logical qubit operation u, would be transversal
-if it were the tensor product of an individual qubit operations.
+if it were the tensor product of n individual qubit operations.
 Such operations are also known as being bitwise operators.
 Clearly this increases a number of gates needed.
 What is the cost of fault-tolerance therefore,
@@ -84,7 +84,7 @@ This is the fault tolerance recursion equation
 and it governs each individual fault-tolerant procedure.
 Let us compute the circuit size required by solving
 this equation to find k.
-We obtain k by substituting n for the acceptable probability
+We obtain k by substituting in for the acceptable probability
 of failure of each fault-tolerant procedure, that
 is epsilon over n.
 We get this new inequality which allows
@@ -111,4 +111,4 @@ And second, we control error propagation
 by employing fault-tolerant procedures, which limit errors
 from spreading and becoming uncorrectable.
 These principles apply to both classical and quantum circuits
-and provide the foundation for a threshold
+and provide the foundation for a threshold for fault-tolerant quantum computation.

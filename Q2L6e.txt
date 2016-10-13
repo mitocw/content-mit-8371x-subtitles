@@ -22,7 +22,7 @@ It is convenient to describe this state entirely
 in terms of how the stabilizer evolves from S1 through S3.
 S1 is just IZ, ZI, the stabilizer
 for 2 qubits in the 0 state.
-S2 is destabilizer given by IZ and XI.
+S2 is the stabilizer given by IZ and XI.
 This is because a Hadamard acts on the first qubit
 to change the stabilizer from Z to X.
 For S3, it is convenient to review
@@ -45,11 +45,11 @@ operation.
 A second Hadamard is applied to the control
 qubit, which is then measured.
 The measurement result A corresponds
-to the eigenvalue of the eigenstate size of A resulting
-from the measurement.
+to the eigenvalue of the eigenstate psi sub a
+resulting from the measurement.
 We employ here this convenient shorthand notation
 for an operator measurement circuit.
-How does such a measurement effect a stabilizer?
+How does such a measurement affect the stabilizer?
 Suppose the stabilizer initially is g1 through gn,
 and we measure a Pauli operator m.
 Note that m squared is Identity and the eigenvalues of m
@@ -62,7 +62,7 @@ and thus it is possible that m commutes
 with all of the generators.
 Measurement thus changes the stabilizer
 to add m in place of g1 with a plus or minus 1
-to the 8th power.
+to the a-th power.
 We know this must be the form of the output stabilizer,
 because the output is an eigenstate of m with eigenvalue
 plus or minus 1.
@@ -95,4 +95,4 @@ then we can fix this by applying ZI,
 a unitary fix operator U. Generally there
 will always be a way to fix up the signs to get the desired
 plus 1 eigenstate.
-Later we will see how to find the fix up operator
+Later we will see how to find the fix up operator systematically.

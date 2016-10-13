@@ -106,8 +106,8 @@ The basic principle we utilize is to compute on encoded data
 and we never decode.
 Gates are performed on the encoded data.
 For example, suppose we have a two-input NAND gate denoted
-by an n with inputs a and b generating the output a
-and b nodded the NAND output.
+by an N with inputs A and B generating the output A
+and B NOTted--the NAND output.
 Together with this NAND gate, we will also
 have a three-input gate taking a, b, and c as inputs,
 and generating as output the majority of a, b,
@@ -179,7 +179,7 @@ The threshold for fault tolerance
 is 1 over the number of fault paths.
 Here, c.
 And the crucial property is that this threshold
-is independent of n and epsilon as desire for the theorem.
+is independent of N and epsilon as desired for the theorem.
 It is instructive to see this behavior graphically.
 We may plot the failure of probability of the circuit
 as a function of the gate error p.
@@ -204,5 +204,5 @@ also estimated that for k input gates,
 the threshold is somewhere above 1/2 minus 1 over 2
 square root of k.
 This is work from 2003.
-What is a threshold then for quantum computation?
-We do not know today, but we have some estimates,
+What is the threshold then for quantum computation?
+We do not know today, but we have some estimates, and that is what we will turn our attention to next.
