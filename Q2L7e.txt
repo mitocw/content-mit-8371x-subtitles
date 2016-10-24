@@ -15,10 +15,10 @@ We have previously seen that for deterministic behavior,
 quantum programs must be orthogonal to each other.
 However, this opens the door to non deterministic quantum
 programs, and this is an example.
-Imagine that Alice has a state alpha which includes a quantum
-gate use of Alpha, which acts on the plus state
-to give this expression-- E to the I alpha on 0 and E
-to minus I alpha on 1 She also has a data qubit side being
+Imagine that Alice has a state alpha which encodes a quantum
+gate U sub alpha, which acts on the plus state
+to give this expression-- e to the i alpha on 0 and e
+to minus i alpha on 1. She also has a data qubit psi being
 A0 plus B1.
 What Alice would like to do is to be
 able to give a third party, say Bob, both of these
@@ -31,7 +31,7 @@ X acting on the program state gives a flip of the sign alpha.
 In other words, it is U daggar alpha acting on the plus state.
 Thus Bob follows the following steps:
 First he takes psi and alpha and applies
-a controlled knot between them.
+a controlled NOT between them.
 This produces a state where when the data is 1, the program gets
 flipped.
 It seems counter intuitive to use the data as a control
@@ -66,6 +66,6 @@ states, to get U alpha psi the desired
 result with probability 1 minus 2 to the N. That's not too bad.
 It's an exponential decrease in error probability.
 And the number of program qubits on average is P of N times N,
-and the probability goes as 1/2 to the end of an error.
+and the probability goes as 1 over 2 to the N of an error.
 And so that is 2 on average.
 Pretty good, but of course non deterministic.

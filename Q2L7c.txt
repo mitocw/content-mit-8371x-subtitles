@@ -39,14 +39,14 @@ Psi is then recovered.
 Denote this state as phi.
 We note that phi is this state right here
 before the fix up operators.
-And phi is found to be a poly X or poly zed, acting
+And phi is found to be a Pauli X or Pauli zed, acting
 on psi in this particular order, zed first.
-X and zed, here in exponents, are 001s.
-And these polys are undone by the fix up operations.
-This proves the desired equivalents, since u is then
+X and zed, here in exponents, are 0s or 1s.
+And these Paulis are undone by the fix up operations.
+This proves the desired equivalence, since U is then
 just appended to the end.
 We now use this equivalence to show an interesting application
-of teleportation, mainly teleporting gates.
+of teleportation, namely, teleporting gates.
 Consider the case when u is the Hadamard gate.
 Then psi goes through the controlled zed, the controlled
 X, and the Hadamard gate.
@@ -61,7 +61,7 @@ so that X controls zed and zed, the bit measurement zed,
 controls X, then we find that the teleported output is
 H times psi.
 And we can interpret this entangled state,
-modified entangled state, as a resource state.
+modified entangled state, as a kind of resource state.
 This teleportation is actually built out
 of two more primitive steps known
 as one-qubit teleportation.
@@ -70,7 +70,7 @@ the swap gate constructed out of three controlled NOT gates.
 This two qubit circuit swaps any two states, phi and psi.
 Now consider the case when phi is the state zero.
 That means that we can drop the first controlled NOT
-gate because it's control is zero,
+gate because its control is zero,
 leaving us with a swap circuit that has two controlled NOT
 gates, again, for the special case, when one of the qubits
 is zero.
@@ -88,7 +88,7 @@ is in the plus state.
 And the control is a computational basis control.
 So we can actually measure that qubit
 and then perform the zed operation classically.
-So it's a classically-controlled poly gate.
+So it's a classically-controlled Pauli gate.
 This circuit, which moves psi from one qubit to another
 is called Z-teleportation.
 And it is counterintuitive because a measurement
@@ -103,7 +103,7 @@ This state is an eigenstate of the X operator.
 And thus, the third controlled NOT gate
 can be dropped, leaving us again with two controlled NOT gates.
 Let us explicitly write out the plus state
-is being created by Hadamard acting on zero.
+as being created by Hadamard acting on zero.
 Note the second controlled NOT can
 be replaced by a classical measurement and a classically
 controlled X gate just as before.
@@ -114,7 +114,7 @@ Here is a useful example.
 Recall the T gate is a square root of the S gate
 or the fourth root of the zed gate.
 It has matrix elements 1 0 0 square root of I.
-And the neat thing is that together with C, NOT, H,
+And the neat thing is that together with CNOT, H,
 and S, which are Clifford group gates, the T gate, which is not
 a Clifford group gate, generates universal quantum computation.
 That is any u can be well-approximated by these four
@@ -122,7 +122,7 @@ primitives.
 The T gate is like a rotation about the zed axis,
 and, thus, it is unsurprising that when
 it commutes with the X gate, it adds an additional phase
-factor of minus I and additional S gate.
+factor of minus i and an additional S gate.
 Thus, if we look at the X-teleportation circuit, which
 takes zero and psi as input, utilizes a Hadamard
 and a controlled NOT gate and a measurement
@@ -134,7 +134,7 @@ with the X gate.
 And this gives us a modified one qubit teleportation circuit
 where we now have a controlled minus ISX gate, instead
 of a controlled X gate.
-The T commutes with a controller or the controlled NOT gate.
+The T commutes with the control of the controlled NOT gate.
 And thus, we may push it back to the input,
 giving us this transformed X-teleportation circuit.
 The structure is the same, but we have a different input state
@@ -144,5 +144,5 @@ And we have a Clifford operation, minus ISX
 instead of just the X operation.
 This means that given this resource state, T H zero,
 universal quantum computation is possible fault tolerantly
-on many stabilizer codes such as the [? Steen ?] code,
+on many stabilizer codes such as the Steane code,
 using this teleported T gate construction.
