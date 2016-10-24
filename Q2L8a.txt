@@ -15,8 +15,8 @@ So far we have seen models which use states, gates,
 and measurement in different ways.
 Our first step was using the quantum circuit model
 which employed zero qubits, controlled
-knots and arbitrary single qubit rotations, and measurement
-in the computational basis non-thought
+NOTs and arbitrary single qubit rotations, and measurement
+in the computational basis non-fault
 tolerantly to achieve universal quantum computation.
 A second model which we have seen
 was explicitly fault tolerant.
@@ -34,7 +34,7 @@ quantum computation.
 Teleportation is the basic idea underlying a very unusual model
 known as measurement based quantum computation.
 This employs a specific state known as a cluster state.
-No gates at all but measurement, which is a little stronger,
+No gates at all, but measurement which is a little stronger,
 namely measurement of any qubit rotated around the zed axis.
 This is not a fault tolerant model by itself,
 and it requires a number of qubits

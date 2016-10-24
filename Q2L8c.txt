@@ -18,7 +18,7 @@ Each node in this graph represents a qubit,
 and each link in the graph represents a controlled phase
 or a controlled Z gate.
 They're the same thing.
-Other typologies follow the same rules.
+Other topologies follow the same rules.
 The quantum state is created based
 on this graph using an initial qubit, each in the plus state,
 and then applying a controlled phase gate
@@ -35,9 +35,9 @@ and so forth.
 These operators denote the measurement basis
 for each qubit.
 The plus or minus sign denotes a dependency
-on prior measurement results.
-As I will explain in more detail,
-unlabeled nodes are unprocessed qubits.
+on prior measurement results,
+as I will explain in more detail.
+Unlabeled nodes are unprocessed qubits.
 They are not measured.
 The numbers shown here in red represent
 the order of operations.
@@ -111,7 +111,7 @@ and now we have two parts to this expression.
 This second part represents exactly what
 we considered earlier.
 And the first part represents something
-which we may call a poly frame.
+which we may call a Pauli frame.
 It depends on M1 and M2, but these
 are both known from prior measurement results.
 And they can thus be undone in principle any time.
@@ -152,12 +152,12 @@ That is followed by a x to the M2 H,
 and in between is a controlled phase
 gate between alpha and beta.
 This is very close to what we want.
-Let us push the x to the M1 H over across the Hadamark.
+Let us push the x to the M1 H over across the Hadamard.
 And what we find is that becomes an x
 to the M1, and a zed to the M1 after the controlled phase
 gate using the rules of propagation of Paulis
 through controlled phase gates.
-And we are left also with an HXM2 on alpha.
+And we are left also with an H X M2 on alpha.
 Let us simplify this further by pushing the second H back
 through the X to the M1.
 That gives us a structure which has
