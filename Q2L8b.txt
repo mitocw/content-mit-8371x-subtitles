@@ -12,16 +12,16 @@
 What happens in quantum teleportation
 if the measurement is generalized?
 Well, recall z-teleportation, this
-is the one-cubit teleportation picture
-where we have a cubit to teleport psi and a state 0.
+is the one-qubit teleportation picture
+where we have a qubit to teleport, psi, and a state 0.
 We perform a controlled not followed by hadamard.
-Then we measure the cubit being teleported
-and do a controlled z to the other cubit
+Then we measure the qubit being teleported
+and do a controlled z to the other qubit
 and observe that our state emerges.
 A simple transformation of this circuit
 reveals something interesting.
 Replace the controlled not with a controlled z
-gate and to hadamard gates.
+gate and two hadamard gates.
 Keep the other hadamard and the measurement-controlled z
 just as they were before.
 Again, we're just rewriting the controlled not gate
@@ -33,22 +33,22 @@ hadamard and measurement, and leaving out the controlled z
 from the measurement and the lower hadamard,
 we find the output is h z to the m times psi.
 This just rewrites the fact that the controlled z gives us
-z the m and the hadamard here does follows on.
+z to the m, and the hadamard here just follows on.
 Now we generalize by introducing another rotation gate.
 Let this box with a z theta in it
 represent a rotation about the z-axis
-acting on a single cubit.
+acting on a single qubit.
 That is, the unitary operation e to the minus i theta
-divided by 2 times poly z.
-Suppose the input where z theta acting
+divided by 2 times Pauli z.
+Suppose the input were z theta acting
 on psi instead of just psi.
 Then looking at our teleportation circuit
-and observing now that h maybe push through the z
+and observing now that h may be pushed through the z
 to m over here to get x to the m h psi instead of h
 z to the m psi, we find that the output just
 has a z theta inserted after the hadamard.
 We may also push the z theta gate from the input
-past the control to z gate.
+past the controlled-z gate.
 This lets us then combine the z theta
 with the hadamard as a new gate before the measurement.
 Think of this part as a measurement change.
@@ -57,5 +57,5 @@ h z theta acting on psi.
 This new circuit is a very useful one
 for measurement-based quantum computation.
 It represents a measurement in a non-stabilizer basis used
-to, in a sense, teleport the z theta gate onto the cubit
+to, in a sense, teleport the z theta gate onto the qubit
 we are teleporting.

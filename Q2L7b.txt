@@ -19,7 +19,7 @@ is stored as a ket p, and acts on quantum data psi.
 It produces output p prime as well as u sub p
 acting on psi, the output data.
 The classical analog of this begins with some parameter
-counting on m bits.
+counting. On m bits,
 That is, m bits going to m bits.
 We have 2 to the m to the 2 to the m possible Boolean
 functions.
@@ -34,7 +34,7 @@ each by k bits, then that means the total number of bits
 required would be 2 to the 2m to the 2 to the k.
 Of course, just as with classical programs,
 most u are impossible to describe efficiently.
-Nevertheless, this parameter accounting
+Nevertheless, this parameter counting
 gives us the idea that we might utilize 2m qubits which have 2
 to the 2m plus 1 minus 1 real parameters as their amplitudes.
 Use these 2m qubits to parameterize
@@ -58,25 +58,25 @@ psi I must produce u sub q acting
 on psi, both with their left overs as well.
 Next, let us take the inner product of these two equations.
 On the left we get-- because g dagger g is identity,
-pq amp psi is ply, which is going to be 1, and on the right
+P Q and psi psi, which is going to be 1, and on the right
 we get p prime q prime, the overlap of the leftovers.
 Together with the overlap of u sub p and u
 sub q, each acting on psi.
 Let us then divide both sides of this equation
 by the overlap of p prime and q prime.
-We find on the right hand side of this expression psi u p
-dagger u cube psi.
+We find on the right hand side of this expression psi U_P
+dagger U_Q psi.
 The left hand side is manifestly independent of the input psi.
 Thus, it is clear the right hand side must also
 be independent of psi.
 The only way in which this is possible
-is if u p dagger you q is proportional to the identity.
+is if U_P dagger U_Q is proportional to the identity.
 But that contradicts our assumptions,
 and therefore p and q must be orthogonal to each other.
 The general conclusion from this observation
 is that every implementable unitary transform that is not
 the same unitary, must require an extra dimension
-in the Hubert space to specify it.
+in the Hilbert space to specify it.
 Basically, the programs must be classically distinct.
 Alternatively, another option would be for a gate array
 to not act deterministically, that is,

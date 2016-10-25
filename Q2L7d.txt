@@ -48,7 +48,7 @@ has to be applied to undo that random Pauli.
 We wish to obtain U acting on psi,
 but of course, the idea is we don't
 have U. So let's push U backwards through W.
-That means we want U W U dagger operator, which we'll call V,
+That means we want U W U dagger, operator which we'll call V,
 to be simpler than the operation U.
 For teleportation, we know that W is a Pauli group operator.
 The result of this is for the two qubit teleportation
@@ -80,7 +80,7 @@ The Toffoli gate, the controlled-controlled-NOT gate
 suffices for that.
 And in fact, the addition of any C3 gate
 gives universal quantum computation together
-with a stabilizer gates.
+with the stabilizer gates.
 One might be tempted to think that C infinity
 would then include all possible quantum circuits.
 And in fact, this question was posed and answered negatively
@@ -96,4 +96,4 @@ It describes the set of all possible quantum software,
 which may be implemented efficiently
 using this teleportation construction.
 What computations are in the Ck hierarchy
-and what computations are not?
+and what computations are not? Work on it, and see if you can find out for yourself.
