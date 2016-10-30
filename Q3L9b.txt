@@ -24,13 +24,13 @@ to get 28 modulo 15 gives us 13.
 to get 28 modulo 15 gives us 13.
 Repeating this pattern, multiplying 13 by 7
 gives us 91, which, modulo 15 is 1.
-This is the first value of 1 that we find.
-And because this is 1, the pattern
+This is the first value of 1 that
+we find.
 And because this is 1, the pattern
 continues to repeat as r gets larger.
 That is, we get 7, 4, and 13.
-The first value of r for which the exponentiation is 1
-The first value of r for which the exponentiation is 1
+The first value
+of r for which the exponentiation is 1
 gives us r equal 4.
 So 4 is the order of 7 with respect to 15.
 Plugging this into the formula for the rest of the reduction

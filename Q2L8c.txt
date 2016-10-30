@@ -82,7 +82,7 @@ From our analysis of teleportation
 with a measurement basis change, we
 know that the result of the first measurement
 is to teleport the sequence x to the M1 HZ theta acting
-on the input state plus.
+on the input state, plus.
 That's for M1.
 For M2, we add an additional set of operators--
 x to the M2 HZ plus or minus phi--

@@ -9,7 +9,7 @@
 #
 #----------------------------------------
 Shor's algorithm can be understood and appreciated
-by working systematically through its quantum circuit,
+by walking systematically through its quantum circuit, step by step.
 Let us do that beginning with the setting
 we have established.
 Let p and q be L-bit, prime numbers.
@@ -22,27 +22,27 @@ Given r, we may find the factors of N and p
 with high probability.
 We began by sketching the circuit.
 The circuit has two registers.
-The first one with to 2L qubits, and the second one with L
+The first one with 2L qubits, and the second one with L
 qubits.
 The first register has a Hadamard
 applied to all 2L qubits individually,
 creating an equal superposition of all decimal values ket a.
 This register of qubit is used to control
-the moderate exponentiation X to the a mod N.
+the modular exponentiation X to the a mod N.
 Suppose for now that we measure this result
-of the moderate exponentiation.
-Now let us walks through the circuit
-and compute the state's psi 0, psi 1, psi 2, and psi 3,
+of the modular exponentiation.
+Now let us walk through the circuit
+and compute the states psi 0, psi 1, psi 2, and psi 3,
 step by step.
-The initial states, psi 0, has 0 and 1.
-The state after the Hadamard's is the equal superposition
+The initial state, psi 0, has 0 and 1.
+The state after the Hadamards is the equal superposition
 of all decimal values, a, going from 0 to 2 to the 2L minus 1.
 The state psi 2 after the controlled
 modular exponentiation, is a entangled state of the two
 registers where X to the a mod N,
 again, is the modular exponentiation of x, which
 is known to have only r possible values.
-r, again, is known as the order of X with respect to the N.
+r, again, is known as the order of X with respect to N.
 It is meaningful to rewrite this expression, this summation,
 It is meaningful to rewrite this expression, this summation,
 by defining j and l, such that a is j times r plus l.
@@ -93,10 +93,10 @@ Let us use this definition of the quantum Fourier
 transform and apply it to psi 3.
 what we get is a double summation
 where one of the terms in the phase can be removed.
-That is, omega to them minus l0 times k, but a second term
+That is, omega to the minus l0 times k, but a second term
 which depends on both j and k, and incidentally,
 but importantly, r remains.
-This second term we may define as being the value g's of k.
+This second term we may define as being the value g of k.
 And g of k is nonzero only for certain values of k.
 That is, where kr is approximately a constant, c,
 an integer c, times 2 to the 2L.
@@ -119,7 +119,7 @@ divided by r, 2 times that, and 3 times that.
 Note that these are all separated by approximately 2
 to the 2L divided by r, and that this distribution
 is insensitive to l0.
-It is in sensitive tell zero because of the shift invariance
+It is insensitive to l0 because of the shift invariance
 property for the Fourier transform.
 In fact, as you can see from this equation,
 l0 turns into a phase factor.
