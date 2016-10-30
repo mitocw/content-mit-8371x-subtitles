@@ -21,15 +21,15 @@ which is the product of p and q.
 We may also, based on N, choose another number, x.
 This number will be less than N minus 1,
 and will also be chosen to be co-prime with N.
-What this means is the number x, which we choose randomly,
-What this means is the number x, which we choose randomly,
+What this means is the number x,
+which we choose randomly,
 has no factors in common with N. That
 means it has neither p nor q as one of its factors.
 If it did, then we would be done with our problem anyway.
 So we'll let r be a property of this number x.
-In particular, r will be the minimum number such
-that x to the r modulo N is equal to 1.
-that x to the r modulo N is equal to 1.
+In particular, r will be the minimum number
+such that
+x to the r modulo N is equal to 1.
 This is an important formula for us.
 It defines r as being a certain quantity.
 Now r is an integer and this integer
