@@ -14,10 +14,10 @@ of all known exponentially fast quantum algorithms.
 It is defined as a unitary transform which maps basis
 states j to superpositions over basis states
 k with a phase factor here omega to the jk divided by n.
-The phase factor is conveniently captured by dividing omega
+The phase factor is conveniently captured by defining omega
 as e to the 2 pi i.
 There are little n qubits and capital N is 2 to the n.
-As an example, the free transform
+As an example, the Fourier transform
 maps the 0 state to an equal superposition over all states
 in the Hilbert space.
 It also maps 1 to a superposition
@@ -33,8 +33,8 @@ transform compare with the classical?
 Let us look at the quantum Fourier transform circuit.
 It is helpful for this to define the bitwise representations
 of various quantities.
-Let j, the input state, be decomposes bits j sub a.
-So j1 is the most significant bit
+Let j, the input state, be decomposed as bits j sub a.
+So j1 is the first bit, the most significant bit,
 and jn is the least significant bit.
 Let us also define the fraction, phi, which is 0.j1,
 j2, j3 all the way out to jn representing
@@ -42,23 +42,23 @@ j divided by capital N. This is what
 is known as a binary fraction representation
 where, for example, 0.1 is 1/2, 0.11 is 3/4, and so forth.
 Let us use this binary fraction notation
-to simplify the way we write omega to the jk over n.
+to simplify the way we write omega to the jk over N.
 Consider j times 2 to the minus l.
 It is convenient to write this as phi times
 2 to the n minus l, which turns out to be 0.jn minus l plus 1
 all the way up through jn.
 This is a subset of the bits of j
 and it happens because omega to an integer is equal to 1
-and phi here is equal to j divided by n.
+and phi here is equal to j divided by N.
 We use this representation next to construct
 what is remarkably simple and intuitively appealing
 quantum circuit for the Fourier transform.
 I claim that the quantum Fourier transform
 can be represented as a map between basis states
 which have bits say j1 through jn
-to a form which has first 0 plus omega to the 0.jn times
-1 tensored with 0 plus omega to the jn minus 1 jn
-times 1 next tensored again with another term of the same form,
+to a form which has first 0 plus omega to the 0.jn times 1,
+tensored with 0 plus omega to the jn minus 1 jn times 1,
+next tensored again with another term of the same form,
 a single qubit of structure 0 plus omega
 to the binary fraction, one more bit shifted in and so forth.
 This structure is remarkable.
@@ -73,8 +73,8 @@ For simplicity, I drop norms and use a binary representation
 of k as well, so k sub l will be the lth bit of k.
 Writing k out now bit by bit, the sum
 becomes n sums over the bits of k
-and let us also express the exponent and other phase
-factor in terms of the bits case of l of k.
+and let us also express the exponent of the phase
+factor in terms of the bits k sub l of k.
 Now, this expression can further be
 simplified by rewriting this state k
 as a tensor product over the individual qubits of k,
@@ -83,12 +83,12 @@ Again, k is now the tensor product of the n bits kl.
 Now, we may now flip the order of summation and the tensor
 product such that we bring the tensor product out front
 and each element of the tensor product
-will be a sum over kl going from 0 to 1 over a single qubits
+will be a sum over kl going from 0 to 1 over a single qubit's
 state with phase factor omega to the jk sub l times two
 to the minus l.
 Remember this is the state of a single qubit
 and we may explicitly write out the two cases, 0 plus omega
-to the j times 2 to the minus l times [? cap ?] 1.
+to the j times 2 to the minus l times ket 1.
 Now, we have a tensor product of these states
 and this expression is exactly what was claimed above,
 namely that we have a tensor product of single qubit states
@@ -110,7 +110,7 @@ according to our claim above.
 This is just a single Hadamard acting on the single qubit.
 That is a single qubit circuit.
 For n equal 2, we have j1, j2, the two
-bits of the input mapping to 1 cubic,
+bits of the input mapping to 1 qubit
 which is just like the one previous,
 but with j2 instead of j1 and tensored with a second qubit,
 which now has 0.j1, j2 in the exponent,
@@ -125,7 +125,7 @@ omega to the 0.j1 acting on 1.
 Now, this is not what we wanted so far
 because this first term here has a Hadamard acting on j2,
 not j1.
-What we actually want is a single qubit face rotation with
+What we actually want is a single qubit phase rotation with
 omega to the 0.0j2 such that we would get these two terms
 for the second qubit.
 And we can obtain that if we apply a controlled rotation
@@ -133,7 +133,7 @@ that does an omega to the 0.01 when j2 is equal to 1 applied
 on the first qubit.
 Let's call this an R2 gate and it is controlled from j2.
 Now, applying a Hadamard on j2, we
-obtain the full quantum Fourier transform circuit for equal to.
+obtain the full quantum Fourier transform circuit for n equal 2.
 Let's generalize this to n equal to 3.
 Here we have 3 qubits as input, j1 through j3
 and the first term we want is a Hadamard on j3
@@ -144,7 +144,7 @@ Now, recall that j is 2 to the n times phi
 and furthermore let us define a generalization of the rotation
 we had R2 as Rk where we get a rotation omega to a 2
 to the minus k.
-R3 qubit quantum Fourier transform circuit
+Our 3 qubit quantum Fourier transform circuit
 takes in the three qubits, j1, j2, j3,
 applies a Hadamard and a controlled rotation R2,
 just as was done for the n equal 2 case,
@@ -165,11 +165,11 @@ This requires all pairs to interact,
 meaning n times n plus 1 divided by 2 gates
 and this order n squared gate requirement should be compared
 with that the classical fast Fourier transform,
-which goes as 2 to the n exponentially more.
+which goes as 2 to the n, exponentially more.
 This is one of the reasons why the quantum Fourier
 transform has been so appealing, but of course, there
 is a catch.
 Naively, the QFT is exponentially smaller, faster
 than the FFT, but measurement causes collapse of the output
 and thus only one of the Fourier transform results is sampled.
-Thus something more clever is required
+Thus something more clever is required to make use of the potential of the quantum Fourier transform.

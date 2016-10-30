@@ -11,15 +11,15 @@
 
 Let us apply the quantum Fourier transform
 to solving an interesting problem-- phase estimation.
-The scenario is that we are given a unitary transform, u,
-and an eigenstate state of u-- little u, such
-that u's eigenstate is e to the 2 pi i phi--
+The scenario is that we are given a unitary transform, U,
+and an eigenstate of U-- little u, such
+that U's eigenstate is e to the 2 pi i phi--
 And the problem is to find phi.
 Now, we don't know how to do this efficiently using
 just what I've given here.
 However, if the terms of the problem
-are changed such that instead of just u,
-you are given a controlled u of a form which
+are changed such that instead of just U,
+you are given a controlled U of a form which
 I'll specify in just a moment, then
 it turns out we can find phi efficiently.
 Now, this Problem Two version can
@@ -29,7 +29,7 @@ We have two registers of qubits, one with t qubits
 that start in zero and go through Hadamard.
 A second, which is the u state that we are given that has n
 qubits.
-We perform a controlled u operation,
+We perform a controlled U operation,
 and then an inverse quantum Fourier transform.
 And I'll show how this measurement of this register
 produces the desired result to good approximation.
@@ -52,31 +52,31 @@ Let's take this quantum circuit and walk
 through why it works based on our understanding
 of the quantum Fourier transform.
 Here is the circuit.
-Note that the effect of the controlled u
-is to change the power exponentially of u that
+Note that the effect of the controlled U
+is to change the power exponentially of U that
 is applied.
-u, and then u squared, u to the fourth, u to the eighth,
+U, and then U squared, U to the fourth, U to the eighth,
 and so on.
 We have t qubits in this control register,
 and we have n qubits in this data register.
 All I've shown so far is this first part of the circuit,
 and it's very much like an operator measurement circuit.
-The controlled u to the k acting on 0 plus 1 and u
-gives zero plus omega to the k phi times 1 with u.
+The controlled U to the k acting on 0 plus 1, and u,
+gives zero plus omega to the k phi times 1, with u.
 This first part is a single qubit
 which gains a phase, just like we saw in the operator
 measurement circuit.
 That phase gives the eigenvalue of u.
-In contrast with a poly-operator measurement case though,
+In contrast with a Pauli operator measurement case though,
 here eigenvalues can be different from just
 plus and minus one.
-For controlled u to the one, we get the usual result-- omega
+For controlled U to the one, we get the usual result-- omega
 to the phi, acting on one.
-For u squared we get omega to the two phi times cat 1.
-For u to the fourth, we get omega
-to the four phi times cat 1, and so forth to the case
-where we have u to the 2 the t, giving us omega to the 2
-to the t times phi times cat 1.
+For U squared we get omega to the two phi times ket 1.
+For U to the fourth, we get omega
+to the four phi times ket 1, and so forth to the case
+where we have U to the 2 the t, giving us omega to the 2
+to the t times phi times ket 1.
 This state should be very familiar to you
 from the Fourier transform analysis.
 We may rewrite the bottom qubit as omega to the zero point
@@ -84,14 +84,14 @@ phi 1 through phi t.
 Remember, phi is a binary fraction.
 The second qubit has omega to the zero point phi 2
 to phi t times 1.
-The third qubit has omega to the zero point phi three phi
+The third qubit has omega to the zero point phi three to phi
 t times 1, and so forth up to the final qubit
-up at the top, which has omega to the zero point fee t
+up at the top, which has omega to the zero point phi t
 times 1.
 This is, in fact, exactly the output of the quantum Fourier
 transform, and thus we may rewrite it straightforwardly
-as simply the [INAUDIBLE], which is a sum over omega phi times
-k times cat k.
+as simply the state psi, which is a sum over omega phi times
+k times ket k.
 This state, fed backwards through the inverse quantum
 Fourier transform, thus gives us phi-- or, more accurately,
 phi times 2 to the t.
@@ -103,8 +103,8 @@ so we get an approximation.
 Second, we need this eigenstate u,
 which may not be available in general.
 And third, the scenario has called
-for a controlled u-- in fact, controlled powers of u--
+for a controlled U-- in fact, controlled powers of U--
 to exponentially higher values, and this is not
-generally possible given a u.
+generally possible given a U.
 Nevertheless, this phase estimation algorithm
-does turn out to be quite useful,
+does turn out to be quite useful, as we will see in Shor's quantum factoring algorithm.
