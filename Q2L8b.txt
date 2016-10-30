@@ -25,7 +25,7 @@ gate and two hadamard gates.
 Keep the other hadamard and the measurement-controlled z
 just as they were before.
 Again, we're just rewriting the controlled not gate
-as a control z with two hadamards.
+as a controlled z with two hadamards.
 Label the measurement result m and note
 that we may rewrite the 0 with hadamard as a plus state.
 So now we have psi and plus going into a controlled z,

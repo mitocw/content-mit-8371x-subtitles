@@ -10,7 +10,7 @@
 #----------------------------------------
 There are several approaches to understanding Shor's Algorithm.
 What we will do today is to use a reduction
-<font color=#000000FF>from the problem of factoring to the problem of order</font>
+from the problem of factoring to the problem of order
 finding.
 This is given by the following theorem.
 The setting of the theorem begins with the definition
@@ -34,7 +34,7 @@ This is an important formula for us.
 It defines r as being a certain quantity.
 Now r is an integer and this integer
 is known as the order of x, with respect to N.
-Now given this number r, for r being nontrivial value,
+Now given this number r, for r being a nontrivial value,
 that is r is even and x to the r divided by 2 modulo N is not 1.
 This means, for example, r is not zero,
 then it turns out that with high probability, the greatest
@@ -42,7 +42,7 @@ common divisor of this number, x to the r divided by 2 minus 4
 plus 1 modulo N with the number N
 is a factor of N. This last step is proven
 using the Chinese remainder theorem.
-Now recall that the number we are factoring has L-bits bits.
+Now recall that the number we are factoring has L bits.
 This reduction, therefore, can be
 computed in time approximately L cubed.
 That time is largely taken up by the greatest common divisor
@@ -51,8 +51,8 @@ Overall, thus we see, that the problem of factoring the number
 can be reduced to the problem of finding
 r, which is known as the order of x with respect to N.
 r is normally difficult to compute.
-The best-known classical algorithm
+The best known classical algorithm
 takes a number of steps, which is exponential in L. However,
 what Shor's Algorithm provides is a quantum algorithm
-for finding the order r in time, which
-is polynomial NL and this is what we'll see next.
+for finding the order r in time which
+is polynomial in L, and this is what we'll see next.
