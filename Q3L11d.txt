@@ -20,40 +20,40 @@ Here we focus on a variant of this problem
 where you are giving a controlled u to the j, where
 j is a control, and in addition a state
 v which is a superposition of eigenstates of u.
-v sub k here denotes an eigenstate of eigenvalue v sub
+phi sub k here denotes an eigenstate of eigenvalue phi sub
 k.
 The goal of the problem is to produce
-sample values of v sub k.
+sample values of phi sub k.
 Here is how the sampling algorithm works.
-One starts with 0 v and applies a [INAUDIBLE]
-to the first register of cubits producing
+One starts with 0 v and applies a Hadamard
+to the first register of qubits producing
 an equal superposition and then v. A controlled u to the j
 is then applied with a first register as the control,
 with the u acting on v. This results in a superposition.
-The u to the j produces v sub k to the j-th power
-acting on [INAUDIBLE] v k.
+The u to the j produces phi sub k to the j-th power
+acting on ket phi k.
 These eigenvalues are roots of unity and thus
 it's helpful to write the phase as lambda sub k.
 Let us gather the terms that depend on j.
 We find that this is a sum over e
-to the 2 pi i lambdas of kj times [INAUDIBLE] j.
+to the 2 pi i lambda sub k j times ket j.
 Recall, this is the form of the output
-of the quantum for your transform,
+of the quantum Fourier transform,
 and thus, in our next step when we apply the inverse quantum
 Fourier transform we obtain a state which
-is the sum over k with c sub k lambdas of k v sub k.
+is the sum over k with c sub k, lambda sub k, phi sub k.
 Lambda sub k here is the phase of the eigenvalue.
 And thus when we measure we obtain this value from which
-we may compute v sub k and the k-th eigenvalue
+we may compute phi sub k and the k-th eigenvalue
 is obtained with probability c sub k squared.
 In the initial state, if the vector v
 is a superposition of the ground and excited states
 with some epsilon fraction of the excited state,
 then we may estimate epsilon using this algorithm.
-The catch is that control u to the j is a lot to ask for,
+The catch is that controlled u to the j is a lot to ask for,
 and is not often available naturally.
-If u is the quantum simulated evolution under h [INAUDIBLE]
-using some Trotterization scheme, then control u to the j
+If u is the quantum simulated evolution under H sys
+using some Trotterization scheme, then controlled u to the j
 will in general require exponential resources
 to accomplish.
 Such exponential time duration simulation

@@ -33,15 +33,15 @@ This is a number of gates.
 Now, whether this is good or bad,
 we'll come to in a little bit.
 The algorithm has three main steps in its procedure.
-The first step is to discretized both the state, so
+The first step is to discretize both the state, so
 that it is represented by approximately poly log n
 qubits, and also the time evolution operation,
 producing efficient quantum circuits for each Hamiltonian H
-k.
-The second step is to approximate to choose the time
+sub k.
+The second step is to approximate, to choose the time
 step delta t and the trotterization
 for producing H from H sub k.
-More sophisticated variance could employ adoptive time
+More sophisticated variants could employ adaptive time
 steps and/or trotterization schemes.
 The third step in the procedure is where
 all the main work is done.
