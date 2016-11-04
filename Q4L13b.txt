@@ -15,7 +15,7 @@ compared with the classical.
 We define this entropy the Von Neumann entropy as minus trace
 of RHO log RHO for density matrix RHO.
 For example, the entropy of a pure state zero is zero,
-and the entropy of this fully mixed cubit is one bit.
+and the entropy of this fully mixed qubit is one bit.
 Evidently, the Von Neumann entropy of RHO
 is simply the Shannon entropy of the eigenvalues of RHO.
 So what could be surprising about this entropy?
@@ -59,10 +59,10 @@ leaving us with h of p, and the second term
 becomes a convex combination of s of RHO sub k.
 Please keep this property in mind for the proof
 of Holevo's theorem.
-Let this turn now to the definition
+Let us turn now to the definition
 of mutual information for the quantum case.
 We build on the conditional entropy
-defined as s of p given q, being s of p cubed minus s of q.
+defined as s of p given q, being s of p q minus s of q.
 Be careful, though, because conditional entropy
 in the quantum case can be negative.
 That is not true in the classical case.
@@ -99,9 +99,9 @@ is always less than or equal to the Shannon entropy
 of a joint between x and y.
 This is not true in the quantum case, though.
 For example, consider a bipartite quantum state
-pq, which is an entangled cubit state, 0 0 plus 1 1.
+pq, which is an entangled qubit state, 0 0 plus 1 1.
 The Von Neumann entropy of p is equal to the Von Neumann
-entropy of q, which is one cubit,
+entropy of q, which is one qubit,
 but the Von Neumann entropy of the total system
 is 0 because it is a pure state.
 The Von Neumann entropy and quantum mutual information

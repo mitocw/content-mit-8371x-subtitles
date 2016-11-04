@@ -14,7 +14,7 @@ one of the earliest results in quantum information theory.
 The scenario here starts with a classical message
 X, which is then mapped by some encoding
 to a quantum state rho.
-And this rho or rho sub X may be an [INAUDIBLE]
+And this rho or rho sub X may be an alphabet
 with non-orthogonal states.
 The states are sent over a noiseless channel-- no noise--
 and received, then measured to produce the channel output
@@ -28,7 +28,7 @@ Holevo's theorem puts a bound on the maximum rate at which X
 can communicate with Y. That is that the mutual information is
 bounded above by the entropy of the density matrix
 minus the probabilistically weighted combination of the von
-Neumann entropy of the signal [INAUDIBLE] states.
+Neumann entropy of the signal alphabet states.
 Here rho is the sum of P sub X times rho sub X.
 Let us explicitly prove Holevo's theorem
 because it is very instructive to see
@@ -105,4 +105,4 @@ above by this expression.
 For a single qubit, Holevo's theorem
 stipulates that the mutual information between X and Y
 is at most the entropy of the density matrix, and that is 1.
-You will explore more interesting cases
+You will explore more interesting cases in the problem set.
