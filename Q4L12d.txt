@@ -19,7 +19,7 @@ the symbols, instead of letters, are quantum states
 which may be non-orthogonal and the distribution, instead
 of a PDF, is a density matrix.
 The message is a tensor product of, say,
-end symbols from the alphabet.
+N symbols from the alphabet.
 The quantum noiseless coding theorem states
 that messages from a quantum source of von Neuman
 entropy s of rho can be faithfully transmitted
@@ -50,7 +50,7 @@ By virtue of their orthonormality,
 any block of n qubits-- call it phi--
 may be represented as a linear combination of tensor
 products of these eigenstates.
-Zero bar one bar thus behavior kind of like classical bits.
+Zero bar one bar thus behave kind of like classical bits.
 Note also that these symbols of our alphabet
 have particularly large overlap with the zero bar state.
 That is, the squared matrix element of psi 0 and psi 1
@@ -73,7 +73,7 @@ For example, with two one bar states,
 we get an overlap matrix element of 0.018.
 And with three one bar elements, the overlap drops to 0.003.
 The terms with the most zero bar elements
-thus has the highest weight.
+thus have the highest weight.
 And in fact, there are three possible cases with 1 1.
 And thus, in total, there are four high probability cases
 and we may encode these as two qubits.
@@ -105,8 +105,8 @@ And in fact, the number of atypical messages
 drops exponentially.
 The quantum case has an analogous definition.
 For a source described by density matrix rho
-with orthonormal unraveling end states
-x and epsilon typical subspace is defined
+with orthonormal unraveling in states
+x, an epsilon typical subspace is defined
 as being the subspace spanned by the vectors labeled
 by epsilon typical sequences of x.
 Note that these probabilities are the eigenvalues of rho
@@ -133,7 +133,7 @@ And finally, we may decompress this back
 to obtain the original n log d qubits to good approximation.
 The compression scheme utilizes two steps.
 First, we apply a unitary transform
-to rotate each cube it into the eigenbases of the density
+to rotate each qubit into the eigenbasis of the density
 matrix of the source.
 This provides a basis with probabilities
 with classical interpretations.

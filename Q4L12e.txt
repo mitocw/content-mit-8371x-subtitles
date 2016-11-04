@@ -17,7 +17,7 @@ produces zero or one with probability p and 1 minus p.
 For example, if p is 0.854 and 1 minus p, 0.146, then out
 of n bits, we expect approximately np zeros.
 When n is 1,000, that means 854 zeros and 146 ones.
-How many of these binary strings would have to np zeros?
+How many of these binary strings would have np zeros?
 Well that's just n choose np.
 And we expand this using the normal combinatorial formula.
 But it is far more insightful to see
@@ -41,4 +41,4 @@ In our particular example, for n equal 1,000, log of n
 choose np is 595.
 And the approximate version, n times H of p, is 600.
 This approximation illustrates the power
-of thinking about typical sequences in terms
+of thinking about typical sequences in terms of entropies.

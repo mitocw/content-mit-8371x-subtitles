@@ -9,7 +9,7 @@
 #
 #----------------------------------------
 
-And insightful perspective for quantum communication
+An insightful perspective for quantum communication
 is provided by starting with the scenario
 of classical communication.
 Here, the goal is to transmit a message, say x, described
@@ -33,7 +33,7 @@ There are parallels to this in quantum communication.
 In this scenario, the source messages
 are described by a density matrix.
 This is a distribution which may be
-viewed as a distribution over peer states.
+viewed as a distribution over pure states.
 For example, these may be non-orthogonal states,
 in contrast to the classical case.
 The received message is also described by a density matrix.
@@ -41,8 +41,8 @@ And in contrast to the classical case,
 this is possibly decoded quantum mechanically,
 say by a quantum computer.
 Analogous to the classical case, the Von Neumann entropy
-describes the number of cubits needed to faithfully represent
-the density matrix row, and this is asymptotically.
+describes the number of qubits needed to faithfully represent
+the density matrix rho, and this is asymptotically.
 This entropy is similar to, but different from,
 the Shannon entropy, as we will see.
 Also, there are several distinct scenarios
@@ -59,11 +59,11 @@ There are even richer scenarios beyond these four.
 Entanglement may also be used to assist, for example,
 classical communication.
 When the sender and receiver have
-pre-shared entangled cubits, this
-may change the [INAUDIBLE] capacity.
+pre-shared entangled qubits, this
+may change the channel capacity.
 Another set of capacity measures result when quantum information
 is allowed to be sent, but only one way or two ways,
 and possibly in addition to having a classical side
 channel.
 Beyond this, quantum communication
-may also involve multiple parties.
+may also involve multiple parties. Quantum communication is thus a fascinating field of study.
