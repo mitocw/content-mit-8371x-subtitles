@@ -83,4 +83,4 @@ On average, it requires 1 bit with probability 1/2,
 with 2 times 1/8 probability.
 All together, that is 1.75 bits per letter.
 Thus, this code demonstrates how the bound
-given by Shannon's noisy coding theorem can be
+given by Shannon's noisy coding theorem can be realized for a simple example.

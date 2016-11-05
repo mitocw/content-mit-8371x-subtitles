@@ -54,7 +54,7 @@ Here, the entropy is simply the log
 of the size of the alphabet.
 As a third example, consider an alphabet
 with four possible symbols, a, b, c, and d.
-Here, say, a occurs with probably 1/2,
+Here, say, a occurs with probability 1/2,
 b, 1/4, and c and d with probability 1/8.
 By direct calculation, the entropy is 7/4 bits.
 Here is the explicit calculation which
@@ -83,4 +83,4 @@ Shannon studied this experimentally
 with a gambling experiment asking listeners
 to predict the next letter as words were spelled out.
 He observed a rate of 1.3 bits per letter.
-This provides a concrete and interesting example
+This provides a concrete and interesting example of the meaning of entropy in communication.

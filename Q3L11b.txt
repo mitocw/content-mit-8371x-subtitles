@@ -69,7 +69,7 @@ The second is B, for time delta t.
 And the third is A, again, for time delta t divided by 2.
 This is an order delta t cubed approximation.
 Note the symmetry in this expression.
-It is this which gives the ever cancellation.
+It is this which gives the error cancellation.
 This second example illustrates how this idea of symmetry
 can be extended to a Hamiltonian with l terms.
 We then approximate the time evolution
