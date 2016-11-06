@@ -35,9 +35,9 @@ greater than zero and in the asymptotic limit
 of sufficiently large n.
 Epsilon here is the probability of error of the protocol.
 Let us first look at concentration.
-Without lots of generality, we may take the state psi
+Without loss of generality, we may take the state psi
 as being a bipartite state with coefficients 1 minus P
-square root 0, 0, n square root of P 1, 1.
+square root 0, 0, and square root of P 1, 1.
 This is the form provided by the Schmidt decomposition.
 Recall that the entanglement of the state psi
 is given by the von Neumann entropy of the reduced density
@@ -48,13 +48,13 @@ What we need from concentration is
 to be able to take n copies of the state psi
 into approximately E of psi copies
 of the maximum entangled state.
-Delta here will be the phi that is
+Delta here will be the fee that is
 paid to be able to create these EPR pairs.
 Since the protocol uses n copies of psi,
 let us explicitly write out this tensor product of n copies.
 We may express this tensor product using
-a binomial expansion were each of the usual binomial
-coefficients multiply as the term xx.
+a binomial expansion where each of the usual binomial
+coefficients multiplies the term xx.
 Here, the absolute value of x denotes the number of 1s
 in the binary string x.
 Let's rewrite using the number of 1s
@@ -113,22 +113,22 @@ locally in her own apparatus.
 Remember, this is a bipartite state.
 She takes half of this state-- n qubits-- and compresses
 it to produce using Schumacher compression,
-for example, and output, which has approximately nE cubits.
+for example, an output which has approximately nE qubits.
 Here, delta is the overhead required for the compression.
 Separately, Bob-- shown here in purple--
 produces n perfect EPR pairs, perhaps
 with a little overhead delta.
 Bob, who holds this entangled state,
 then sends half of those qubits--
-that is, approximately nE cubits over to Alice.
+that is, approximately nE qubits over to Alice.
 Alice performs a Bell basis measurement
 between the compressed state and this half of the EPR pairs,
 sends the classical measurement result to Bob,
 who fixes up the other half of the EPR pairs
 using the normal teleportation protocol.
-And remember, there are nE of these cubits.
+And remember, there are nE of these qubits.
 Decompresses with the reverse of the Schumacher compression,
-obtaining a state with n cubits.
+obtaining a state with n qubits.
 All together then what Bob and Alice have
 is with high probability n copies of the state psi A/B.
 For this protocol, the fixed parameter is delta.

@@ -89,7 +89,7 @@ even when quantum error correction codes fail.
 This is the case, for example, for the depolarization channel.
 This single qubit channel transmits the state
 unchanged with probability p but otherwise replaces the qubit
-with one of the [INAUDIBLE] states.
+with one of the Pauli states.
 When p is less than 3 over 4, it is
 known that the capacity of the channel
 is 0 as proven, for example, by the quantum singleton bound.
@@ -100,4 +100,4 @@ less than 3/4.
 It turns out that the reason for this difference
 is because the entanglement purification protocol may
 employ two-way communication in contrast
-to the one-way communication traditionally employed
+to the one-way communication traditionally employed in quantum error correction.
