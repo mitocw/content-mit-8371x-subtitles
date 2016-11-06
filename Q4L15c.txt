@@ -62,7 +62,7 @@ and binding.
 In other words, it is insecure.
 Historically, this result from Dominic Mayers, HF Chau,
 and Hoi-Kwong Lo was a milestone in our understanding of quantum
-bit commitment and quantum particles
+bit commitment and quantum protocols
 utilizing entanglement.
 The proof of this no-go theorem utilizes our familiar friend,
 the Schmidt decomposition.
@@ -99,7 +99,7 @@ to e sub k prime.
 This acts on the qubits that Alice keeps locally to herself.
 U sub A is thus something Alice can choose
 to do without telling Bob.
-And in fact, this let's Alice change
+And in fact, this lets Alice change
 psi AB0 to psi AB1 and vice versa.
 And again, Alice this does this without touching Bob's state.
 Therefore, we conclude that this protocol
@@ -113,4 +113,4 @@ be fixed, perhaps by adding multiple rounds
 or some other kind of generalization?
 It turns out not to be possible.
 No generalization of this protocol
-is known to be secure today.
+is known to be secure today. Nevertheless, it is instructive to understand exactly why.

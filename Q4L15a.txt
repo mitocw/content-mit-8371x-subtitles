@@ -21,7 +21,7 @@ We wish A to commit to a secret.
 She does this in two phases.
 In phase one, known as the commit phase,
 there are two steps.
-First, A chooses her secret as 0, from an alphabet S. Second,
+First, A chooses her secret S0, from an alphabet S. Second,
 A publishes some information which is related to S,
 namely f of S 0.
 We'll call this f 0.
@@ -64,13 +64,13 @@ This version of the protocol is good only so long
 as factoring is a hard problem.
 A secure bit commitment scheme is
 useful for a variety of applications
-such as the millionaires problem, where
-two millionaires went to find out
+such as the millionaire's problem, where
+two millionaires want to find out
 who has more money without revealing
 how much either one has.
-Bit commitment may also be used for certain, secured two-party
+Bit commitment may also be used for certain secure two-party
 computations.
 But can bit commitment be realized securely
 without the need for computational complexity
 assumptions?
-Let us see if bit commitment can be realized with quantum
+Let us see if bit commitment can be realized with quantum physics in a secure way.

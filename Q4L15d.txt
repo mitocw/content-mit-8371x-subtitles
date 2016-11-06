@@ -50,7 +50,7 @@ We prove this by starting with our friend
 the Schmidt decomposition, here written with lambda sub
 k, a sub k, and b sub k.
 In this basis, let Bob's measurement quantum operators
-b m sub j, with the matrix elements m sub j kl.
+be m sub j, with the matrix elements m sub j kl.
 Note how this operator maps b sub l to b sub k.
 Acting on psi, Bob's measurement produces
 psi sub j, a superposition involving
@@ -69,12 +69,12 @@ This operator, measured by Alice locally,
 would produce a state psi tilda sub
 j, which is a sum over matrix elements and a sub k, b sub l.
 The probability of the jth measurement result occurring
-would be a sum over a kl of matrix elements squared.
+would be a sum over kl of matrix elements squared.
 And it turns out to be exactly the same as p sub j.
 These states, though, are slightly different.
 Previously, we had a sub l, but now we have a sub k.
 These are different, but it turns out
-that psi tilda sub j has the same Schmidt
+that psi tilde sub j has the same Schmidt
 decomposition as psi sub j.
 This is evident by inspection because the two states are
 the same under a relabelling of a sub k, and a sub l,
@@ -82,7 +82,7 @@ and b sub k, and b sub l.
 This remapping is an operation which may be performed locally
 by unitaries.
 Call these u sub i, and u sub j.
-And these unitaries map between psi sub j, and psi tilda sub j.
+And these unitaries map between psi sub j, and psi tilde sub j.
 Let us absorb u into the definition of n prime.
 We have thus shown that a measurement of m sub
 j by Bob, can be equivalently done by Alice performing n sub
