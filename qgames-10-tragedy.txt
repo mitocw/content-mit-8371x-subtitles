@@ -12,7 +12,7 @@
 The Tragedy of the Commons is a classic game
 which we illustrate here using an example from McCain's
 book on game theory.
-Consider the question of whether an individual, along the many,
+Consider the question of whether an individual, among many,
 would be better off commuting by car or by bus.
 Both must share the same roads, and the reward to an individual
 is a faster commute.
@@ -65,4 +65,4 @@ such as governments, who restrain over use.
 Such solutions bring their own issues.
 Could perhaps trusted third parties
 be supplemented or replaced by trust
-in quantum mechanics, or at least an apparatus
+in quantum mechanics, or at least in apparatuses governed by quantum mechanics?
