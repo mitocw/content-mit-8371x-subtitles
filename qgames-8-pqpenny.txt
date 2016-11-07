@@ -40,4 +40,4 @@ The winning strategy for Q is thus
 to perform two Hadamard operations,
 such that it becomes irrelevant whether P flipped the coin
 or not, thus leaving the coin always in the head
-state, in the end, once it is measured,
+state, in the end, once it is measured, giving a payoff of +1 for Q no matter what P does.

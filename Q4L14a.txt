@@ -25,7 +25,7 @@ called an ebit, plus two classical bits
 into the ability to communicate one quantum bit.
 Such conversion is not possible without the entanglement.
 Another well known protocol is super dense coding,
-by which an ebit and one cubit are used to communicate
+by which an ebit and one qubit are used to communicate
 two classical bits.
 Entangled quantum states are known
 to also be useful for clock synchronization, distributed
@@ -37,7 +37,7 @@ So given that entanglement is useful,
 the problem is, is entanglement a resource?
 And by this I mean, a mathematical, formal definition
 of resource.
-For example, here are two entangled state, 0 0 plus 1 1,
+For example, here are two entangled states, 0 0 plus 1 1,
 versus 0.9 square root 0 0 plus 0.1 square root 1 1.
 How are these the same or different?
 After all, one can't have different kinds of resources
@@ -50,16 +50,16 @@ is to say that A and B are equivalent if there
 is a mechanism to convert from A to B and from B to A.
 Does this apply to entangled states?
 In fact yes, to some degree.
-A state psy and another state phi,
-which are by bipartite peer states,
+A state psi and another state phi,
+which are by bipartite pure states,
 are equivalent under local operations
 and classical communication, that is,
 operations which do not create entanglement, if and only
-if psy majorizes phi, and phi also majorizes psy.
-Here, psy and phi are the Schmidt decomposition
+if psi majorizes phi, and phi also majorizes psi.
+Here, psi and phi are the Schmidt decomposition
 coefficients of the pure bipartite states.
 Equivalently, the eigenvalues of the reduced density matrices
-of psy and phi for one side or another must be the same.
+of psi and phi for one side or another must be the same.
 This is a fine criterion, but it is clearly too strict,
 because it means that we would have many different categories
 of entanglement.

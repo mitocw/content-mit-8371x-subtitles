@@ -84,4 +84,4 @@ in game theory known as the Prisoner's Dilemma.
 Both prisoners would be better off
 if they had cooperated with each other,
 but because of the incentive to defect from each other,
-each one of them ends up defecting, not knowing
+each one of them ends up defecting, not knowing what the other player will do.

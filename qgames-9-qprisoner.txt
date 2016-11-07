@@ -25,7 +25,7 @@ qubits in the C state.
 A two qubit operation J is applied to these qubits.
 J will be defined in a moment.
 The two player's actions are represented
-by use of A and use of B-- two single qubit operations.
+by U sub A and U sub B-- two single qubit operations.
 The two qubits are then passed through the inverse operator J
 dagger and then measured.
 We define J as being the two qubit entangling
@@ -34,7 +34,7 @@ This is an entangling operation, which
 is a pi over 4 rotation about the two Pauli xx operation.
 Now, it is a little unclear exactly who
 is doing J and J dagger.
-But it should be clear that use of A and use of B
+But it should be clear that U sub A and U sub B
 are the prisoner's actions.
 Where the unitary operations are either
 I-- representing cooperation with a partner,
@@ -49,8 +49,8 @@ represented by these two formulas
 reduce to exactly the same as expected
 from the classical version of the prisoner's dilemma game.
 In these formulas R, P, T, and S are, as before,
-the reward punishment tempt payoff and the sucker's payoff.
-What is different now is that the payoffs involved
+the reward, punishment, tempt payoff, and the sucker's payoff.
+What is different now is that the payoffs involve
 probabilities P sub CC, P sub DD, and so forth, given
 by the measurement results.
 So these are now random variables.
@@ -61,7 +61,7 @@ Thus, the payoff matrix is exactly the same
 as in the classical case.
 With this quantum setting, however, we
 may now introduce a new quantum strategy represented
-by the operator Z chosen for either use of A or use of B,
+by the operator Z chosen for either U sub A or U sub B,
 or both.
 Let us call this the quantum action versus C or D
 being the classical actions.
@@ -71,7 +71,7 @@ and Bob chooses to cooperate C. Then in this case, the output
 state before measurement, psi, is given by this formula
 J dagger Z tensored I times J acting on CC- the input state.
 Working through the algebra for this
-using the known poly matrix commutation relationships
+using the known Pauli matrix commutation relationships
 we find that the output state is up to an overall phase
 DD for this action QC.
 Thus, the output payoff is-- for each one of the players--
@@ -107,5 +107,5 @@ to help the prisoners in this setting?
 What is the proper interpretation
 of the game now that we have a quantum set of strategies?
 Nevertheless, this example demonstrates
-some of the principle ideas used in introducing
+some of the principal ideas used in introducing
 quantum strategies into classical games.

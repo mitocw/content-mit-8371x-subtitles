@@ -23,7 +23,7 @@ then performs a controlled Hadamard based
 on the random classical bit string b prime.
 This has n bits and it acts on the n
 qubits which are measured to produce the bit string a prime.
-Note that I have used tildas to indicate bit strings here.
+Note that I have used tildes to indicate bit strings here.
 This part of the protocol represents the commit phase.
 For the opening phase of bit commitment,
 Alice reveals the bit string, a, and her secret, b.
@@ -93,9 +93,9 @@ Alice does not decide upon b until later
 in the opening phase.
 At that point, she chooses b, performs a Hadamard depending
 on b, and then measures.
-This gives her a tilda.
-She finds out a tilda instead of choosing a tilda.
-This act of deferring the choice of b and production of a tilda
+This gives her a tilde.
+She finds out a tilde instead of choosing a tilde.
+This act of deferring the choice of b and production of a tilde
 until the opening phase clearly violates
 the binding requirement of the bit commitment protocol.
 This flaw is known as the EPR attack.

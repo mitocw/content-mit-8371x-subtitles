@@ -17,7 +17,7 @@ Suppose a group of coworkers collects
 a pool of funds for a birthday celebration.
 Assume each individual starts with y dollars
 and is asked to contribute.
-So say John and Kay and Chloe each
+So say John, Ann, Kay, and Chloe each
 have the option of contributing some amount.
 However, contributions are anonymous,
 and everyone gets to share equally
@@ -34,7 +34,7 @@ of the contributions.
 We may model each individual share of their birthday party
 as a payoff given the individual endowment
 minus the contribution plus an equal share
-of the total contribution weighed by the public gain.
+of the total contribution weighted by the public gain.
 Note, again, that contributions are optional.
 Thus, it is apparent from this formula
 that individual payoffs are maximized by contributing
